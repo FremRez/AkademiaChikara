@@ -32,7 +32,7 @@ nav {
   align-items: center;
   z-index: 100;
 
-  & div {
+  & .nav-items-container {
     width: 70vw;
     display: flex;
     justify-content: space-between;
@@ -60,10 +60,60 @@ nav {
     background-color: rgba(255, 0, 0, 0.527);
     backdrop-filter: blur(10px);
     color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+
+  & a:first-of-type:hover {
+    scale: 1;
   }
 }
 
-main {
+.training-schedule {
+  position: relative;
+}
+
+.training-schedule:hover {
+  scale: 1;
+}
+
+.training-schedule:hover .training-list {
+  display: flex;
+  animation: menuList 300ms;
+}
+
+.training-list {
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+  top: 40px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 218, 218);
+  padding: 15px 0;
+  border-radius: 10px;
+  display: none;
+  & p {
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    font-size: 15px;
+    transition: background-color 150ms;
+  }
+
+  & p:hover {
+    background-color: whitesmoke;
+  }
+}
+
+@keyframes menuList {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.enter-site {
   width: 100vw;
   height: 100vh;
   background-image: url(images/background.jpg);
@@ -74,7 +124,7 @@ main {
   align-items: center;
 }
 
-section {
+#enter-site-content {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -130,10 +180,130 @@ section {
   display: none;
 }
 
-footer {
-  width: 100vw;
-  height: 100vh;
-  padding: 100px;
+.main-site-content {
+  padding: 20px;
+}
+
+.line {
+  width: 130px;
+  height: 3px;
+  background-color: rgba(255, 0, 0, 0.658);
+}
+
+#about-us {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 200px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.about-us-txt {
+  place-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  & h1 {
+    font-size: 50px;
+    margin: 10px 20px;
+  }
+  & p {
+    font-size: 20px;
+    margin: 10px 20px;
+    padding-right: 60px;
+  }
+  & button {
+    padding: 15px 20px;
+    border: 2px solid rgba(255, 0, 0, 0.658);
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 20px 20px;
+    color: rgba(255, 0, 0, 0.719);
+    backdrop-filter: blur(20px);
+    font-weight: bolder;
+    font-size: 15px;
+    transition: 200ms;
+    cursor: pointer;
+  }
+  & button:hover {
+    background-color: rgba(255, 0, 0, 0.658);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
+    color: white;
+    scale: 1.02;
+  }
+}
+
+.about-us-video {
+  position: relative;
+  & div {
+    width: 550px;
+    height: 310px;
+    background-color: rgba(255, 0, 0, 0.658);
+    top: 0;
+    transform: rotate(-10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16/9;
+  }
+
+  & video {
+    aspect-ratio: 16/9;
+    transform: rotate(10deg);
+  }
+}
+
+#what-is-karate {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h1 {
+    font-size: 50px;
+    margin: 10px 20px;
+  }
+  & p {
+    font-size: 20px;
+    margin: 110px 20px;
+  }
+  & div:first-of-type {
+    margin: 20px 0;
+  }
+  & div:last-of-type {
+    position: relative;
+  }
+  & img {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+  }
+  & button {
+    padding: 15px 20px;
+    border: 2px solid rgba(255, 0, 0, 0.658);
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 20px 20px;
+    color: rgba(255, 0, 0, 0.719);
+    backdrop-filter: blur(20px);
+    font-weight: bolder;
+    font-size: 15px;
+    transition: 200ms;
+    cursor: pointer;
+  }
+  & button:hover {
+    background-color: rgba(255, 0, 0, 0.658);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
+    color: white;
+    scale: 1.02;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -143,6 +313,10 @@ footer {
 
   .menu-option {
     display: none;
+  }
+
+  #about-us {
+    grid-template-columns: 1fr;
   }
 }
 
