@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.911) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+
+  & div {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & img {
+    width: 100px;
+    margin: 0 30px;
+  }
+
+  & a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    transition: scale 150ms;
+  }
+
+  & a:hover {
+    scale: 1.15;
+  }
+
+  & a:first-of-type {
+    background-color: rgba(255, 0, 0, 0.527);
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+  }
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.705) 0%,
+    rgba(255, 255, 255, 0.425) 60%,
+    rgb(255, 255, 255) 100%
+  );
+  align-items: center;
+  & h1 {
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(48, 48, 48);
+    margin: 0 20px 65px 20px;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+  & span {
+    color: rgba(255, 0, 0, 0.555);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 30px;
+    text-shadow: 0 0 10px rgb(255, 87, 87);
+  }
+  & button {
+    padding: 15px 20px;
+    margin-top: 20px;
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.658);
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition: 300ms;
+    & a {
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+    }
+  }
+  & button:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
+    scale: 1.07;
+  }
+}
+
+.menu-icon {
+  font-size: 50px;
+  display: none;
+}
+
+footer {
+  width: 100vw;
+  height: 100vh;
+  padding: 100px;
+}
+
+@media (max-width: 1600px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-option {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    & h1 {
+      font-size: 50px;
+      margin: 30px;
+    }
+
+    & span {
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+  nav {
+    & div {
+      width: 100vw;
+      padding: 0 50px;
+    }
+    & img {
+      margin: 0;
+    }
+  }
+}
