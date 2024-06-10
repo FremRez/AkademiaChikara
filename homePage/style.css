@@ -1,0 +1,190 @@
+@import "../globalStyle.css";
+
+button {
+  padding: 15px 20px;
+  border: 2px solid rgba(255, 0, 0, 0.658);
+  background-color: transparent;
+  border-radius: 10px;
+  color: rgba(255, 0, 0, 0.719);
+  backdrop-filter: blur(20px);
+  font-weight: bolder;
+  font-size: 15px;
+  transition: 200ms;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(255, 0, 0, 0.658);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
+  color: white;
+  scale: 1.02;
+}
+
+/*---------ENTER SITE---------*/
+.enter-site {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.enter-site-items {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.705) 0%,
+    rgba(255, 255, 255, 0.425) 60%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.enter-site-text {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darker-red);
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgb(255, 79, 79);
+  margin-bottom: 14px;
+  & span {
+    margin: 0 40px;
+  }
+}
+
+#enter-site-title {
+  font-size: 80px;
+  text-align: center;
+  color: rgb(34, 34, 34);
+  margin-bottom: 60px;
+  letter-spacing: 10px;
+}
+
+#enter-site-button {
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: var(--darker-red);
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition: 300ms;
+
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#enter-site-button:hover {
+  box-shadow: 0 0 20px var(--darker-red);
+  scale: 1.07;
+}
+
+/*---------ABOUT US MAIN---------*/
+main {
+  padding: 30px;
+}
+
+.line {
+  height: 3px;
+  width: 140px;
+  background-color: var(--darker-red);
+}
+
+#about-us {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 150px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+
+  & h1 {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  & p {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-right: 40px;
+  }
+
+  & button {
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+}
+
+.about-us-video {
+  width: 550px;
+  height: 310px;
+  background-color: rgba(255, 0, 0, 0.658);
+  top: 0;
+  transform: rotate(-10deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16/9;
+
+  & video {
+    max-width: 550px;
+    aspect-ratio: 16/9;
+    transform: rotate(10deg);
+  }
+}
+
+/*---------KARATE INFO MAIN---------*/
+
+@media (max-width: 1200px) {
+  /*---------ABOUT US MAIN---------*/
+  #about-us {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .enter-site-text span {
+    margin: 0 18px;
+  }
+
+  #enter-site-title {
+    font-size: 50px;
+  }
+
+  /*---------ABOUT US MAIN---------*/
+  .about-us-video {
+    width: 400px;
+    height: 250px;
+  }
+
+  video {
+    width: 400px;
+  }
+}
+
+@media (max-width: 550px) {
+  /*---------ABOUT US MAIN---------*/
+  #about-us {
+    padding: 30px 20px;
+  }
+  .about-us-video {
+    width: 300px;
+    height: 190px;
+  }
+
+  video {
+    width: 300px;
+  }
+}
