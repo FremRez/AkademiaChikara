@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Chakra Petch", sans-serif;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -16,94 +14,210 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.about-us {
+  padding: 50px;
+  & h1 {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    & img {
+      width: 50px;
+      opacity: 0.3;
+      margin: 0 200px;
+    }
+  }
+
+  & ion-icon {
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  & img {
+    max-width: 700px;
+  }
+}
+
+.about-us-desc {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & p {
+    text-align: center;
+    margin: 40px 0 70px 0;
+    font-size: 20px;
+  }
+}
+
+.about-us-spot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+  & h3 {
+    font-size: 50px;
+    margin: 50px 0;
+  }
+
+  & ul {
+    list-style-type: none;
+  }
+
+  & li {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    font-size: 20px;
+  }
+}
+
+.li-img {
+  width: 30px;
+  opacity: 0.5;
+  margin: 0 20px;
+}
+
+fieldset {
+  max-width: 1100px;
+  position: relative;
+  padding: 30px 80px;
+  margin: 100px auto;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & legend {
+    padding: 0 30px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+
+.trainer-img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-self: center;
+  & img {
+    width: 300px;
+  }
+}
+
+.trainer-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center start;
+  border: 2px solid rgb(207, 207, 207);
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  margin: 40px 0;
+  cursor: pointer;
+  transition: 400ms;
+
+  & p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    & span {
+      color: rgba(255, 0, 0, 0.651);
+      font-size: 25px;
+    }
+  }
+
+  & span {
+    font-size: 20px;
+  }
+}
+
+.trainer-short {
+  grid-column: 2/4;
+}
+
+.trainer-card:hover {
+  border: 2px solid rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.616);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.527);
+  color: white;
+  scale: 1.03;
+  & p span {
+    color: rgb(71, 41, 41);
+  }
+}
+
+.line {
+  height: 3px;
+  width: 140px;
+  background-color: rgba(255, 0, 0, 0.685);
+  margin: 0 auto;
+}
+
 nav {
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 10vh;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 0.911) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  padding: 25px;
   z-index: 100;
-
-  & .nav-items-container {
-    width: 70vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  & img {
-    width: 100px;
-    margin: 0 30px;
-  }
-
-  & a {
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 10px;
-    transition: scale 150ms;
-  }
-
-  & a:hover {
-    scale: 1.15;
-  }
-
-  & a:first-of-type {
-    background-color: rgba(255, 0, 0, 0.527);
-    backdrop-filter: blur(10px);
-    color: rgb(255, 255, 255);
-    padding: 10px;
-  }
-
-  & a:first-of-type:hover {
-    scale: 1;
-  }
 }
 
-.training-schedule {
+#nav-items-container {
+  max-width: 1450px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navbar-logo {
+  width: 110px;
+}
+
+.menu-option {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 13px;
+  transition: scale 200ms;
+  cursor: pointer;
+}
+.menu-option:hover {
+  scale: 1.15;
+}
+
+#menu-training-schedule:hover {
   position: relative;
-}
-
-.training-schedule:hover {
   scale: 1;
 }
-
-.training-schedule:hover .training-list {
+#menu-training-schedule:hover #menu-training-list {
   display: flex;
-  animation: menuList 300ms;
+  animation: menuTrainingList 300ms;
 }
-
-.training-list {
-  position: absolute;
-  flex-direction: column;
-  left: 0;
-  top: 40px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(218, 218, 218);
-  padding: 15px 0;
-  border-radius: 10px;
-  display: none;
-  & p {
-    background-color: rgb(255, 255, 255);
-    padding: 15px 20px;
-    font-size: 15px;
-    transition: background-color 150ms;
-  }
-
-  & p:hover {
-    background-color: whitesmoke;
-  }
-}
-
-@keyframes menuList {
+@keyframes menuTrainingList {
   0% {
     opacity: 0;
   }
@@ -113,233 +227,102 @@ nav {
   }
 }
 
-.enter-site {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.selected-menu-option {
+  background-color: rgba(255, 0, 0, 0.527);
+  color: white;
+}
+.selected-menu-option:hover {
+  scale: 1;
 }
 
-#enter-site-content {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.705) 0%,
-    rgba(255, 255, 255, 0.425) 60%,
-    rgb(255, 255, 255) 100%
-  );
-  align-items: center;
-  & h1 {
-    font-size: 80px;
-    letter-spacing: 5px;
-    text-align: center;
-    color: rgb(48, 48, 48);
-    margin: 0 20px 65px 20px;
-    text-shadow: 0 0 20px rgb(255, 255, 255);
-  }
-  & span {
-    color: rgba(255, 0, 0, 0.555);
-    font-size: 20px;
-    font-weight: 600;
-    padding: 0 30px;
-    text-shadow: 0 0 10px rgb(255, 87, 87);
-  }
-  & button {
-    padding: 15px 20px;
-    margin-top: 20px;
-    z-index: 1;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 0, 0, 0.658);
-    backdrop-filter: blur(20px);
-    cursor: pointer;
-    transition: 300ms;
-    & a {
-      color: white;
-      font-weight: 700;
-      font-size: 16px;
-      text-decoration: none;
-    }
-  }
-  & button:hover {
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
-    scale: 1.07;
-  }
-}
-
-.menu-icon {
-  font-size: 50px;
+#menu-training-list {
   display: none;
-}
-
-.main-site-content {
-  padding: 20px;
-}
-
-.line {
-  width: 130px;
-  height: 3px;
-  background-color: rgba(255, 0, 0, 0.658);
-}
-
-#about-us {
-  max-width: 1450px;
-  margin: 0 auto;
-  padding: 200px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-}
-
-.about-us-txt {
-  place-self: start;
-  display: flex;
+  position: absolute;
+  top: 40px;
+  left: 0;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  & h1 {
-    font-size: 50px;
-    margin: 10px 20px;
-  }
-  & p {
-    font-size: 20px;
-    margin: 10px 20px;
-    padding-right: 60px;
-  }
-  & button {
+  justify-content: center;
+  background-color: white;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 10px;
+  padding: 15px 0;
+
+  & a {
     padding: 15px 20px;
-    border: 2px solid rgba(255, 0, 0, 0.658);
-    background-color: transparent;
-    border-radius: 10px;
-    margin: 20px 20px;
-    color: rgba(255, 0, 0, 0.719);
-    backdrop-filter: blur(20px);
-    font-weight: bolder;
-    font-size: 15px;
-    transition: 200ms;
-    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+    transition: background-color 300ms;
   }
-  & button:hover {
-    background-color: rgba(255, 0, 0, 0.658);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
-    color: white;
-    scale: 1.02;
+
+  & a:hover {
+    background-color: whitesmoke;
   }
 }
 
-.about-us-video {
-  position: relative;
-  & div {
-    width: 550px;
-    height: 310px;
-    background-color: rgba(255, 0, 0, 0.658);
-    top: 0;
-    transform: rotate(-10deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 16/9;
-  }
-
-  & video {
-    aspect-ratio: 16/9;
-    transform: rotate(10deg);
-  }
+#responsive-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.281);
+  justify-content: flex-end;
 }
 
-#what-is-karate {
-  max-width: 1450px;
-  margin: 0 auto;
-  padding: 50px 0;
-  text-align: center;
+#responsive-menu-list {
+  width: 40vw;
+  height: 100%;
+  background-color: white;
   display: flex;
   flex-direction: column;
+}
+
+#close-menu-icon {
+  align-self: flex-end;
+  font-size: 40px;
+  color: rgb(29, 29, 29);
+  cursor: pointer;
+  padding: 30px;
+}
+
+.res-menu-option {
+  width: 100%;
+  padding: 25px 40px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 300ms;
+  border-bottom: 2px solid whitesmoke;
+  cursor: pointer;
+}
+.res-menu-option:hover {
+  background-color: whitesmoke;
+}
+
+#res-menu-training-schedule {
+  display: flex;
   align-items: center;
-  & h1 {
-    font-size: 50px;
-    margin: 10px 20px;
-  }
-  & p {
-    font-size: 20px;
-    margin: 110px 20px;
-  }
-  & div:first-of-type {
-    margin: 20px 0;
-  }
-  & div:last-of-type {
-    position: relative;
-  }
-  & img {
-    width: 400px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.2;
-  }
-  & button {
-    padding: 15px 20px;
-    border: 2px solid rgba(255, 0, 0, 0.658);
-    background-color: transparent;
-    border-radius: 10px;
-    margin: 20px 20px;
-    color: rgba(255, 0, 0, 0.719);
-    backdrop-filter: blur(20px);
-    font-weight: bolder;
-    font-size: 15px;
-    transition: 200ms;
-    cursor: pointer;
-  }
-  & button:hover {
-    background-color: rgba(255, 0, 0, 0.658);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
-    color: white;
-    scale: 1.02;
+
+  & ion-icon {
+    margin-left: 20px;
   }
 }
-
-@media (max-width: 1600px) {
-  .menu-icon {
+.res-menu-training-list {
+  & a {
     display: block;
-  }
-
-  .menu-option {
-    display: none;
-  }
-
-  #about-us {
-    grid-template-columns: 1fr;
+    text-decoration: none;
+    padding-top: 40px;
+    color: var(--darker-red);
   }
 }
 
-@media (max-width: 600px) {
-  section {
-    & h1 {
-      font-size: 50px;
-      margin: 30px;
-    }
-
-    & span {
-      text-align: center;
-      padding: 10px;
-    }
-  }
-
-  nav {
-    & div {
-      width: 100vw;
-      padding: 0 50px;
-    }
-    & img {
-      margin: 0;
-    }
-  }
+#menu-icon {
+  display: none;
+  font-size: 40px;
+  color: rgb(29, 29, 29);
+  cursor: pointer;
 }

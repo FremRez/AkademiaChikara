@@ -3,99 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About us info</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <nav>
-      <div class="nav-items-container">
-        <a href="" class="menu-option">Strona główna</a>
+      <div id="nav-items-container">
+        <a href="" class="menu-option selected-menu-option">Strona główna</a>
         <a href="" class="menu-option">Aktualności</a>
-        <!-- <a href="" class="menu-option">Nasze sukcesy</a>
-        <a href="" class="menu-option">Trenerzy</a> -->
-        <a href="" class="menu-option training-schedule"
+        <span class="menu-option" id="menu-training-schedule"
           >Harmonogram treninów
-          <div class="training-list">
-            <p>Karate</p>
-            <p>Krav Maga</p>
-            <p>Grupa niepełnosprawnych</p>
+          <div id="menu-training-list">
+            <a href="">Karate</a>
+            <a href="">Krav Maga</a>
+            <a href="">Grupa niepełnosprawnych</a>
           </div>
-        </a>
-        <img src="images/Logo.png" alt="logo" />
+        </span>
+        <img src="images/Logo.png" alt="logo" id="navbar-logo" />
 
         <a href="" class="menu-option">Obozy i półkolonie</a>
         <a href="" class="menu-option">Cennik</a>
         <a href="" class="menu-option">Kontakt</a>
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="menu-outline" id="menu-icon"></ion-icon>
+      </div>
+
+      <div id="responsive-menu">
+        <div id="responsive-menu-list">
+          <ion-icon name="close-outline" id="close-menu-icon"></ion-icon>
+          <a href="" class="res-menu-option">Strona główna</a>
+          <a href="" class="res-menu-option">Aktualności</a>
+
+          <div class="res-menu-option show-trainin-list">
+            <div id="res-menu-training-schedule">
+              <p>Harmonogram treninów</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="res-menu-training-list hidden">
+              <a href="">Karate</a>
+              <a href="">Krav Maga</a>
+              <a href="">Grupa niepełnosprawnych</a>
+            </div>
+          </div>
+
+          <a href="" class="res-menu-option">Obozy i półkolonie</a>
+          <a href="" class="res-menu-option">Cennik</a>
+          <a href="" class="res-menu-option">Kontakt</a>
+        </div>
       </div>
     </nav>
 
-    <div class="enter-site">
-      <section id="enter-site-content">
-        <div>
-          <span>Pasja</span>
-          <span>Rozwój</span>
-          <span>Inspiracja</span>
-        </div>
-        <h1>
-          Akademia Sportu <br />
-          Chikara
-        </h1>
-        <button><a href="#about-us">Przejdź do strony</a></button>
-      </section>
-    </div>
+    <div class="about-us">
+      <ion-icon name="arrow-back-circle-outline"></ion-icon>
+      <h1>
+        <img src="images/arrows.png" alt="" /> O Akademii
+        <img src="images/arrows.png" alt="" />
+      </h1>
 
-    <main id="main-site-content">
-      <section id="about-us">
-        <div class="about-us-txt">
-          <div class="line"></div>
-          <h1>O NAS</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ducimus
-            magni animi error a totam eligendi quidem impedit, rerum perferendis
-            reiciendis maiores laboriosam architecto facilis quasi aperiam autem
-            soluta alias nam odio officiis quaerat accusamus.
-          </p>
-          <button>Więcej informacji</button>
-        </div>
-        <div class="about-us-video">
-          <div>
-            <video
-              src="images/akademiachikara video.mp4"
-              width="550px"
-              controls
-            ></video>
-          </div>
-        </div>
-      </section>
-
-      <section id="what-is-karate">
-        <h1>Czym jest karate?</h1>
+      <div class="about-us-desc">
         <div class="line"></div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            in aliquam quasi doloribus exercitationem, dicta inventore ea
-            distinctio repudiandae voluptas sapiente eius. Aspernatur neque,
-            harum similique esse nobis eligendi. Velit inventore recusandae quae
-            repellat, explicabo id, error cumque ex dolorum sunt, vel iure modi
-            in non at aperiam voluptas totam dolorem laborum ipsa placeat ullam!
-            Corporis natus pariatur id fugiat amet possimus quam aspernatur
-            adipisci, nisi rem, et error sit voluptate ad iure enim at dolor
-            voluptas tempore totam esse ipsa debitis? Et quibusdam ratione
-            tempore quo. Quia, minus provident.
-          </p>
-          <img src="images/dojokun.png" alt="" />
-        </div>
-        <button>Pytania i ciekawostki</button>
-      </section>
-    </main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          laborum ea ratione ab! Quaerat, accusantium? Amet tenetur magnam vero
+          maiores deleniti, quisquam eum? Aliquid sequi, tempore eligendi
+          ratione consequuntur inventore tenetur, iste animi excepturi numquam
+          soluta accusamus tempora obcaecati esse ab quaerat saepe at quae sunt
+          nostrum eaque perferendis. Eum ullam, earum quod libero unde nihil
+          molestiae eveniet laboriosam. Saepe ex eaque ipsum, a culpa nisi quo
+          error distinctio sit. Incidunt vero nobis libero suscipit beatae
+          laborum recusandae doloremque tempora.
+        </p>
+
+        <img
+          src="images/placeholder.jpg"
+          alt=""
+        /><!--potem zamieni sie na film-->
+      </div>
+
+      <div class="about-us-spot">
+        <h3>Gdzie prowadzimy zajęcia?</h3>
+        <ul>
+          <li>
+            <img src="images/list-item.png" alt="" class="li-img" /> Rzeszów,
+            ul. Hanasiewicza 10
+          </li>
+          <li>
+            <img src="images/list-item.png" alt="" class="li-img" /> Zajęcia w
+            Krasnym – Budynek Crasnovii
+          </li>
+          <li>
+            <img src="images/list-item.png" alt="" class="li-img" /> Zajęcia w
+            Białobrzegach – Fitness Park
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-us-trainers">
+        <fieldset>
+          <legend>Nasza kadra</legend>
+          <div class="trainers-list">
+            <div class="sensei-marek trainer-card">
+              <div class="trainer-img-container">
+                <img src="images/trainers/sensei marek.png" alt="" />
+              </div>
+              <div class="trainer-short">
+                <p>Sensei <span> Marek Żyłka</span></p>
+                <span
+                  >Urodził się 26.07.1991r. w Rzeszowie. Założyciel Akademii
+                  Sportu Chikara w roku 2014. Prezes Klubu, Właściciel Firmy,
+                  Szczęśliwy Tata Dwójki Córek.</span
+                >
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="sensei-piotr trainer-card">
+              <div class="trainer-img-container">
+                <img src="images/trainers/sensei piotr.png" alt="" />
+              </div>
+              <div class="trainer-short">
+                <p>Sensei <span> Piotr Ramot</span></p>
+                <span
+                  >Posiada stopień 2 Dan – urodzony 14 października 1985r. w
+                  Rzeszowie. Treningi Karate rozpoczął w 1998. W 2005 roku kiedy
+                  to zdobył czarny pas.</span
+                >
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="sensei-agnieszka trainer-card">
+              <div class="trainer-img-container">
+                <img src="images/trainers/sensei agnieszka.png" alt="" />
+              </div>
+              <div class="trainer-short">
+                <p>Sensei <span> Agnieszka Sajdutka</span></p>
+                <span
+                  >Instruktor Karate Tradycyjnego, trenuje karate od 20 lat.
+                  Mistrzyni Świata w Karate Tradycyjnym, Mistrzyni Europy,
+                  Zdobywczyni Pucharu Świata, Wielokrotna Mistrzyni Polski.
+                </span>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
 
     <script
       type="module"

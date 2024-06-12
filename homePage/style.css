@@ -6,7 +6,7 @@ button {
   background-color: transparent;
   border-radius: 10px;
   color: rgba(255, 0, 0, 0.719);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   font-weight: bolder;
   font-size: 15px;
   transition: 200ms;
@@ -16,14 +16,14 @@ button:hover {
   background-color: rgba(255, 0, 0, 0.658);
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
   color: white;
-  scale: 1.02;
+  scale: 1.05;
 }
 
 /*---------ENTER SITE---------*/
 .enter-site {
   width: 100vw;
   height: 100vh;
-  background-image: url(images/background.jpg);
+  background-image: url(images/enter\ site/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -88,7 +88,7 @@ button:hover {
   scale: 1.07;
 }
 
-/*---------ABOUT US MAIN---------*/
+/*---------ABOUT US HOME PAGE---------*/
 main {
   padding: 30px;
 }
@@ -99,7 +99,7 @@ main {
   background-color: var(--darker-red);
 }
 
-#about-us {
+#homepage-about-us {
   max-width: 1450px;
   margin: 0 auto;
   padding: 150px 20px;
@@ -126,7 +126,7 @@ main {
   }
 }
 
-.about-us-video {
+.homepage-about-us-video {
   width: 550px;
   height: 310px;
   background-color: rgba(255, 0, 0, 0.658);
@@ -144,11 +144,45 @@ main {
   }
 }
 
-/*---------KARATE INFO MAIN---------*/
+/*---------KARATE INFO HOME PAGE---------*/
+.homepage-karate-info {
+  max-width: 1300px;
+  margin: 100px auto 50px auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h1 {
+    font-size: 45px;
+    margin-bottom: 24px;
+  }
+}
+
+.homepage-karate-info-txt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 130px 0 60px 0;
+  min-height: 210px;
+  & p {
+    font-size: 20px;
+  }
+}
+
+.homepage-dojokun-img {
+  max-width: 400px;
+  opacity: 0.2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 @media (max-width: 1200px) {
-  /*---------ABOUT US MAIN---------*/
-  #about-us {
+  /*---------ABOUT US HOME PAGE---------*/
+  #homepage-about-us {
     grid-template-columns: 1fr;
     gap: 100px;
   }
@@ -163,8 +197,8 @@ main {
     font-size: 50px;
   }
 
-  /*---------ABOUT US MAIN---------*/
-  .about-us-video {
+  /*---------ABOUT US HOME PAGE---------*/
+  .homepage-about-us-video {
     width: 400px;
     height: 250px;
   }
@@ -172,19 +206,37 @@ main {
   video {
     width: 400px;
   }
+
+  /*---------KARATE INFO HOME PAGE---------*/
+  .homepage-karate-info-txt {
+    margin: 100px 0 40px 0;
+    & img {
+      opacity: 0.4;
+    }
+
+    & p {
+      text-shadow: 0 0 20px rgb(202, 202, 202);
+    }
+  }
 }
 
 @media (max-width: 550px) {
-  /*---------ABOUT US MAIN---------*/
-  #about-us {
+  /*---------ABOUT US HOME PAGE---------*/
+  #homepage-about-us {
     padding: 30px 20px;
   }
-  .about-us-video {
+  .homepage-about-us-video {
     width: 300px;
     height: 190px;
   }
 
   video {
     width: 300px;
+  }
+
+  /*---------KARATE INFO HOME PAGE---------*/
+  .homepage-dojokun-img {
+    width: 300px;
+    top: 70px;
   }
 }
