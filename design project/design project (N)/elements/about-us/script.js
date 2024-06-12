@@ -1,4 +1,3 @@
-//klasa i tablica z trenerami do podstrony "o nas", po kliknieciu w przycisk podczas generowania podstrony bedzie sie tez generowalo to
 class Trainer {
   constructor(name, dsc, img, rank) {
     this.name = name;
@@ -92,3 +91,7 @@ const trainers = [
     "3 Dan"
   ),
 ];
+
+trainers.forEach((trainer) => {
+  trainer.renderCard();
+});

@@ -1,0 +1,1 @@
+w index.html i style.css w folderze bazgroly robie sobie elementy ktore potem bede zamieszczac normalnie na stronie, nastepnie co musze generowac dynamicznie przerzucam sobie do folderu elements, czego nie musze to po prostu przeklejam do html a cssa do tego wrzucam do arkuszy stylow poszczegolnych stron i tak sie kreci karuzela spierdolenia

@@ -93,12 +93,6 @@ main {
   padding: 30px;
 }
 
-.line {
-  height: 3px;
-  width: 140px;
-  background-color: var(--darker-red);
-}
-
 #homepage-about-us {
   max-width: 1450px;
   margin: 0 auto;
@@ -180,11 +174,144 @@ main {
   transform: translate(-50%, -50%);
 }
 
+/*---------ABOUT US---------*/
+.about-us {
+  padding: 40px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.about-us-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.about-us-title {
+  max-width: 1000px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+
+  & img {
+    width: 50px;
+    opacity: 0.3;
+  }
+
+  & h1 {
+    font-size: 60px;
+  }
+}
+
+.about-us-description {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.about-us-video {
+  width: 70%;
+  margin-top: 70px;
+}
+
+.spot-list-title {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.spot-list {
+  margin-top: 30px;
+  list-style-type: none;
+  font-size: 20px;
+
+  & div {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  & img {
+    width: 30px;
+    margin-right: 30px;
+    opacity: 0.5;
+  }
+}
+
+.trainers-list-title {
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.trainer-card {
+  max-width: 900px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  border: 2px solid rgb(206, 206, 206);
+  border-radius: 30px;
+  margin: 50px 0;
+  transition: 400ms;
+}
+
+.trainer-card:hover {
+  border: 2px solid rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.616);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.527);
+  color: white;
+  scale: 1.03;
+  & p span {
+    color: rgb(71, 41, 41);
+  }
+}
+
+.trainer-img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 150%;
+  }
+}
+
+.trainer-short {
+  grid-column: 2/4;
+  font-size: 20px;
+  margin-left: 30px;
+
+  & p {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 23px;
+    & span {
+      color: rgba(255, 0, 0, 0.692);
+    }
+  }
+}
+
+.trainer-rank {
+  opacity: 0.5;
+}
+
 @media (max-width: 1200px) {
   /*---------ABOUT US HOME PAGE---------*/
   #homepage-about-us {
     grid-template-columns: 1fr;
     gap: 100px;
+  }
+
+  /*---------ABOUT US---------*/
+  .about-us-title h1 {
+    font-size: 43px;
   }
 }
 
@@ -218,6 +345,29 @@ main {
       text-shadow: 0 0 20px rgb(202, 202, 202);
     }
   }
+
+  /*---------ABOUT US---------*/
+  .about-us-title h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .back-icon {
+    left: 10px;
+  }
+
+  .about-us-video {
+    width: 100%;
+  }
+
+  .trainer-card {
+    grid-template-columns: 1fr;
+  }
+
+  .trainer-short {
+    grid-column: 1/2;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -238,5 +388,14 @@ main {
   .homepage-dojokun-img {
     width: 300px;
     top: 70px;
+  }
+
+  /*---------ABOUT US---------*/
+  .about-us-title img {
+    width: 30px;
+  }
+
+  .about-us-title h1 {
+    font-size: 30px;
   }
 }

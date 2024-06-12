@@ -1,173 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --light-red: rgba(255, 0, 0, 0.55);
+  --darker-red: rgba(255, 0, 0, 0.68);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Chakra Petch", sans-serif;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-.about-us {
-  padding: 50px;
-  & h1 {
-    margin: 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 70px;
-    color: rgb(0, 0, 0);
-    & img {
-      width: 50px;
-      opacity: 0.3;
-      margin: 0 200px;
-    }
-  }
-
-  & ion-icon {
-    position: absolute;
-    top: 120px;
-    left: 60px;
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-  }
-
-  & img {
-    max-width: 700px;
-  }
-}
-
-.about-us-desc {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  & p {
-    text-align: center;
-    margin: 40px 0 70px 0;
-    font-size: 20px;
-  }
-}
-
-.about-us-spot {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-
-  & h3 {
-    font-size: 50px;
-    margin: 50px 0;
-  }
-
-  & ul {
-    list-style-type: none;
-  }
-
-  & li {
-    display: flex;
-    align-items: center;
-    margin: 40px 0;
-    font-size: 20px;
-  }
-}
-
-.li-img {
-  width: 30px;
-  opacity: 0.5;
-  margin: 0 20px;
-}
-
-fieldset {
-  max-width: 1100px;
-  position: relative;
-  padding: 30px 80px;
-  margin: 100px auto;
-  border-radius: 10px;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & legend {
-    padding: 0 30px;
-    font-size: 50px;
-    font-weight: bold;
-  }
-}
-
-.trainer-img-container {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  place-self: center;
-  & img {
-    width: 300px;
-  }
-}
-
-.trainer-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center start;
-  border: 2px solid rgb(207, 207, 207);
-  background-color: white;
-  border-radius: 30px;
-  padding: 30px;
-  margin: 40px 0;
-  cursor: pointer;
-  transition: 400ms;
-
-  & p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-
-    & span {
-      color: rgba(255, 0, 0, 0.651);
-      font-size: 25px;
-    }
-  }
-
-  & span {
-    font-size: 20px;
-  }
-}
-
-.trainer-short {
-  grid-column: 2/4;
-}
-
-.trainer-card:hover {
-  border: 2px solid rgb(255, 0, 0);
-  background-color: rgba(255, 0, 0, 0.616);
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.527);
-  color: white;
-  scale: 1.03;
-  & p span {
-    color: rgb(71, 41, 41);
-  }
-}
-
-.line {
-  height: 3px;
-  width: 140px;
-  background-color: rgba(255, 0, 0, 0.685);
-  margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -228,7 +71,7 @@ nav {
 }
 
 .selected-menu-option {
-  background-color: rgba(255, 0, 0, 0.527);
+  background-color: var(--light-red);
   color: white;
 }
 .selected-menu-option:hover {
@@ -325,4 +168,32 @@ nav {
   font-size: 40px;
   color: rgb(29, 29, 29);
   cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  nav {
+    padding: 25px 60px;
+  }
+
+  #nav-items-container {
+    justify-content: space-between;
+  }
+
+  .menu-option {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  #responsive-menu-list {
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
 }

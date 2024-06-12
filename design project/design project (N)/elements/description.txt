@@ -1,0 +1,2 @@
+w tym folderze zapisujemy sobie rzeczy ktore potem trzeba bedzie dynamicznie generowac w js zeby wiedziec co wygenerowac i z jakimi klasami
+rzeczy ktore sa tu zapisane sa raczej madrzejsze (madrzejsze != madre) od tych bazgrolow wczesniej wiec mozna im ufac (?)
