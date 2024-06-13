@@ -89,12 +89,6 @@ const trainers = [
     "1 Dan"
   ),
   new Trainer(
-    "Filip Horski",
-    "Mistrz Polski w Karate Tradycyjnym. Członek Kadry Polski  w karate. Stopień 1 Dan. Od 2022 roku Instruktor w Akademii Sportu Chikara.",
-    "sensei filip.png",
-    "1 Dan"
-  ),
-  new Trainer(
     "Mariusz Kazanowski",
     "Legenda Karate Tradycyjnego w Polsce i Rzeszowie Stopień 3 dan. Wielokrotny medalista Mistrzostw Polski, brązowy medalista Mistrzostw Europy w kumite drużynowym.",
     "sensei mariusz.png",
