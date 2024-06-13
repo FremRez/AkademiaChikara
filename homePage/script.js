@@ -1,4 +1,13 @@
-//klasa i tablica z trenerami do podstrony "o nas", po kliknieciu w przycisk podczas generowania podstrony bedzie sie tez generowalo to
+const enterSiteButton = document.querySelector("#enter-site-button");
+const enterSiteContent = document.querySelector(".enter-site");
+const homePageContent = document.querySelector(".homePage-start-content");
+enterSiteButton.addEventListener("click", () => {
+  setTimeout(() => {
+    enterSiteContent.remove();
+  }, 600);
+});
+
+//-----------ABOUT US-----------//
 class Trainer {
   constructor(name, dsc, img, rank) {
     this.name = name;
@@ -6,14 +15,14 @@ class Trainer {
     this.image = img;
     this.rank = rank;
   }
-  renderCard() {
-    const trainersList = document.querySelector(".trainers-list");
+  renderCard(trainersList) {
+    // const trainersList = document.querySelector(".trainers-list");
     let trainerCard = document.createElement("div");
     trainerCard.classList.add("trainer-card");
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("trainer-img-container");
     let image = document.createElement("img");
-    image.src = "images/trainers/" + this.image;
+    image.src = "images/about-us/trainers/" + this.image;
     console.log(imgContainer);
     imgContainer.insertAdjacentElement("afterbegin", image);
     trainerCard.insertAdjacentElement("afterbegin", imgContainer);
@@ -92,3 +101,119 @@ const trainers = [
     "3 Dan"
   ),
 ];
+
+const aboutUs = () => {
+  homePageContent.classList.add("hidden");
+
+  const aboutUsSection = document.createElement("section");
+  aboutUsSection.classList.add("about-us");
+  aboutUsSection.id = "about-us";
+  document.body.appendChild(aboutUsSection);
+  const contentContainer = document.createElement("div");
+  contentContainer.classList.add("about-us-content");
+
+  //ikonka do powrotu
+  const backIcon = document.createElement("ion-icon");
+  backIcon.name = "arrow-back-circle-outline";
+  backIcon.classList.add("back-icon");
+  backIcon.addEventListener("click", () => {
+    aboutUsSection.remove();
+    homePageContent.classList.remove("hidden");
+    homePageContent.classList.add("showAnimation");
+    window.scrollTo({
+      top: 0,
+      behaviour: "smooth",
+    });
+  });
+  contentContainer.insertAdjacentElement("afterbegin", backIcon);
+
+  //pasek z tytulem
+  const titleBar = document.createElement("div");
+  titleBar.classList.add("about-us-title");
+  const arrowsImg = document.createElement("img");
+  const arrowsImg2 = document.createElement("img");
+  arrowsImg.src = "images/about-us/arrows.png";
+  arrowsImg.classList.add("title-arrows");
+  arrowsImg2.src = "images/about-us/arrows.png";
+  arrowsImg2.classList.add("title-arrows");
+  const title = document.createElement("h1");
+  title.textContent = "O NAS";
+
+  titleBar.insertAdjacentElement("afterbegin", arrowsImg);
+  titleBar.insertAdjacentElement("beforeend", title);
+  titleBar.insertAdjacentElement("beforeend", arrowsImg2);
+  contentContainer.insertAdjacentElement("beforeend", titleBar);
+
+  //linia
+  const line = document.createElement("div");
+  line.classList.add("line", "center-line");
+  contentContainer.insertAdjacentElement("beforeend", line);
+
+  //tekst
+  const paragraph = document.createElement("p");
+  paragraph.classList.add("about-us-description");
+  paragraph.textContent =
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipismolestiae deleniti aut. Ratione dolorum, distinctio labore, ab veliticing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicimolestiae deleniti autmolestiae deleniti aut. Ratione dolorum, distinctio labore, ab velit. Ratione dolorum, distinctio labore, ab velitng elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.";
+  contentContainer.insertAdjacentElement("beforeend", paragraph);
+
+  //placeholder na film
+  const placeholder = document.createElement("img");
+  placeholder.src = "images/about-us/placeholder.jpg";
+  placeholder.classList.add("about-us-video");
+  contentContainer.insertAdjacentElement("beforeend", placeholder);
+
+  //lista miejsc
+  const spotListTitle = document.createElement("h3");
+  spotListTitle.classList.add("spot-list-title");
+  spotListTitle.textContent = "Gdzie prowadzimy zajęcia?";
+  contentContainer.insertAdjacentElement("beforeend", spotListTitle);
+
+  const spotList = document.createElement("ul");
+  spotList.classList.add("spot-list");
+
+  const spots = [
+    "Rzeszów, ul. Hanasiewicza 10",
+    "Zajęcia w Krasnym – Budynek Crasnovii",
+    "Zajęcia w Białobrzegach – Fitness Park",
+  ];
+  spots.forEach((spot) => {
+    const listItemsContainer = document.createElement("div");
+    const listItemImg = document.createElement("img");
+    listItemImg.src = "images/about-us/list-item.png";
+    listItemsContainer.insertAdjacentElement("afterbegin", listItemImg);
+
+    const listItemText = document.createElement("li");
+    listItemText.textContent = spot;
+    listItemsContainer.insertAdjacentElement("beforeend", listItemText);
+
+    spotList.insertAdjacentElement("beforeend", listItemsContainer);
+  });
+
+  contentContainer.insertAdjacentElement("beforeend", spotList);
+
+  //kadra
+  const trainersListTitle = document.createElement("h2");
+  trainersListTitle.textContent = "Nasi trenerzy";
+  trainersListTitle.classList.add("trainers-list-title");
+  contentContainer.insertAdjacentElement("beforeend", trainersListTitle);
+
+  const trainersList = document.createElement("div");
+  trainersList.classList.add("trainers-list");
+  contentContainer.insertAdjacentElement("beforeend", trainersList);
+  trainers.forEach((trainer) => {
+    trainer.renderCard(trainersList);
+  });
+
+  //koniec :3
+  contentContainer.classList.add("showAnimation");
+  aboutUsSection.insertAdjacentElement("afterbegin", contentContainer);
+  window.scrollTo({
+    top: 0,
+    behaviour: "smooth",
+  });
+};
+
+const aboutUsButton = document.querySelector(".homepage-about-us-text button");
+aboutUsButton.addEventListener("click", aboutUs);
+
+//-----------KARATE INFO-----------//

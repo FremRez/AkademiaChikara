@@ -19,6 +19,27 @@ button:hover {
   scale: 1.05;
 }
 
+a {
+  color: var(--darker-red);
+  transition: color 200ms;
+}
+
+button:hover a {
+  color: white;
+}
+
+@keyframes showAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.showAnimation {
+  animation: showAnimation 200ms;
+}
+
 /*---------ENTER SITE---------*/
 .enter-site {
   width: 100vw;
