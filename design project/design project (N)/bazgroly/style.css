@@ -36,156 +36,18 @@ a {
   top: 90px;
   left: 50px;
   cursor: pointer;
+  z-index: 99;
 }
 
 /*------------------------------------------------------*/
 
-.karate-info {
-  padding: 40px;
-  margin-top: 50px;
-  position: relative;
-  background: rgb(200, 200, 200);
-  background: linear-gradient(
-    0deg,
-    whitesmoke 0%,
-    rgba(236, 236, 236, 1) 22%,
-    rgba(255, 255, 255, 1) 53%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-
-.karate-info-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px;
-}
-
-.basic-information {
-  background-color: rgb(255, 255, 255);
-  border: 4px solid whitesmoke;
-  padding: 60px;
-  border-radius: 30px;
-  position: relative;
-  transition: scale 500ms;
-  margin-bottom: 100px;
-  & h3 {
-    font-size: 35px;
-  }
-
-  & span {
-    color: rgba(255, 0, 0, 0.658);
-  }
-
-  & img {
-    position: absolute;
-    width: 250px;
-    opacity: 0.7;
-    right: -150px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 500ms;
-  }
-
-  & p {
-    max-width: 800px;
-    font-size: 20px;
-    margin-top: 24px;
-    padding: 10px;
-  }
-}
-
-.basic-information:hover {
-  scale: 1.05;
-}
-
-.basic-information:hover img {
-  right: -20px;
-}
-
-.dojo-kun {
-  padding: 30px;
-
-  & h2 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  & p {
-    font-size: 20px;
-    margin: 40px 0;
-  }
-
-  & img {
-    width: 100%;
-  }
-
-  & ul {
-    list-style-type: none;
-  }
-
-  & li {
-    font-size: 23px;
-    margin: 20px 0;
-    font-weight: bold;
-    opacity: 0.8;
-  }
-
-  & span {
-    color: rgba(255, 0, 0, 0.712);
-  }
-}
-
-.dojo-kun-dsc {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  gap: 50px;
-}
-
-.faq {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.faq-title {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 70px;
-  margin-bottom: 50px;
-}
-
-.question-container {
-  max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.438);
-  backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 0, 0, 0.24);
-  border-radius: 30px;
-  padding: 40px;
-  margin: 20px 0;
-  transition: 300ms;
-
-  & h4 {
-    font-size: 25px;
-    margin-bottom: 24px;
-    color: rgb(36, 0, 0);
-    transition: 300ms;
-  }
-
-  & p {
-    font-size: 18px;
-  }
-}
-
-.question-container:hover {
-  scale: 1.05;
-
-  & h4 {
-    color: rgba(255, 0, 0, 0.733);
-  }
-}
-
 /*-----------------------------------------------*/
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 700px) {
+}
+
+@media (max-width: 550px) {
+}
