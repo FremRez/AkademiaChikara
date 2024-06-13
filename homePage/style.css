@@ -28,7 +28,7 @@ button:hover {
   }
 }
 .showAnimation {
-  animation: showAnimation 200ms;
+  animation: showAnimation 400ms;
 }
 
 /*---------ENTER SITE---------*/

@@ -7,6 +7,22 @@ enterSiteButton.addEventListener("click", () => {
   }, 600);
 });
 
+const renderBackIcon = (container, removeSection) => {
+  const backIcon = document.createElement("ion-icon");
+  backIcon.name = "arrow-back-circle-outline";
+  backIcon.classList.add("back-icon");
+  backIcon.addEventListener("click", () => {
+    removeSection.remove();
+    homePageContent.classList.remove("hidden");
+    homePageContent.classList.add("showAnimation");
+    window.scrollTo({
+      top: 0,
+      behaviour: "smooth",
+    });
+  });
+  container.insertAdjacentElement("afterbegin", backIcon);
+};
+
 //-----------ABOUT US-----------//
 class Trainer {
   constructor(name, dsc, img, rank) {
@@ -101,25 +117,12 @@ const aboutUs = () => {
 
   const aboutUsSection = document.createElement("section");
   aboutUsSection.classList.add("about-us");
-  aboutUsSection.id = "about-us";
   document.body.appendChild(aboutUsSection);
   const contentContainer = document.createElement("div");
   contentContainer.classList.add("about-us-content");
 
   //ikonka do powrotu
-  const backIcon = document.createElement("ion-icon");
-  backIcon.name = "arrow-back-circle-outline";
-  backIcon.classList.add("back-icon");
-  backIcon.addEventListener("click", () => {
-    aboutUsSection.remove();
-    homePageContent.classList.remove("hidden");
-    homePageContent.classList.add("showAnimation");
-    window.scrollTo({
-      top: 0,
-      behaviour: "smooth",
-    });
-  });
-  contentContainer.insertAdjacentElement("afterbegin", backIcon);
+  renderBackIcon(contentContainer, aboutUsSection);
 
   //pasek z tytulem
   const titleBar = document.createElement("div");
@@ -211,3 +214,158 @@ const aboutUsButton = document.querySelector(".homepage-about-us-text button");
 aboutUsButton.addEventListener("click", aboutUs);
 
 //-----------KARATE INFO-----------//
+class Question {
+  constructor(question, answer) {
+    this.questionText = question;
+    this.answerText = answer;
+  }
+  renderQuestion(questionList) {
+    const questionContainer = document.createElement("div");
+    questionContainer.classList.add("question-container");
+
+    const question = document.createElement("h4");
+    question.textContent = this.questionText;
+    questionContainer.insertAdjacentElement("afterbegin", question);
+
+    const answer = document.createElement("p");
+    answer.textContent = this.answerText;
+    questionContainer.insertAdjacentElement("beforeend", answer);
+
+    questionList.insertAdjacentElement("beforeend", questionContainer);
+  }
+}
+const questions = [
+  new Question(
+    "Jakie są korzyści z trenowania karate?",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus veniam harum ipsam, eius ipsa maiores dolores similique nihil cumque repellat dolore, quod facilis quam eos eveniet rerum pariatur?"
+  ),
+  new Question(
+    "Czy potrzebuję specjalnego sprzętu, aby zacząć?",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus veniam"
+  ),
+  new Question(
+    "Czy muszę mieć dobrą kondycję fizyczną, aby zacząć?",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus veniam harum ipsam, eius ipsa maiores dolores similique nihil cumque repellat dolore, quod facilis quam eos eveniet rerum pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus"
+  ),
+  new Question(
+    "Jak długo trwa, aby osiągnąć czarny pas?",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus veniam harum ipsam, eius ipsa maiores dolores similique nihil cumque repellat dolore, quod facilis"
+  ),
+];
+
+const karateInfo = () => {
+  homePageContent.classList.add("hidden");
+
+  const karateInfoSection = document.createElement("section");
+  karateInfoSection.classList.add("karate-info");
+  document.body.appendChild(karateInfoSection);
+
+  const karateInfoContainer = document.createElement("div");
+  karateInfoContainer.classList.add("karate-info-content");
+
+  //ikonka do powrotu
+  renderBackIcon(karateInfoContainer, karateInfoSection);
+
+  //podstawowe info
+  const basicInfo = document.createElement("div");
+  basicInfo.classList.add("basic-information");
+
+  const basicInfoTitle = document.createElement("h3");
+  const infoTitleSpan = document.createElement("span");
+  infoTitleSpan.textContent = "Karate Shotokan";
+  basicInfoTitle.textContent = "Podstawowe informacje na temat ";
+  basicInfoTitle.insertAdjacentElement("beforeend", infoTitleSpan);
+  basicInfo.insertAdjacentElement("afterbegin", basicInfoTitle);
+
+  const basicInfoText = document.createElement("p");
+  basicInfoText.textContent =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea accusantium culpa aliquid delectus soluta animi magni vitae est porro. Architecto dolore fuga harum qui necessitatibus beatae nesciunt, aperiam consequuntur provident fugit quam at vero error id ad odit, numquam modi libero sunt nulla pariatur unde laudantium animi! Minus provident laudantium quos eaque eum minima praesentium eligendi eveniet modi debitis quia adipisci accusamus inventore rerum, qui, alias voluptate. Ipsam non voluptate ipsum quia modi assumenda possimus saepe, inventore, repellat dolorem suscipit minus ratione quam facilis fuga adipisci laudantium, ex corrupti.";
+  basicInfo.insertAdjacentElement("beforeend", basicInfoText);
+
+  const basicInfoArrowImg = document.createElement("img");
+  basicInfoArrowImg.src = "images/karate-info/arrow.png";
+  basicInfo.insertAdjacentElement("beforeend", basicInfoArrowImg);
+
+  karateInfoContainer.insertAdjacentElement("beforeend", basicInfo);
+
+  //dojo kun
+  const dojoKun = document.createElement("div");
+  dojoKun.classList.add("dojo-kun");
+
+  const dojoKunTitle = document.createElement("h2");
+  dojoKunTitle.textContent = "Czym jest Dojo Kun?";
+  dojoKun.insertAdjacentElement("afterbegin", dojoKunTitle);
+
+  const dojoKunDescriprion = document.createElement("div");
+  dojoKunDescriprion.classList.add("dojo-kun-dsc");
+
+  const desctiptionTextContainer = document.createElement("div");
+  const dscText = document.createElement("p");
+  dscText.textContent =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea accusantium culpa aliquid delectus soluta animi magni vitae est porro. Architecto dolore fuga harum qui necessitatibus beatae nesciunt, aperiam consequuntur provident fugit quam at vero error";
+  desctiptionTextContainer.insertAdjacentElement("afterbegin", dscText);
+
+  //lista
+  const dojoKunList = document.createElement("ul");
+  const dojoKunSpan = [
+    " (Po pierwsze: Dążyć do doskonalenia charakteru)",
+    " (Po pierwsze: Być wiernym ścieżce prawdy)",
+    " (Po pierwsze: Rozwijać ducha wysiłku i wytrwałości)",
+    " (Po pierwsze: Szanować innych i praktykować etykietę)",
+    " (Po pierwsze: Powstrzymywać się od przemocy i zachować spokój ducha)",
+  ];
+  const dojoKunLi = [
+    "Hitotsu! Jinkaku kansei ni tsutomuru koto ",
+    "Hitotsu! Makoto no michi o mamoru koto ",
+    "Hitotsu! Doryoku no seishin o yashinau koto ",
+    "Hitotsu! Reigi o omonzuru koto ",
+    "Hitotsu! Kekki no yu o imashimuru koto ",
+  ];
+  for (let i = 0; i < dojoKunLi.length; i++) {
+    const listItem = document.createElement("li");
+    listItem.textContent = dojoKunLi[i];
+
+    const listItemSpan = document.createElement("span");
+    listItemSpan.textContent = dojoKunSpan[i];
+
+    listItem.insertAdjacentElement("beforeend", listItemSpan);
+    dojoKunList.insertAdjacentElement("beforeend", listItem);
+  }
+  desctiptionTextContainer.insertAdjacentElement("beforeend", dojoKunList);
+  dojoKunDescriprion.insertAdjacentElement(
+    "beforeend",
+    desctiptionTextContainer
+  );
+
+  const dojoKunImg = document.createElement("img");
+  dojoKunImg.src = "images/karate-info/dojokun.png";
+  dojoKunDescriprion.insertAdjacentElement("beforeend", dojoKunImg);
+
+  dojoKun.insertAdjacentElement("beforeend", dojoKunDescriprion);
+
+  karateInfoContainer.insertAdjacentElement("beforeend", dojoKun);
+
+  //faq
+  const faqTitle = document.createElement("h2");
+  faqTitle.classList.add("faq-title");
+  faqTitle.textContent = "Najczęściej zadawane pytania";
+  karateInfoContainer.insertAdjacentElement("beforeend", faqTitle);
+
+  const faqList = document.createElement("div");
+  faqList.classList.add("faq");
+  questions.forEach((question) => {
+    question.renderQuestion(faqList);
+  });
+  karateInfoContainer.insertAdjacentElement("beforeend", faqList);
+
+  //koniec
+  karateInfoSection.insertAdjacentElement("afterbegin", karateInfoContainer);
+  karateInfoContainer.classList.add("showAnimation");
+  window.scrollTo({
+    top: 0,
+    behaviour: "smooth",
+  });
+};
+
+const karateInfoButton = document.querySelector(".homepage-karate-info button");
+karateInfoButton.addEventListener("click", karateInfo);
