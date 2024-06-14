@@ -39,7 +39,6 @@ class Trainer {
     imgContainer.classList.add("trainer-img-container");
     let image = document.createElement("img");
     image.src = "images/about-us/trainers/" + this.image;
-    console.log(imgContainer);
     imgContainer.insertAdjacentElement("afterbegin", image);
     trainerCard.insertAdjacentElement("afterbegin", imgContainer);
 
