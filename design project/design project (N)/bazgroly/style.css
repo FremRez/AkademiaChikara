@@ -93,38 +93,38 @@ fieldset {
 }
 
 #large-room-schedule-button {
-  background-color: #ff1414;
+  background-color: #b30000;
 }
 
 #litle-room1-schedule-button {
-  background-color: #ff2727;
+  background-color: #cc0000;
 }
 
 #litle-room2-schedule-button {
-  background-color: #ff3b3b;
+  background-color: #e60000;
 }
 
 #litle-room3-schedule-button {
-  background-color: #ff4e4e;
+  background-color: #ff0000;
 }
 
 #krasne-schedule-button {
-  background-color: #ff4f14;
+  background-color: #e63a00;
   padding: 15px 30px;
 }
 
 #bialobrzegi-schedule-button {
-  background-color: #ff5b27;
+  background-color: #ff4000;
   padding: 15px 30px;
 }
 
 table {
-  margin-top: 100px;
-  border-collapse: collapse;
+  color: whitesmoke;
+  border-spacing: 5px;
+  text-align: center;
 
   & th,
   td {
-    border: 3px solid white;
     border-radius: 15px;
     padding: 20px;
     font-size: 17px;
@@ -136,7 +136,7 @@ table {
   }
 
   & h4 {
-    color: wheat;
+    color: rgb(255, 255, 255);
   }
 
   & p {
@@ -149,9 +149,61 @@ table {
   }
 }
 
+.schedule-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 50px 0;
+}
+
 .large-room-schedule {
   & tr:first-of-type {
-    background-color: #ff1414;
+    background-color: #b30000;
+  }
+
+  & tr:nth-of-type(2) {
+    background-color: #c70000;
+  }
+
+  & tr:nth-of-type(3) {
+    background-color: #da0000;
+  }
+
+  & tr:nth-of-type(4) {
+    background-color: #ee0000;
+  }
+}
+
+.little-room1-schedule {
+  & tr:first-of-type {
+    background-color: #cc0000;
+  }
+
+  & tr:nth-of-type(2) {
+    background-color: #f30000;
+  }
+
+  & tr:nth-of-type(3) {
+    background-color: #ff1b1b;
+  }
+}
+
+.little-room2-schedule {
+  & tr:first-of-type {
+    background-color: #e60000;
+  }
+
+  & tr:nth-of-type(2) {
+    background-color: #ff0e0e;
+  }
+
+  & tr:nth-of-type(3) {
+    background-color: #ff3535;
+  }
+}
+
+.little-room3-schedule {
+  & tr:first-of-type {
+    background-color: #ff0000;
   }
 
   & tr:nth-of-type(2) {
@@ -159,11 +211,11 @@ table {
   }
 
   & tr:nth-of-type(3) {
-    background-color: #ff3b3b;
+    background-color: #ff4e4e;
   }
 
   & tr:nth-of-type(4) {
-    background-color: #ff4e4e;
+    background-color: #ff7676;
   }
 }
 
@@ -175,7 +227,27 @@ table {
   color: rgb(2, 255, 23);
 }
 
+.sensei-marek {
+  color: rgb(255, 195, 31);
+}
+
+.sensei-dawid {
+  color: rgb(38, 23, 255);
+}
+
+.sensei-tymek {
+  color: rgb(255, 155, 252);
+}
+
+.sensei-igor {
+  color: aquamarine;
+}
+
 /*-----------------------------------------------*/
+
+.hidden {
+  display: none;
+}
 
 @media (max-width: 1200px) {
 }
