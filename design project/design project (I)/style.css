@@ -147,6 +147,7 @@ footer p ion-icon{
 .footer-chikara-logo{
   grid-area: img;
   width: 50%;
+  min-width: 400px
 }
 .footer-items-container{
   grid-area: content;
@@ -160,7 +161,7 @@ footer p ion-icon{
   display: flex;
   
   & p:last-of-type {
-    margin-left: 30px
+    margin-left: 45px
   }
 }
 .footer-social-media{
@@ -170,6 +171,8 @@ footer p ion-icon{
 
   & ion-icon{
     font-size: 25px;
+    color: black;
+    text-decoration: none;
   }
 }
 .footer-separator{
@@ -187,14 +190,9 @@ footer p ion-icon{
   align-items: center;
 }
 .footer-logos img {
-  width: 90px;
+  width: 100px;
   margin: auto;
 }
-
-
-
-
-
 
 @media (max-width: 1400px) {
   .menu-icon {
@@ -213,7 +211,6 @@ footer p ion-icon{
     min-width: 300px
   }
   .footer-items-container{
-    place-self: center start;
     font-size: 18px;
   }
 }
@@ -248,14 +245,12 @@ footer p ion-icon{
     'content'
     'separator'
     'logos';
-
-    & img{
-      max-width: 300px;
-    }
+  }
+  .footer-chikara-logo{
+    max-width: 300px;
   }
   .footer-items-container{
-    place-self: center;
-    margin: 60px 0;
+    margin-top: 60px;
     font-size: 16px;
   }
 }
@@ -263,7 +258,7 @@ footer p ion-icon{
   .footer-items-container{
     font-size: 14px;
   }
-  footer img{
+  .footer-chikara-logo{
     width: 70%;
     min-width: 200px;
   }
