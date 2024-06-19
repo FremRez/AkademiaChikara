@@ -259,7 +259,6 @@ const karateInfo = () => {
 
   const karateInfoSection = document.createElement("section");
   karateInfoSection.classList.add("karate-info");
-  document.body.appendChild(karateInfoSection);
 
   const karateInfoContainer = document.createElement("div");
   karateInfoContainer.classList.add("karate-info-content");
@@ -360,6 +359,7 @@ const karateInfo = () => {
   karateInfoContainer.insertAdjacentElement("beforeend", faqList);
 
   //koniec
+  document.body.insertAdjacentElement("afterbegin", karateInfoSection);
   karateInfoSection.insertAdjacentElement("afterbegin", karateInfoContainer);
   karateInfoContainer.classList.add("showAnimation");
   window.scrollTo({
