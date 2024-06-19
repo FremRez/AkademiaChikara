@@ -140,10 +140,12 @@ function renderRoot() {
     },
   ];
   partnersTable.forEach((partner) => {
-    const partnersLogos = document.createElement("img");
+    const partnersLogos = document.createElement('img');
+    const partnersLinks = document.createElement('a');
     partnersLogos.src = partner.logo;
-    partnersLogos.href = partner.link;
-    partners.appendChild(partnersLogos);
+    partnersLinks.href = partner.link;
+    partnersLinks.appendChild(partnersLogos)
+    partners.appendChild(partnersLinks);
   });
   footer.appendChild(partners);
 
