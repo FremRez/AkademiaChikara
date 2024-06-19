@@ -66,6 +66,7 @@ function renderRoot() {
   socialsTable.forEach((social) => {
     const socialMedias = document.createElement("a");
     socialMedias.href = social.link;
+    socialMedias.target = "_blank";
     const socialMediasIcon = document.createElement("ion-icon");
     socialMediasIcon.name = social.icon;
     socialMedias.appendChild(socialMediasIcon);
@@ -144,6 +145,7 @@ function renderRoot() {
     const partnersLinks = document.createElement("a");
     partnersLogos.src = partner.logo;
     partnersLinks.href = partner.link;
+    partnersLinks.target = "_blank";
     partnersLinks.appendChild(partnersLogos);
     partners.appendChild(partnersLinks);
   });
