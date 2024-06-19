@@ -85,11 +85,11 @@ nav {
   scale: 1.15;
 }
 
-#menu-training-schedule:hover {
+#schedulePageLinks:hover {
   position: relative;
   scale: 1;
 }
-#menu-training-schedule:hover #menu-training-list {
+#schedulePageLinks:hover #menu-training-list {
   display: flex;
   animation: menuTrainingList 300ms;
 }
