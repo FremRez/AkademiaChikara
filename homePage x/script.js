@@ -1,3 +1,5 @@
+import renderRoot from "../root.js";
+
 const enterSiteButton = document.querySelector("#enter-site-button");
 const enterSiteContent = document.querySelector(".enter-site");
 const homePageContent = document.querySelector(".homePage-start-content");
@@ -116,7 +118,6 @@ const aboutUs = () => {
 
   const aboutUsSection = document.createElement("section");
   aboutUsSection.classList.add("about-us");
-  document.body.appendChild(aboutUsSection);
   const contentContainer = document.createElement("div");
   contentContainer.classList.add("about-us-content");
 
@@ -201,6 +202,7 @@ const aboutUs = () => {
   });
 
   //koniec :3
+  document.body.insertAdjacentElement("afterbegin", aboutUsSection);
   contentContainer.classList.add("showAnimation");
   aboutUsSection.insertAdjacentElement("afterbegin", contentContainer);
   window.scrollTo({
@@ -368,3 +370,5 @@ const karateInfo = () => {
 
 const karateInfoButton = document.querySelector(".homepage-karate-info button");
 karateInfoButton.addEventListener("click", karateInfo);
+
+renderRoot();

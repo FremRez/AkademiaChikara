@@ -3,7 +3,7 @@ function renderRoot() {
 
   // ----- Logo ----- //
   const chikaraLogo = document.createElement("img");
-  chikaraLogo.src = "../Logo.png";
+  chikaraLogo.src = "images/Logo.png";
   chikaraLogo.classList.add("footer-chikara-logo");
   footer.appendChild(chikaraLogo);
 
@@ -83,59 +83,59 @@ function renderRoot() {
   partners.classList.add("footer-partners");
   let partnersTable = [
     {
-      logo: "../logos/benefit.svg",
+      logo: "logos/benefit.svg",
       link: "https://www.benefitsystems.pl/en",
     },
     {
-      logo: "../logos/decathlon.png",
+      logo: "logos/decathlon.png",
       link: "https://www.decathlon.pl/",
     },
     {
-      logo: "../logos/dworzysko.png",
+      logo: "logos/dworzysko.png",
       link: "https://dworzysko-park.pl/kontakt/",
     },
     {
-      logo: "../logos/fabrykasily.png",
+      logo: "logos/fabrykasily.png",
       link: "https://www.fabrykasily.pl/",
     },
     {
-      logo: "../logos/infopodkarpacie.png",
+      logo: "logos/infopodkarpacie.png",
       link: "http://infopodkarpacie.pl/",
     },
     {
-      logo: "../logos/lotto.png",
+      logo: "logos/lotto.png",
       link: "https://www.lotto.pl/",
     },
     {
-      logo: "../logos/passio.svg",
+      logo: "logos/passio.svg",
       link: "https://passiopoland.pl/",
     },
     {
-      logo: "../logos/pukt.png",
+      logo: "logos/pukt.png",
       link: "https://pukt.pl/",
     },
     {
-      logo: "../logos/rbeco.png",
+      logo: "logos/rbeco.png",
       link: "https://rbeco.pl/",
     },
     {
-      logo: "../logos/reshouse.jpg",
+      logo: "logos/reshouse.jpg",
       link: "https://reshouse.pl/",
     },
     {
-      logo: "../logos/rzeszow.jpg",
+      logo: "logos/rzeszow.jpg",
       link: "https://www.erzeszow.pl/",
     },
     {
-      logo: "../logos/rzeszowskie-nieruchomosci.jpg",
+      logo: "logos/rzeszowskie-nieruchomosci.jpg",
       link: "https://rzeszowskie-nieruchomosci.pl/",
     },
     {
-      logo: "../logos/sensis.png",
+      logo: "logos/sensis.png",
       link: "https://www.sensis.rzeszow.pl/",
     },
     {
-      logo: "../logos/titum.png",
+      logo: "logos/titum.png",
       link: "http://titum.pl/",
     },
   ];
@@ -150,5 +150,3 @@ function renderRoot() {
   // ----- Podłączenie całego footera ----- //
   document.body.insertAdjacentElement("beforeend", footer);
 }
-
-export default renderRoot;
