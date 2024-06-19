@@ -15,7 +15,7 @@ buttonsArr.forEach((button) => {
             schedule.classList.remove("hidden");
             schedule.classList.add("showAnimation");
             window.scrollTo({
-              top: 500,
+              top: 1000,
               behaviour: "smooth",
             });
           }

@@ -41,117 +41,13 @@ a {
 
 /*------------------------------------------------------*/
 
-@keyframes showAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.showAnimation {
-  animation: showAnimation 500ms;
-}
-
-.training-schedule {
-  padding: 70px 40px;
-}
-
-.schedule-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-
-  & h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 30px 0;
-    color: rgba(0, 0, 0, 0.808);
-  }
-}
-
-.categories {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-legend {
-  text-align: center;
-  padding: 0 20px;
-  font-size: 25px;
-  font-weight: bold;
-  color: rgba(255, 0, 0, 0.705);
-}
-
-fieldset {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.377);
-  border-radius: 30px;
-
-  & button {
-    padding: 15px 20px;
-    font-size: 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    transition: scale 300ms;
-  }
-
-  & button:hover {
-    scale: 1.07;
-  }
-}
-
-#large-room-schedule-button {
-  background-color: #b30000;
-}
-
-#litle-room1-schedule-button {
-  background-color: #cc0000;
-}
-
-#litle-room2-schedule-button {
-  background-color: #e60000;
-}
-
-#litle-room3-schedule-button {
-  background-color: #ff0000;
-}
-
-#krasne-schedule-button {
-  background-color: #e63a00;
-  padding: 15px 30px;
-}
-
-#bialobrzegi-schedule-button {
-  background-color: #ff4000;
-  padding: 15px 30px;
-}
-
-img {
-  width: 100%;
-}
-
-.schedule-title {
-  text-align: center;
-  font-size: 40px;
-  margin: 50px 0;
-}
-
 /*-----------------------------------------------*/
 
 .hidden {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
 }
 
 @media (max-width: 700px) {

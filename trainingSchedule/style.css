@@ -7,11 +7,11 @@
   }
 }
 .showAnimation {
-  animation: showAnimation 500ms ease-in;
+  animation: showAnimation 500ms;
 }
 
 .training-schedule {
-  padding: 70px 40px;
+  padding: 70px 40px 20px 40px;
 }
 
 .schedule-content {
@@ -42,9 +42,8 @@ legend {
 }
 
 fieldset {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   padding: 30px;
   border: 2px solid rgba(0, 0, 0, 0.377);
   border-radius: 30px;
@@ -92,37 +91,8 @@ fieldset {
   padding: 15px 30px;
 }
 
-table {
-  color: whitesmoke;
-  border-spacing: 5px;
-  text-align: center;
-  display: grid;
-  place-items: center;
-
-  & th,
-  td {
-    border-radius: 15px;
-    padding: 20px;
-    font-size: 17px;
-    width: 400px;
-  }
-
-  & th {
-    color: white;
-  }
-
-  & h4 {
-    color: rgb(255, 255, 255);
-  }
-
-  & p {
-    margin: 10px 0;
-  }
-
-  & span {
-    font-size: 15px;
-    font-weight: bold;
-  }
+img {
+  width: 100%;
 }
 
 .schedule-title {
@@ -131,126 +101,31 @@ table {
   margin: 50px 0;
 }
 
-.large-room-schedule {
-  & tr:first-of-type {
-    background-color: #b30000;
-  }
+/*----------RESPONSYWNOSC-----------*/
 
-  & tr:nth-of-type(2) {
-    background-color: #da0000;
-  }
-
-  & tr:nth-of-type(3) {
-    background-color: #ff0202;
-  }
-
-  & tr:nth-of-type(4) {
-    background-color: #ff2a2a;
+@media (max-width: 1300px) {
+  .categories {
+    grid-template-columns: 1fr;
   }
 }
 
-.little-room1-schedule {
-  & tr:first-of-type {
-    background-color: #cc0000;
-  }
+@media (max-width: 700px) {
+  .training-place-buttons {
+    display: grid;
+    place-items: center;
+    width: 100%;
 
-  & tr:nth-of-type(2) {
-    background-color: #ff0808;
-  }
-
-  & tr:nth-of-type(3) {
-    background-color: #ff4343;
+    & button {
+      width: 70%;
+    }
   }
 }
 
-.little-room2-schedule {
-  & tr:first-of-type {
-    background-color: #e60000;
+@media (max-width: 550px) {
+  .schedule-content h1 {
+    font-size: 40px;
   }
-
-  & tr:nth-of-type(2) {
-    background-color: #ff2222;
+  .training-place-buttons button {
+    width: 100%;
   }
-
-  & tr:nth-of-type(3) {
-    background-color: #ff5d5d;
-  }
-}
-
-.little-room3-schedule {
-  & tr:first-of-type {
-    background-color: #ff0000;
-  }
-
-  & tr:nth-of-type(2) {
-    background-color: #ff2727;
-  }
-
-  & tr:nth-of-type(3) {
-    background-color: #ff4e4e;
-  }
-
-  & tr:nth-of-type(4) {
-    background-color: #ff7676;
-  }
-
-  & tr:nth-of-type(5) {
-    background-color: #ff9d9d;
-  }
-}
-
-.krasne-schedule {
-  & td,
-  th {
-    width: 250px;
-  }
-  & tr:first-of-type {
-    background-color: #e63a00;
-  }
-
-  & tr:nth-of-type(2) {
-    background-color: #ff4b0e;
-  }
-
-  & tr:nth-of-type(3) {
-    background-color: #ff6835;
-  }
-}
-
-.bialobrzegi-schedule {
-  & td,
-  th {
-    width: 250px;
-  }
-  & tr:first-of-type {
-    background-color: #ff4000;
-  }
-
-  & tr:nth-of-type(2) {
-    background-color: #ff5d27;
-  }
-
-  & tr:nth-of-type(3) {
-    background-color: #ff7b4e;
-  }
-}
-
-.sensei-piotr {
-  color: #6ffaff;
-}
-
-.sensei-agnieszka {
-  color: rgb(109, 255, 121);
-}
-
-.sensei-marek {
-  color: rgb(200, 255, 0);
-}
-
-.sensei-dawid {
-  color: rgb(255, 195, 31);
-}
-
-.sensei-daria {
-  color: rgb(140, 0, 255);
 }
