@@ -136,7 +136,7 @@ footer{
   grid-template-areas: 
   'img content'
   'separator separator'
-  'logos logos';
+  'partners partners';
 
   place-items: center;
   padding: 100px;
@@ -181,15 +181,15 @@ footer p ion-icon{
   border-top: 2px solid rgba(0, 0, 0, 0.3);
   margin: 50px;
 }
-.footer-logos {
-  grid-area: logos;
+.footer-partners {
+  grid-area: partners;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
-.footer-logos img {
+.footer-partners img {
   width: 100px;
   margin: auto;
 }
@@ -244,7 +244,7 @@ footer p ion-icon{
     'img'
     'content'
     'separator'
-    'logos';
+    'partners';
   }
   .footer-chikara-logo{
     max-width: 300px;
