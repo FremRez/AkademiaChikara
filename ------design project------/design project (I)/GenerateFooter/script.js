@@ -152,3 +152,5 @@ function renderRoot() {
   // ----- Podłączenie całego footera ----- //
   document.body.insertAdjacentElement("beforeend", footer);
 }
+
+renderRoot();
