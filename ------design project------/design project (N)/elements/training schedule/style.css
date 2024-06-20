@@ -144,11 +144,80 @@ img {
   margin: 50px 0;
 }
 
+/*-----*/
+
+.schedule-text {
+  text-align: center;
+  font-size: 23px;
+  margin-top: 30px;
+}
+
+.schedule-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  place-items: center;
+  margin-top: 100px;
+}
+
+.schedule-card {
+  background-color: rgba(255, 0, 0, 0.699);
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 400ms;
+  position: relative;
+
+  & h3 {
+    color: white;
+    font-size: 30px;
+  }
+
+  & h4 {
+    margin: 24px 0;
+    font-size: 20px;
+  }
+
+  & p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.76);
+  }
+
+  & ion-icon {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 80px;
+    color: white;
+    opacity: 0.3;
+  }
+}
+
+.schedule-card:hover {
+  scale: 1.05;
+  box-shadow: 0 0 40px rgb(255, 0, 0);
+}
+
 /*----------RESPONSYWNOSC-----------*/
 
 @media (max-width: 1300px) {
   .categories {
     grid-template-columns: 1fr;
+  }
+
+  .schedule-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-card {
+    width: 70%;
   }
 }
 
@@ -162,6 +231,14 @@ img {
       width: 70%;
     }
   }
+
+  .schedule-card {
+    width: 100%;
+  }
+
+  .schedule-content h1 {
+    font-size: 3em;
+  }
 }
 
 @media (max-width: 550px) {
@@ -170,6 +247,18 @@ img {
   }
   .training-place-buttons button {
     width: 100%;
+  }
+
+  .schedule-content h1 {
+    font-size: 25px;
+  }
+
+  .training-schedule {
+    padding: 0;
+  }
+
+  .schedule-card {
+    padding: 80px 20px;
   }
 }
 
