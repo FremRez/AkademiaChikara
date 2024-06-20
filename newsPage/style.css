@@ -1,0 +1,11 @@
+.news-content {
+  padding: 40px;
+  max-width: 1450px;
+  margin: 70px auto;
+
+  & h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0;
+  }
+}
