@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <template>
+    <template class="news-short-template">
       <div class="img-container">
         <img src="" alt="" />
       </div>
@@ -18,11 +18,35 @@
       </div>
     </template>
 
+    <template class="news-details-template">
+      <!-- <div class="news-details-container"> -->
+      <div class="black-bg"></div>
+      <div class="news-details">
+        <div class="details-header">
+          <img src="images/post-images/pxfuel (7).jpg" alt="" />
+          <div class="red-bg">
+            <h2>cool title</h2>
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="details"></div>
+      </div>
+      <!-- </div> -->
+    </template>
+
     <div class="news-content">
       <h1>Aktualności</h1>
       <div class="news"></div>
     </div>
 
     <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
