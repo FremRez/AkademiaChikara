@@ -126,14 +126,21 @@ class Post {
           );
           break;
 
+        case "ol":
+          detailsElementsContainer.insertAdjacentElement(
+            "beforeend",
+            createList(this.content[index])
+          );
+          break;
+
         case "img":
           detailsElementsContainer.insertAdjacentElement(
             "beforeend",
             createImg(this.content[index])
           );
+          break;
 
         default:
-          console.log("i have a bad feeling about this");
           break;
       }
     });
@@ -159,13 +166,17 @@ const createParagraph = (pProperties) => {
 const createList = (listProperties) => {
   //funkcja generująca liste
   let list = "";
-  if (listProperties.name == "ul") list = document.createElement("ul");
-  else list = document.createElement("ol");
+  if (listProperties.name == "ul") {
+    list = document.createElement("ul");
+    console.log("created ul");
+  } else {
+    list = document.createElement("ol");
+    console.log("created ol");
+  }
 
   list.classList.add("post-details-list");
 
   for (let i = 0; i < listProperties.text.length; i++) {
-    console.log(listProperties.text.length);
     const li = document.createElement("li");
     li.textContent = listProperties.text[i];
     list.appendChild(li);
@@ -224,7 +235,7 @@ const posts = [
     {
       name: "img",
       src: "images/post-images/pxfuel (7).jpg",
-      width: "350px",
+      width: "600px",
       placeSelf: "center",
     },
 
@@ -234,7 +245,7 @@ const posts = [
       fontSize: "30px",
       fontWeight: 500,
       textAlign: "center",
-      color: "pink",
+      color: "violet",
     },
   ]),
 
@@ -308,6 +319,25 @@ const posts = [
       src: "images/post-images/pxfuel (7).jpg",
       width: "350px",
       placeSelf: "end",
+    },
+
+    {
+      name: "ol",
+      text: ["akademia", "sportu", "chikara"],
+      fontSize: "30px",
+      fontWeight: 400,
+      color: "red",
+      listStyleType: "upper-roman",
+      placeSelf: "start",
+    },
+
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
+      fontSize: "24px",
+      fontWeight: 500,
+      textAlign: "center",
+      color: "green",
     },
   ]),
 
