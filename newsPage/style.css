@@ -139,4 +139,22 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 50px;
   border-radius: 0 0 30px 30px;
+  display: grid;
+}
+
+.post-details-p {
+  margin: 14px 0;
+}
+
+.post-details-list {
+  margin: 30px;
+
+  & li {
+    padding: 10px 0;
+  }
+}
+
+.post-details-img {
+  margin: 20px 0;
+  place-self: center;
 }

@@ -1,17 +1,9 @@
 const post = {
   title: "post title",
   img: "postImage.png",
-  content: {
-    list: {
-      type: "ul",
-      text: ["listItem1", "listItem2"],
-      fontSize: "20px",
-      fontWeight: 500,
-      color: "black",
-      listStyleType: "disc",
-    },
-
-    p: {
+  content: [
+    {
+      name: "p",
       text: "Lorem ipsum dolor",
       fontSize: "24px",
       fontWeight: 500,
@@ -19,11 +11,30 @@ const post = {
       color: "black",
     },
 
-    img: {
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
+      fontSize: "24px",
+      fontWeight: 500,
+      textAlign: "center",
+      color: "green",
+    },
+
+    {
+      name: "ul",
+      text: ["listItem1", "listItem2"],
+      fontSize: "20px",
+      fontWeight: 500,
+      color: "black",
+      listStyleType: "disc",
+    },
+
+    {
+      name: "img",
       src: "postImages/image.png",
       width: "350px",
     },
-  },
+  ],
 };
 
 class Post {
@@ -59,10 +70,16 @@ class Post {
     title.textContent = this.title;
 
     const shortText = templateCopy.querySelector(".news-short-text");
-    if (this.content.p1.text.split("").length < 50) {
-      shortText.textContent = this.content.p1.text;
-    } else {
-      shortText.textContent = this.content.p1.text.substring(0, 50) + "...";
+    for (let i = 0; i < this.content.length; i++) {
+      if (!this.content[i].name == "p") continue;
+
+      if (this.content[i].text.split("").length < 50) {
+        shortText.textContent = this.content[i].text;
+      } else {
+        shortText.textContent = this.content[i].text.substring(0, 50) + "...";
+      }
+
+      break;
     }
 
     newsCardContainer.appendChild(templateCopy);
@@ -89,25 +106,34 @@ class Post {
       container.remove();
     });
 
+    //-------------------------------------------------------------------------------------------------------
+
     const detailsElementsContainer = templateCopy.querySelector(".details");
-    Object.keys(this.content).forEach((key) => {
-      const keyFirstLetter = key.substring(0, 1);
-      switch (keyFirstLetter) {
+
+    this.content.forEach((element, index) => {
+      switch (element.name) {
         case "p":
           detailsElementsContainer.insertAdjacentElement(
-            "afterbegin",
-            createParagraph(this.content.p1)
+            "beforeend",
+            createParagraph(this.content[index])
           );
           break;
 
-        case "l":
+        case "ul":
+          detailsElementsContainer.insertAdjacentElement(
+            "beforeend",
+            createList(this.content[index])
+          );
           break;
 
-        case "i":
-          break;
+        case "img":
+          detailsElementsContainer.insertAdjacentElement(
+            "beforeend",
+            createImg(this.content[index])
+          );
 
         default:
-          alert("error");
+          console.log("i have a bad feeling about this");
           break;
       }
     });
@@ -132,22 +158,24 @@ const createParagraph = (pProperties) => {
 
 const createList = (listProperties) => {
   //funkcja generująca liste
-  const list = "";
-  if (listProperties.type == "ul") list = document.createElement("ul");
+  let list = "";
+  if (listProperties.name == "ul") list = document.createElement("ul");
   else list = document.createElement("ol");
 
   list.classList.add("post-details-list");
 
-  listProperties.text.forEach((listElText) => {
+  for (let i = 0; i < listProperties.text.length; i++) {
+    console.log(listProperties.text.length);
     const li = document.createElement("li");
-    li.textContent = listElText;
+    li.textContent = listProperties.text[i];
     list.appendChild(li);
-  });
+  }
 
   list.style.setProperty("font-size", listProperties.fontSize);
   list.style.setProperty("font-weight", listProperties.fontWeight);
   list.style.setProperty("color", listProperties.color);
   list.style.setProperty("list-style-type", listProperties.listStyleType);
+  list.style.setProperty("place-self", listProperties.placeSelf);
 
   return list;
 };
@@ -158,144 +186,244 @@ const createImg = (imgProperties) => {
   img.classList.add("post-details-img");
   img.src = imgProperties.src;
   img.style.setProperty("width", imgProperties.width);
+  img.style.setProperty("place-self", imgProperties.placeSelf);
 
   return img;
 };
 
 const posts = [
-  new Post("cool post title ;3:3;3:3", "images/post-images/pxfuel (7).jpg", {
-    p1: {
-      text: "DZIAŁA!!",
-      fontSize: "24px",
-      fontWeight: 800,
-      textAlign: "left",
-      color: "yellowgreen",
-    },
-
-    list: {
-      text: ["listItem1", "listItem2"],
-      fontSize: "24px",
-      fontWeight: 500,
-      color: "black",
-    },
-
-    img: {
-      src: "postImages/image.png",
-      width: 70,
-    },
-  }),
-
-  new Post("second cool post", "images/post-images/pxfuel (8).jpg", {
-    list: {
-      text: ["listItem1", "listItem2"],
-      fontSize: "24px",
-      fontWeight: 500,
-      color: "palevioletred",
-    },
-
-    img: {
-      src: "postImages/image.png",
-      width: 70,
-    },
-
-    p1: {
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      fontSize: "24px",
-      fontWeight: 500,
-      textAlign: "center",
-      color: "palevioletred",
-    },
-  }),
-  new Post("cool post title", "images/post-images/pxfuel (10).jpg", {
-    p1: {
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+  new Post("cool post title ;3:3;3:3", "images/post-images/pxfuel (7).jpg", [
+    {
+      name: "p",
+      text: "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
       fontSize: "24px",
       fontWeight: 500,
       textAlign: "center",
       color: "black",
     },
 
-    list: {
-      text: ["listItem1", "listItem2"],
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
       fontSize: "24px",
       fontWeight: 500,
-      color: "black",
+      textAlign: "center",
+      color: "green",
     },
 
-    img: {
-      src: "postImages/image.png",
-      width: 70,
-    },
-  }),
-
-  new Post("second cool post", "images/post-images/pxfuel (9).jpg", {
-    list: {
+    {
+      name: "ul",
       text: ["listItem1", "listItem2"],
-      fontSize: "24px",
+      fontSize: "20px",
       fontWeight: 500,
-      color: "black",
+      color: "blue",
+      listStyleType: "circle",
+      placeSelf: "center",
     },
 
-    img: {
-      src: "postImages/image.png",
-      width: 70,
+    {
+      name: "img",
+      src: "images/post-images/pxfuel (7).jpg",
+      width: "350px",
+      placeSelf: "center",
     },
 
-    p1: {
+    {
+      name: "p",
+      text: "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+      fontSize: "30px",
+      fontWeight: 500,
+      textAlign: "center",
+      color: "pink",
+    },
+  ]),
+
+  new Post("second cool post", "images/post-images/pxfuel (8).jpg", [
+    {
+      name: "p",
       text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       fontSize: "24px",
       fontWeight: 500,
       textAlign: "center",
       color: "black",
     },
-  }),
+
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
+      fontSize: "24px",
+      fontWeight: 500,
+      textAlign: "center",
+      color: "green",
+    },
+
+    {
+      name: "ul",
+      text: ["listItem1", "listItem2"],
+      fontSize: "20px",
+      fontWeight: 500,
+      color: "black",
+      listStyleType: "disc",
+      placeSelf: "center",
+    },
+
+    {
+      name: "img",
+      src: "images/post-images/pxfuel (7).jpg",
+      width: "500px",
+      placeSelf: "center",
+    },
+  ]),
+  new Post("cool post title", "images/post-images/pxfuel (10).jpg", [
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
+      fontSize: "24px",
+      fontWeight: 500,
+      textAlign: "start",
+      color: "black",
+    },
+
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
+      fontSize: "24px",
+      fontWeight: 500,
+      textAlign: "center",
+      color: "green",
+    },
+
+    {
+      name: "ul",
+      text: ["listItem1", "listItem2"],
+      fontSize: "20px",
+      fontWeight: 500,
+      color: "black",
+      listStyleType: "disc",
+      placeSelf: "center",
+    },
+
+    {
+      name: "img",
+      src: "images/post-images/pxfuel (7).jpg",
+      width: "350px",
+      placeSelf: "end",
+    },
+  ]),
+
+  new Post("second cool post", "images/post-images/pxfuel (9).jpg", [
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
+      fontSize: "24px",
+      fontWeight: 500,
+      textAlign: "center",
+      color: "black",
+    },
+
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
+      fontSize: "24px",
+      fontWeight: 500,
+      textAlign: "center",
+      color: "green",
+    },
+
+    {
+      name: "ul",
+      text: ["listItem1", "listItem2"],
+      fontSize: "20px",
+      fontWeight: 500,
+      color: "black",
+      listStyleType: "disc",
+      placeSelf: "center",
+    },
+
+    {
+      name: "img",
+      src: "images/post-images/pxfuel (7).jpg",
+      width: "350px",
+      placeSelf: "center",
+    },
+  ]),
   new Post(
     "cool post title",
     "images/post-images/MPKT2024-Insta-stories-edited_1.png",
-    {
-      p1: {
-        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    [
+      {
+        name: "p",
+        text: "Lorem ipsum dolor",
         fontSize: "24px",
         fontWeight: 500,
         textAlign: "center",
         color: "black",
       },
 
-      list: {
-        text: ["listItem1", "listItem2"],
+      {
+        name: "p",
+        text: "Lorem ipsum dolor",
         fontSize: "24px",
         fontWeight: 500,
-        color: "black",
+        textAlign: "center",
+        color: "green",
       },
 
-      img: {
-        src: "postImages/image.png",
-        width: 70,
+      {
+        name: "ul",
+        text: ["listItem1", "listItem2"],
+        fontSize: "20px",
+        fontWeight: 500,
+        color: "black",
+        listStyleType: "disc",
+        placeSelf: "center",
       },
-    }
+
+      {
+        name: "img",
+        src: "images/post-images/pxfuel (7).jpg",
+        width: "350px",
+        placeSelf: "center",
+      },
+    ]
   ),
 
-  new Post("second cool post", "images/post-images/pxfuel (8).jpg", {
-    list: {
-      text: ["listItem1", "listItem2"],
-      fontSize: "24px",
-      fontWeight: 500,
-      color: "black",
-    },
-
-    img: {
-      src: "postImages/image.png",
-      width: 70,
-    },
-
-    p1: {
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+  new Post("second cool post", "images/post-images/pxfuel (8).jpg", [
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
       fontSize: "24px",
       fontWeight: 500,
       textAlign: "center",
       color: "black",
     },
-  }),
+
+    {
+      name: "p",
+      text: "Lorem ipsum dolor",
+      fontSize: "24px",
+      fontWeight: 500,
+      textAlign: "center",
+      color: "green",
+    },
+
+    {
+      name: "ul",
+      text: ["listItem1", "listItem2"],
+      fontSize: "20px",
+      fontWeight: 500,
+      color: "black",
+      listStyleType: "disc",
+      placeSelf: "center",
+    },
+
+    {
+      name: "img",
+      src: "images/post-images/pxfuel (7).jpg",
+      width: "350px",
+      placeSelf: "center",
+    },
+  ]),
 ];
 
 posts.forEach((post) => {
