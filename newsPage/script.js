@@ -139,9 +139,6 @@ class Post {
             createImg(this.content[index])
           );
           break;
-
-        default:
-          break;
       }
     });
 
@@ -166,13 +163,8 @@ const createParagraph = (pProperties) => {
 const createList = (listProperties) => {
   //funkcja generująca liste
   let list = "";
-  if (listProperties.name == "ul") {
-    list = document.createElement("ul");
-    console.log("created ul");
-  } else {
-    list = document.createElement("ol");
-    console.log("created ol");
-  }
+  if (listProperties.name == "ul") list = document.createElement("ul");
+  else list = document.createElement("ol");
 
   list.classList.add("post-details-list");
 
@@ -323,12 +315,12 @@ const posts = [
 
     {
       name: "ol",
-      text: ["akademia", "sportu", "chikara"],
+      text: ["akademia", "sportu", "chikara", "rzeszow"],
       fontSize: "30px",
       fontWeight: 400,
       color: "red",
-      listStyleType: "upper-roman",
-      placeSelf: "start",
+      listStyleType: "decimal",
+      placeSelf: "end",
     },
 
     {
