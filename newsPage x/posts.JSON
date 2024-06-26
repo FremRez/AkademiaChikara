@@ -1,0 +1,275 @@
+[
+  {
+    "title": "cool post title ;3:3;3:3",
+    "img": "images/post-images/pxfuel (7).jpg",
+    "content": [
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "green"
+      },
+
+      {
+        "name": "ul",
+        "text": ["listItem1", "listItem2"],
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "color": "blue",
+        "listStyleType": "circle",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/pxfuel (7).jpg",
+        "width": "80%",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+        "fontSize": "30px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "violet"
+      }
+    ]
+  },
+
+  {
+    "title": "second cool post",
+    "img": "images/post-images/pxfuel (8).jpg",
+    "content": [
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "green"
+      },
+
+      {
+        "name": "ul",
+        "text": ["listItem1", "listItem2"],
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "color": "black",
+        "listStyleType": "disc",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/pxfuel (7).jpg",
+        "width": "80%",
+        "placeSelf": "center"
+      }
+    ]
+  },
+
+  {
+    "title": "cool post title",
+    "img": "images/post-images/pxfuel (10).jpg",
+    "content": [
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "start",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "green"
+      },
+
+      {
+        "name": "ul",
+        "text": ["listItem1", "listItem2"],
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "color": "black",
+        "listStyleType": "disc",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/pxfuel (7).jpg",
+        "width": "80%",
+        "placeSelf": "end"
+      },
+
+      {
+        "name": "ol",
+        "text": ["akademia", "sportu", "chikara", "rzeszow"],
+        "fontSize": "30px",
+        "fontWeight": 400,
+        "color": "red",
+        "listStyleType": "decimal",
+        "placeSelf": "end"
+      },
+
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "green"
+      }
+    ]
+  },
+
+  {
+    "title": "second cool post",
+    "img": "images/post-images/pxfuel (9).jpg",
+    "content": [
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "green"
+      },
+
+      {
+        "name": "ul",
+        "text": ["listItem1", "listItem2"],
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "color": "black",
+        "listStyleType": "disc",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/pxfuel (7).jpg",
+        "width": "80%",
+        "placeSelf": "center"
+      }
+    ]
+  },
+
+  {
+    "title": "cool post title",
+    "img": "images/post-images/MPKT2024-Insta-stories-edited_1.png",
+    "content": [
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "green"
+      },
+
+      {
+        "name": "ul",
+        "text": ["listItem1", "listItem2"],
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "color": "black",
+        "listStyleType": "disc",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/pxfuel (7).jpg",
+        "width": "60%",
+        "placeSelf": "center"
+      }
+    ]
+  },
+
+  {
+    "title": "second cool post",
+    "img": "images/post-images/pxfuel (8).jpg",
+    "content": [
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Lorem ipsum dolor",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "green"
+      },
+
+      {
+        "name": "ul",
+        "text": ["listItem1", "listItem2"],
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "color": "black",
+        "listStyleType": "disc",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/pxfuel (7).jpg",
+        "width": "100%",
+        "placeSelf": "center"
+      }
+    ]
+  }
+]
