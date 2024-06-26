@@ -37,6 +37,8 @@ const post = {
   ],
 };
 
+console.log(JSON.stringify(post));
+
 class Post {
   constructor(title, imgSrc, content) {
     this.title = title;
@@ -62,7 +64,7 @@ class Post {
       if (mainImg.naturalWidth > mainImg.naturalHeight) {
         mainImg.style.setProperty("height", "100%");
       } else {
-        mainImg.style.setProperty("width", "100%");
+        mainImg.style.setProperty("width", "130%");
       }
     };
 
@@ -152,7 +154,10 @@ const createParagraph = (pProperties) => {
   const paragraph = document.createElement("p");
   paragraph.classList.add("post-details-p");
   paragraph.textContent = pProperties.text;
-  paragraph.style.setProperty("font-size", pProperties.fontSize);
+  paragraph.style.setProperty(
+    "font-size",
+    "calc(" + pProperties.fontSize + " * var(--font-size))"
+  );
   paragraph.style.setProperty("font-weight", pProperties.fontWeight);
   paragraph.style.setProperty("color", pProperties.color);
   paragraph.style.setProperty("text-align", pProperties.textAlign);
@@ -174,7 +179,10 @@ const createList = (listProperties) => {
     list.appendChild(li);
   }
 
-  list.style.setProperty("font-size", listProperties.fontSize);
+  list.style.setProperty(
+    "font-size",
+    "calc(" + listProperties.fontSize + " * var(--font-size))"
+  );
   list.style.setProperty("font-weight", listProperties.fontWeight);
   list.style.setProperty("color", listProperties.color);
   list.style.setProperty("list-style-type", listProperties.listStyleType);
@@ -227,7 +235,7 @@ const posts = [
     {
       name: "img",
       src: "images/post-images/pxfuel (7).jpg",
-      width: "600px",
+      width: "80%",
       placeSelf: "center",
     },
 
@@ -273,10 +281,11 @@ const posts = [
     {
       name: "img",
       src: "images/post-images/pxfuel (7).jpg",
-      width: "500px",
+      width: "80%",
       placeSelf: "center",
     },
   ]),
+
   new Post("cool post title", "images/post-images/pxfuel (10).jpg", [
     {
       name: "p",
@@ -309,7 +318,7 @@ const posts = [
     {
       name: "img",
       src: "images/post-images/pxfuel (7).jpg",
-      width: "350px",
+      width: "80%",
       placeSelf: "end",
     },
 
@@ -365,7 +374,7 @@ const posts = [
     {
       name: "img",
       src: "images/post-images/pxfuel (7).jpg",
-      width: "350px",
+      width: "80%",
       placeSelf: "center",
     },
   ]),
@@ -404,7 +413,7 @@ const posts = [
       {
         name: "img",
         src: "images/post-images/pxfuel (7).jpg",
-        width: "350px",
+        width: "60%",
         placeSelf: "center",
       },
     ]
@@ -442,7 +451,7 @@ const posts = [
     {
       name: "img",
       src: "images/post-images/pxfuel (7).jpg",
-      width: "350px",
+      width: "100%",
       placeSelf: "center",
     },
   ]),
