@@ -6,7 +6,6 @@ class Post {
   }
 
   renderPost() {
-    //metoda generująca "miniaturke" do posta na stronie z aktualnosciami, daje event listener do miniaturki ktory po kliknieciu bedzie wykonywal metode renderPostDetails
     const template = document.querySelector(".news-short-template");
     const templateCopy = template.content.cloneNode(true);
     const newsList = document.querySelector(".news");
@@ -48,8 +47,6 @@ class Post {
   }
 
   renderPostDetails() {
-    //wrzuca na srodek ekranu okienko z cala zawartoscia posta i iteruje po calym obiekcie przypisanym do klucza "content" sprawdzajac w switchu nazwy kluczy i w zaleznosci od nich wywoluje funkcje generujace poszczegolne elementy
-
     const template = document.querySelector(".news-details-template");
     const templateCopy = template.content.cloneNode(true);
     const newsDetailsContainer = document.createElement("div");
@@ -109,7 +106,6 @@ class Post {
 }
 
 const createParagraph = (pProperties) => {
-  //funkcja generujaca element p
   const paragraph = document.createElement("p");
   paragraph.classList.add("post-details-p");
   paragraph.textContent = pProperties.text;
@@ -125,7 +121,6 @@ const createParagraph = (pProperties) => {
 };
 
 const createList = (listProperties) => {
-  //funkcja generująca liste
   let list = "";
   if (listProperties.name == "ul") list = document.createElement("ul");
   else list = document.createElement("ol");
@@ -151,7 +146,6 @@ const createList = (listProperties) => {
 };
 
 const createImg = (imgProperties) => {
-  //funkcja generująca obrazek
   const img = document.createElement("img");
   img.classList.add("post-details-img");
   img.src = imgProperties.src;

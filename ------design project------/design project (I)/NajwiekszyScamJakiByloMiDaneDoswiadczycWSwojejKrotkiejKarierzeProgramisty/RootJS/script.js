@@ -1,6 +1,6 @@
 function renderRoot(linkId) {
-                                          // ----- Navbar ----- //
-                                          
+  // ----- Navbar ----- //
+
   const navbar = document.createElement("nav");
 
   // ----- Miejsce na content ----- //
@@ -13,9 +13,9 @@ function renderRoot(linkId) {
   resMenu.id = "responsive-menu";
   navbar.appendChild(resMenu);
 
-  const resMenuList = document.createElement("div")
-  resMenuList.id = "responsive-menu-list"
-  resMenu.appendChild(resMenuList)
+  const resMenuList = document.createElement("div");
+  resMenuList.id = "responsive-menu-list";
+  resMenu.appendChild(resMenuList);
 
   // ----- Podłączenie całego navbara ----- //
   document.body.insertAdjacentElement("afterbegin", navbar);
@@ -25,162 +25,165 @@ function renderRoot(linkId) {
     {
       id: "homePageLink",
       href: "../home/index.html",
-      content: "Strona główna"
+      content: "Strona główna",
     },
     {
       id: "newsPageLink",
       href: "",
-      content: "Aktualności"
+      content: "Aktualności",
     },
     {
       id: "campPageLink",
       href: "",
-      content: "Obozy i półkolonie"
+      content: "Obozy i półkolonie",
     },
     {
       id: "pricingPageLink",
       href: "../home/index.html",
-      content: "Cennik"
+      content: "Cennik",
     },
     {
       id: "contactPageLink",
       href: "",
-      content: "Kontakt"
+      content: "Kontakt",
     },
-  ]
+  ];
 
-  navbarLinksTable.forEach(element => {
-    const links = document.createElement('a');
+  navbarLinksTable.forEach((element) => {
+    const links = document.createElement("a");
     links.classList.add("menu-option");
     links.id = element.id;
-    links.textContent = element.content
-    links.href = element.href
+    links.textContent = element.content;
+    links.href = element.href;
     navbarItemsContainer.appendChild(links);
   });
-  const menuIcon = document.createElement('ion-icon');
-  menuIcon.id = 'menu-icon'
-  menuIcon.name = 'menu-outline'
+  const menuIcon = document.createElement("ion-icon");
+  menuIcon.id = "menu-icon";
+  menuIcon.name = "menu-outline";
   navbarItemsContainer.appendChild(menuIcon);
 
-
   // ----- Content (harmonogram) ----- //
-  const schedule = document.createElement('span');
-  const news = document.querySelector('#newsPageLink')
-  
+  const schedule = document.createElement("span");
+  const news = document.querySelector("#newsPageLink");
+
   schedule.classList.add("menu-option");
   schedule.id = "schedulePageLinks";
   schedule.textContent = "Harmonogram treninów";
-  news.insertAdjacentElement("afterend", schedule)
+  news.insertAdjacentElement("afterend", schedule);
 
-  const scheduleList = document.createElement('div');
+  const scheduleList = document.createElement("div");
   scheduleList.id = "menu-training-list";
-  schedule.appendChild(scheduleList)
+  schedule.appendChild(scheduleList);
 
-  const scheduleListItems = ["Karate", "Krav Maga", "Grupa niepełnosprawnych"]
-  scheduleListItems.forEach(item => {
-    const listItem = document.createElement('a');
-    listItem.href = "../trainingSchedule/index.html"
+  const scheduleListItems = ["Karate", "Krav Maga", "Grupa niepełnosprawnych"];
+  scheduleListItems.forEach((item) => {
+    const listItem = document.createElement("a");
+    listItem.href = "../trainingSchedule/index.html";
     listItem.textContent = item;
-    scheduleList.appendChild(listItem)
+    scheduleList.appendChild(listItem);
   });
-
 
   // ----- /Respo/ Content (linki i ion-icon) ----- //
   const closeMenu = document.createElement("ion-icon");
-  closeMenu.id = "close-menu-icon"
-  closeMenu.name = "close-outline"
-  resMenuList.appendChild(closeMenu)
+  closeMenu.id = "close-menu-icon";
+  closeMenu.name = "close-outline";
+  resMenuList.appendChild(closeMenu);
 
   const navbarResponsiveLinksTable = [
     {
       href: "../home/index.html",
-      content: "Strona główna"
+      content: "Strona główna",
     },
     {
       href: "",
-      content: "Aktualności"
+      content: "Aktualności",
     },
     {
       href: "",
-      content: "Obozy i półkolonie"
+      content: "Obozy i półkolonie",
     },
     {
       href: "",
-      content: "Cennik"
+      content: "Cennik",
     },
     {
       href: "",
-      content: "Kontakt"
+      content: "Kontakt",
     },
-  ]
-  navbarResponsiveLinksTable.forEach(element => {
-    const links = document.createElement('a');
+  ];
+  navbarResponsiveLinksTable.forEach((element) => {
+    const links = document.createElement("a");
     links.classList.add("res-menu-option");
-    links.textContent = element.content
-    links.href = element.href
+    links.textContent = element.content;
+    links.href = element.href;
     resMenuList.appendChild(links);
   });
 
   // ----- /Respo/ Content (harmonogram) ----- //
 
-  const showTrainingList = document.createElement("div")
-  showTrainingList.classList.add("show-training-list", "res-menu-option")
+  const showTrainingList = document.createElement("div");
+  showTrainingList.classList.add("show-training-list", "res-menu-option");
   const insertNews = document.querySelector("#responsive-menu a:nth-child(3)");
   insertNews.insertAdjacentElement("afterend", showTrainingList);
-  
-  const resSchedule = document.createElement('div');
-  resSchedule.id = "res-menu-training-schedule"
-  showTrainingList.appendChild(resSchedule);
+
+  const resSchedule = document.createElement("div");
+  resSchedule.id = "res-menu-training-schedule";
 
   const resScheduleContent = document.createElement("p");
   resScheduleContent.textContent = "Harmonogram treningów";
-  resSchedule.appendChild(resScheduleContent)
+  resSchedule.appendChild(resScheduleContent);
 
   const resScheduleIcon = document.createElement("ion-icon");
   resScheduleIcon.name = "chevron-down-outline";
-  resSchedule.appendChild(resScheduleIcon)
+  resSchedule.appendChild(resScheduleIcon);
 
-  const resScheduleList = document.createElement('div');
-  resScheduleList.classList.add("res-menu-training-list","hidden")
-  resSchedule.appendChild(resScheduleList);
+  showTrainingList.insertAdjacentElement("beforeend", resSchedule);
 
-  const resScheduleListItems = ["Karate", "Krav Maga", "Grupa niepełnosprawnych"]
-  resScheduleListItems.forEach(item => {
-    const listItem = document.createElement('a');
-    listItem.href = "../trainingSchedule/index.html"
+  const resScheduleList = document.createElement("div");
+  resScheduleList.classList.add("res-menu-training-list", "hidden");
+
+  const resScheduleListItems = [
+    "Karate",
+    "Krav Maga",
+    "Grupa niepełnosprawnych",
+  ];
+  resScheduleListItems.forEach((item) => {
+    const listItem = document.createElement("a");
+    listItem.href = "../trainingSchedule/index.html";
     listItem.textContent = item;
-    resScheduleList.appendChild(listItem)
+    resScheduleList.insertAdjacentElement("beforeend", listItem);
   });
-  
 
+  showTrainingList.appendChild(resScheduleList);
 
   // ---- Logo ---- //
   const chikaraLogoNavbar = document.createElement("img");
   chikaraLogoNavbar.src = "../Logo.png";
   chikaraLogoNavbar.id = "navbar-logo";
-  schedule.insertAdjacentElement("afterend", chikaraLogoNavbar)
+  schedule.insertAdjacentElement("afterend", chikaraLogoNavbar);
 
   // ----- Kod obsługujący navbar ----- //
   const menuButton = document.querySelector("#menu-icon");
   const responsiveMenu = document.querySelector("#responsive-menu");
   const closeMenuButton = document.querySelector("#close-menu-icon");
-  const showMenuTrainingListButton = document.querySelector(".show-training-list");
+  const showMenuTrainingListButton = document.querySelector(
+    ".show-training-list"
+  );
   const menuTrainingList = document.querySelector(".res-menu-training-list");
-  
+
   menuButton.addEventListener("click", () => {
     responsiveMenu.style.setProperty("display", "flex");
   });
-  
+
   closeMenuButton.addEventListener("click", () => {
     responsiveMenu.style.setProperty("display", "none");
   });
-  
+
   showMenuTrainingListButton.addEventListener("click", () => {
     menuTrainingList.classList.toggle("hidden");
   });
 
-
-                                          // ----- Footer ---- //
+  // ----- Footer ---- //
 
   const footer = document.createElement("footer");
 
@@ -338,8 +341,4 @@ function renderRoot(linkId) {
   document.body.insertAdjacentElement("beforeend", footer);
 }
 
-renderRoot()
-
-
-
-
+renderRoot();
