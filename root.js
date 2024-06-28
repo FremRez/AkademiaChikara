@@ -80,6 +80,10 @@ function renderRoot(linkId) {
     const listItem = document.createElement("a");
     listItem.href = "../trainingSchedule x/schedule.html";
     listItem.textContent = item;
+    if (item == "Krav Maga") {
+      listItem.href = "https://kravmaga-podkarpacie.pl/rzeszow-centrum/"
+      listItem.target = "_blank";
+    }
     scheduleList.appendChild(listItem);
   });
 
@@ -150,6 +154,10 @@ function renderRoot(linkId) {
     const listItem = document.createElement("a");
     listItem.href = "../trainingSchedule x/schedule.html";
     listItem.textContent = item;
+    if (item == "Krav Maga") {
+      listItem.href = "https://kravmaga-podkarpacie.pl/rzeszow-centrum/"
+      listItem.target = "_blank";
+    }
     resScheduleList.appendChild(listItem);
   });
 
