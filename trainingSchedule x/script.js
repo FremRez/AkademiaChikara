@@ -26,4 +26,17 @@ buttonsArr.forEach((button) => {
   });
 });
 
+const karateSchedule = document.querySelector(".schedule-content");
+const disabledSchedule = document.querySelector(".disabled-people-schedule");
+const chosenSchedule = window.localStorage.getItem("chosenSchedule");
+if (chosenSchedule == "Karate") {
+  karateSchedule.classList.remove("hidden");
+  disabledSchedule.classList.add("hidden");
+  localStorage.clear();
+} else {
+  karateSchedule.classList.add("hidden");
+  disabledSchedule.classList.remove("hidden");
+  localStorage.clear();
+}
+
 renderRoot("schedulePageLinks");
