@@ -371,4 +371,4 @@ const karateInfo = () => {
 const karateInfoButton = document.querySelector(".homepage-karate-info button");
 karateInfoButton.addEventListener("click", karateInfo);
 
-renderRoot();
+renderRoot("homePageLink");

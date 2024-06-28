@@ -1,3 +1,4 @@
+import renderRoot from "../root.js";
 class Post {
   constructor(title, imgSrc, content) {
     this.title = title;
@@ -166,6 +167,4 @@ fetch("./posts.JSON")
     });
   });
 
-posts.forEach((post) => {
-  post.renderPost();
-});
+renderRoot("newsPageLink");
