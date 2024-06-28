@@ -88,7 +88,7 @@
   opacity: 0;
   white-space: nowrap;
   overflow: hidden;
-  transition: width 300ms ease-in-out, opacity 300ms ease-in-out, background-color 200ms;
+  transition: width 300ms ease-in-out, opacity 300ms ease-in-out, background-color 300ms;
 }
 .animation {
   width: 75px;
