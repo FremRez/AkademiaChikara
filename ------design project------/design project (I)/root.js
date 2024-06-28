@@ -24,27 +24,27 @@ document.body.insertAdjacentElement("afterbegin", navbar);
 const navbarLinksTable = [
 {
 id: "homePageLink",
-href: "../home/index.html",
+href: "../homePage x/homepage.html",
 content: "Strona główna"
 },
 {
 id: "newsPageLink",
-href: "",
+href: "../newsPage x/newspage.html",
 content: "Aktualności"
 },
 {
 id: "campPageLink",
-href: "",
+href: "../campPage x/camp.html",
 content: "Obozy i półkolonie"
 },
 {
 id: "pricingPageLink",
-href: "../home/index.html",
+href: "../pricingPage x/pricing.html",
 content: "Cennik"
 },
 {
 id: "contactPageLink",
-href: "",
+href: "../contactPage x/contact.html",
 content: "Kontakt"
 },
 ]
@@ -78,7 +78,7 @@ schedule.appendChild(scheduleList)
 const scheduleListItems = ["Karate", "Krav Maga", "Grupa niepełnosprawnych"]
 scheduleListItems.forEach(item => {
 const listItem = document.createElement('a');
-listItem.href = "../trainingSchedule/index.html"
+listItem.href = "../trainingSchedule x/schedule.html"
 listItem.textContent = item;
 scheduleList.appendChild(listItem)
 });
@@ -92,23 +92,23 @@ resMenuLinks.appendChild(closeMenuIcon)
 
 const navbarResponsiveLinksTable = [
 {
-href: "../home/index.html",
+href: "../homePage x/homepage.html",
 content: "Strona główna"
 },
 {
-href: "",
+href: "../newsPage x/newspage.html",
 content: "Aktualności"
 },
 {
-href: "",
+href: "../campPage x/camp.html",
 content: "Obozy i półkolonie"
 },
 {
-href: "",
+href: "../pricingPage x/pricing.html",
 content: "Cennik"
 },
 {
-href: "",
+href: "../contactPage x/contact.html",
 content: "Kontakt"
 },
 ]
@@ -145,7 +145,7 @@ showTrainingList.appendChild(resScheduleList);
 const resScheduleListItems = ["Karate", "Krav Maga", "Grupa niepełnosprawnych"]
 resScheduleListItems.forEach(item => {
 const listItem = document.createElement('a');
-// listItem.href = "../trainingSchedule/index.html"
+listItem.href = "../trainingSchedule x/schedule.html"
 listItem.textContent = item;
 resScheduleList.appendChild(listItem)
 });
@@ -185,7 +185,7 @@ localStorage.setItem("chosenSchedule", link.textContent)
 
 const chosenNavLink = document.querySelectorAll(".menu-option")
 chosenNavLink.forEach(link => {
-if (linkId == link.textContent) {
+if (linkId == link.id) {
 link.classList.add("selected-menu-option")
 }
 });
@@ -347,3 +347,5 @@ partners.appendChild(partnersLinks);
 });
 footer.appendChild(partners);
 }
+
+export default renderRoot;
