@@ -1,0 +1,107 @@
+.pricing-content-wrapper {
+  padding: 60px 40px;
+  max-width: 1450px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: grid;
+  place-items: center;
+
+  & h2 {
+    font-size: 50px;
+    margin: 100px 0 50px 0;
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: 60px;
+  text-align: center;
+}
+
+.prices-image {
+  width: 80%;
+  margin-top: 80px;
+}
+
+.karate-payment {
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.096);
+  border-radius: 20px;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  margin: 20px 0;
+  padding: 40px 10px;
+
+  & h3 {
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.705);
+  }
+
+  & p {
+    font-size: 17px;
+  }
+}
+
+.bank-name {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.562);
+}
+
+.bank-account-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+
+  & ion-icon {
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.781);
+  }
+
+  & p {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.842);
+  }
+}
+
+.copy {
+  background-color: rgba(0, 0, 0, 0.479);
+  color: whitesmoke;
+  opacity: 1;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: normal;
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+@media (max-width: 550px) {
+  .pricing-content-wrapper {
+    padding: 60px 20px;
+
+    & h2 {
+      font-size: 40px;
+    }
+  }
+
+  .prices-image {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .bank-account-number ion-icon {
+    font-size: 30px;
+  }
+}
