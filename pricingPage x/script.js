@@ -1,3 +1,4 @@
+import renderRoot from "../root.js";
 const copyIcons = document.querySelectorAll(".copy-icon");
 const textToCopy = document.querySelectorAll(".bank-account-number p");
 
@@ -41,3 +42,5 @@ copyIcons.forEach((icon, i) => {
       });
   });
 });
+
+renderRoot("pricingPageLink");

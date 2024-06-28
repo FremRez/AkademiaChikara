@@ -1,3 +1,4 @@
+import renderRoot from "../root.js";
 const buttonsArr = document.querySelectorAll(".training-place-buttons button");
 const scheduleArr = document.querySelectorAll(".schedule");
 const headerArr = document.querySelectorAll(".schedule-title");
@@ -15,7 +16,7 @@ buttonsArr.forEach((button) => {
             schedule.classList.remove("hidden");
             schedule.classList.add("showAnimation");
             window.scrollTo({
-              top: 1000,
+              top: 500,
               behaviour: "smooth",
             });
           }
@@ -24,3 +25,5 @@ buttonsArr.forEach((button) => {
     });
   });
 });
+
+renderRoot("schedulePageLinks");

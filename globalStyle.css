@@ -57,7 +57,7 @@ nav {
   );
   width: 100%;
   padding: 25px;
-  z-index: 100;
+  z-index: 90;
 }
 
 #nav-items-container {
