@@ -5,12 +5,12 @@ const textToCopy = document.querySelectorAll(".bank-account-number p");
 copyIcons.forEach((icon, i) => {
   icon.addEventListener("mouseover", () => {
     icon.name = "copy";
-    icon.nextElementSibling.classList.remove("hidden");
+    icon.nextElementSibling.classList.add("animation");
   });
 
   icon.addEventListener("mouseout", () => {
     icon.name = "copy-outline";
-    icon.nextElementSibling.classList.add("hidden");
+    icon.nextElementSibling.classList.remove("animation");
   });
 
   icon.addEventListener("click", () => {
@@ -22,18 +22,14 @@ copyIcons.forEach((icon, i) => {
           "yellowgreen"
         );
         icon.nextElementSibling.textContent = "Skopiowano!";
-        icon.nextElementSibling.style.setProperty("right", "0");
       })
       .then(() => {
         setTimeout(() => {
-          icon.nextElementSibling.classList.add("hidden");
           icon.nextElementSibling.style.setProperty(
             "background-color",
             "rgba(0, 0, 0, 0.479)"
           );
           icon.nextElementSibling.textContent = "Skopiuj";
-          icon.nextElementSibling.style.setProperty("right", "20px");
-
           icon.name = "copy-outline";
         }, 500);
       })

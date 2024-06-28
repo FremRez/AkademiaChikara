@@ -79,9 +79,20 @@
   font-weight: normal;
   border-radius: 5px;
   position: absolute;
-  right: 20px;
-  bottom: 0;
-  transition: background-color 200ms;
+  right: -7px;
+  bottom: 20px;
+
+
+  width: 0;
+  display: inline-block;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width 300ms ease-in-out, opacity 300ms ease-in-out, background-color 200ms;
+}
+.animation {
+  width: 75px;
+  opacity: 1;
 }
 
 @media (max-width: 550px) {
