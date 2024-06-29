@@ -146,7 +146,7 @@ footer p ion-icon{
 }
 .footer-chikara-logo{
   grid-area: img;
-  width: 50%;
+  width: 30%;
   min-width: 400px
 }
 .footer-items-container{
@@ -171,27 +171,93 @@ footer p ion-icon{
 
   & ion-icon{
     font-size: 25px;
+    padding: 7px 10px;
+    border-radius: 10px;
     color: black;
     text-decoration: none;
+    transition: 300ms;
+  }
+  & ion-icon:hover{
+    background-color: rgba(255, 0, 0, 0.658);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
+    color: white;
+    scale: 1.10;
+    cursor: pointer;
   }
 }
+
 .footer-separator{
   grid-area: separator;
   width: 100%;
   border-top: 2px solid rgba(0, 0, 0, 0.3);
   margin: 50px;
 }
+
 .footer-partners {
   grid-area: partners;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.footer-partners img {
+
+.footer-partners p{
+  padding: 15px 20px;
+  border: 2px solid rgba(255, 0, 0, 0.658);
+  background-color: transparent;
+  border-radius: 10px;
+  color: rgba(255, 0, 0, 0.719);
+  backdrop-filter: blur(10px);
+  font-weight: bolder;
+  transition: 300ms;
+}
+
+.footer-partners p:hover{
+  background-color: rgba(255, 0, 0, 0.658);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
+  color: white;
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.footer-partners-caption{
+  font-weight: bolder;
+  white-space: nowrap;
+  text-align: center;
+  width: 0;
+  opacity: 0;
+  margin: 15px;
+  color: rgba(255, 0, 0, 0.719);
+  overflow: hidden;
+  transition: width 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.footer-partners-logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  gap: 20px;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: width 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.footer-partners-logos img {
   width: 100px;
   margin: auto;
+}
+
+.partners-animation {
+  width: 100%;
+  opacity: 1;
+}
+
+.caption-animation{
+  width: 250px;
+  opacity: 1;
 }
 
 @media (max-width: 1400px) {

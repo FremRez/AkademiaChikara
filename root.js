@@ -293,6 +293,17 @@ function renderRoot(linkId) {
   // ----- PartnersLogos ----- //
   const partners = document.createElement("div");
   partners.classList.add("footer-partners");
+  footer.appendChild(partners);
+
+  const partnersButton = document.createElement("p");
+  partnersButton.textContent = "Zobacz naszych partnerów"
+  partners.appendChild(partnersButton)
+
+  const partnersCaption = document.createElement("span");
+  partnersCaption.classList.add("footer-partners-caption")
+  partnersCaption.textContent = "Przejdź na stronę klikając Logo"
+  partners.appendChild(partnersCaption)
+
   let partnersTable = [
     {
       logo: "../logos/benefit.svg",
@@ -351,16 +362,42 @@ function renderRoot(linkId) {
       link: "http://titum.pl/",
     },
   ];
+  const partnersLogosContainer = document.createElement("div")
+  partnersLogosContainer.classList.add("footer-partners-logos")
+  partners.appendChild(partnersLogosContainer)
+
   partnersTable.forEach((partner) => {
     const partnersLogos = document.createElement("img");
     const partnersLinks = document.createElement("a");
     partnersLogos.src = partner.logo;
     partnersLinks.href = partner.link;
     partnersLinks.target = "_blank";
+    if (partner.logo == "../logos/titum.png") {
+      partnersLogos.id = "lastPartner"
+    }
     partnersLinks.appendChild(partnersLogos);
-    partners.appendChild(partnersLinks);
+    partnersLogosContainer.appendChild(partnersLinks);
   });
-  footer.appendChild(partners);
+
+  // ----- Kod obsługujący footer ----- //
+  const animationButton = document.querySelector(".footer-partners p");
+  const animationCaption = document.querySelector(".footer-partners-caption");
+  const animationContainer = document.querySelector(".footer-partners-logos");
+  const lastPartner = document.getElementById("lastPartner");
+
+  animationButton.addEventListener("click", () => {
+    animationContainer.classList.toggle("partners-animation");
+    animationCaption.classList.toggle("caption-animation")
+    
+    if (animationContainer.classList.contains("partners-animation")) {
+      setTimeout(() => {
+        animationContainer.style.setProperty("height", "fit-content")
+        lastPartner.scrollIntoView("behavior: 'smooth'");
+    }, 300);
+    }else{
+      animationContainer.style.setProperty("height", "60px")
+    }
+  });
 }
 
 export default renderRoot;
