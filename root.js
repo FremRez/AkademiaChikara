@@ -24,27 +24,27 @@ function renderRoot(linkId) {
   const navbarLinksTable = [
     {
       id: "homePageLink",
-      href: "../homePage x/homepage.html",
+      href: "homePage x/homepage.html",
       content: "Strona główna",
     },
     {
       id: "newsPageLink",
-      href: "../newsPage x/newspage.html",
+      href: "newsPage x/newspage.html",
       content: "Aktualności",
     },
     {
       id: "campPageLink",
-      href: "../campPage x/camp.html",
+      href: "campPage x/camp.html",
       content: "Obozy i półkolonie",
     },
     {
       id: "pricingPageLink",
-      href: "../pricingPage x/pricing.html",
+      href: "pricingPage x/pricing.html",
       content: "Cennik",
     },
     {
       id: "contactPageLink",
-      href: "../contactPage x/contact.html",
+      href: "contactPage x/contact.html",
       content: "Kontakt",
     },
   ];
