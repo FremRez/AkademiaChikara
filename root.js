@@ -214,7 +214,7 @@ function renderRoot(linkId) {
 
   // ----- Logo ----- //
   const chikaraLogoFooter = document.createElement("img");
-  chikaraLogoFooter.src = "- logos -/- logo -.png";
+  chikaraLogoFooter.src ="=logos=/=logo=.png";
   chikaraLogoFooter.classList.add("footer-chikara-logo");
   footer.appendChild(chikaraLogoFooter);
 
