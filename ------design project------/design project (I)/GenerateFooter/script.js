@@ -3,7 +3,7 @@ function renderRoot() {
 
   // ----- Logo ----- //
   const chikaraLogo = document.createElement("img");
-  chikaraLogo.src = "images/Logo.png";
+  chikaraLogo.src = "Logo.png";
   chikaraLogo.classList.add("footer-chikara-logo");
   footer.appendChild(chikaraLogo);
 
