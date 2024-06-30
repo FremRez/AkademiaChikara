@@ -163,7 +163,7 @@ function renderRoot(linkId) {
 
   // ---- Logo ---- //
   const chikaraLogoNavbar = document.createElement("img");
-  chikaraLogoNavbar.src = "Logo.png";
+  chikaraLogoNavbar.src = "- logos -/- logo -.png";
   chikaraLogoNavbar.id = "navbar-logo";
   schedule.insertAdjacentElement("afterend", chikaraLogoNavbar);
 
@@ -214,7 +214,7 @@ function renderRoot(linkId) {
 
   // ----- Logo ----- //
   const chikaraLogoFooter = document.createElement("img");
-  chikaraLogoFooter.src = "Logo.png";
+  chikaraLogoFooter.src = "- logos -/- logo -.png";
   chikaraLogoFooter.classList.add("footer-chikara-logo");
   footer.appendChild(chikaraLogoFooter);
 
