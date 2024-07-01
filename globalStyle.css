@@ -75,11 +75,11 @@ nav {
 .menu-option {
   color: black;
   font-weight: 500;
-  text-decoration: none;
   font-size: 16px;
   padding: 10px 13px;
   transition: scale 200ms;
   cursor: pointer;
+  font-size: 15px;
 }
 .menu-option:hover {
   scale: 1.15;
@@ -349,6 +349,8 @@ footer p ion-icon {
   }
 
   #nav-items-container {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
