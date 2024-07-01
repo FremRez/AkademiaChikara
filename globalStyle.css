@@ -63,9 +63,9 @@ nav {
 #nav-items-container {
   max-width: 1450px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
 }
 
 #navbar-logo {
@@ -246,12 +246,12 @@ footer p ion-icon {
   }
 }
 
-.footer-social-media{
+.footer-social-media {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 
-  & ion-icon{
+  & ion-icon {
     font-size: 25px;
     padding: 7px 10px;
     border-radius: 10px;
@@ -259,16 +259,16 @@ footer p ion-icon {
     text-decoration: none;
     transition: 300ms;
   }
-  & ion-icon:hover{
+  & ion-icon:hover {
     background-color: rgba(255, 0, 0, 0.658);
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
     color: white;
-    scale: 1.10;
+    scale: 1.1;
     cursor: pointer;
   }
 }
 
-.footer-separator{
+.footer-separator {
   grid-area: separator;
   width: 100%;
   border-top: 2px solid rgba(0, 0, 0, 0.3);
@@ -283,7 +283,7 @@ footer p ion-icon {
   align-items: center;
 }
 
-.footer-partners p{
+.footer-partners p {
   padding: 15px 20px;
   border: 2px solid rgba(255, 0, 0, 0.658);
   background-color: transparent;
@@ -294,7 +294,7 @@ footer p ion-icon {
   transition: 300ms;
 }
 
-.footer-partners p:hover{
+.footer-partners p:hover {
   background-color: rgba(255, 0, 0, 0.658);
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
   color: white;
@@ -302,7 +302,7 @@ footer p ion-icon {
   cursor: pointer;
 }
 
-.footer-partners-caption{
+.footer-partners-caption {
   font-weight: bolder;
   white-space: nowrap;
   text-align: center;
@@ -314,7 +314,7 @@ footer p ion-icon {
   transition: width 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 
-.footer-partners-logos{
+.footer-partners-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -337,7 +337,7 @@ footer p ion-icon {
   opacity: 1;
 }
 
-.caption-animation{
+.caption-animation {
   width: 250px;
   opacity: 1;
 }
