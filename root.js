@@ -44,7 +44,7 @@ function renderRoot(linkId) {
     },
     {
       id: "contactPageLink",
-      href: "../contactPage x/contact.html",
+      href: "../contactInfo/contact.html",
       content: "Kontakt",
     },
   ];
@@ -81,7 +81,7 @@ function renderRoot(linkId) {
     listItem.href = "../trainingSchedule x/schedule.html";
     listItem.textContent = item;
     if (item == "Krav Maga") {
-      listItem.href = "https://kravmaga-podkarpacie.pl/rzeszow-centrum/"
+      listItem.href = "https://kravmaga-podkarpacie.pl/rzeszow-centrum/";
       listItem.target = "_blank";
     }
     scheduleList.appendChild(listItem);
@@ -111,7 +111,7 @@ function renderRoot(linkId) {
       content: "Cennik",
     },
     {
-      href: "../contactPage x/contact.html",
+      href: "../contactPage/contact.html",
       content: "Kontakt",
     },
   ];
@@ -155,7 +155,7 @@ function renderRoot(linkId) {
     listItem.href = "../trainingSchedule x/schedule.html";
     listItem.textContent = item;
     if (item == "Krav Maga") {
-      listItem.href = "https://kravmaga-podkarpacie.pl/rzeszow-centrum/"
+      listItem.href = "https://kravmaga-podkarpacie.pl/rzeszow-centrum/";
       listItem.target = "_blank";
     }
     resScheduleList.appendChild(listItem);
@@ -296,13 +296,13 @@ function renderRoot(linkId) {
   footer.appendChild(partners);
 
   const partnersButton = document.createElement("p");
-  partnersButton.textContent = "Zobacz naszych partnerów"
-  partners.appendChild(partnersButton)
+  partnersButton.textContent = "Zobacz naszych partnerów";
+  partners.appendChild(partnersButton);
 
   const partnersCaption = document.createElement("span");
-  partnersCaption.classList.add("footer-partners-caption")
-  partnersCaption.textContent = "Przejdź na stronę klikając Logo"
-  partners.appendChild(partnersCaption)
+  partnersCaption.classList.add("footer-partners-caption");
+  partnersCaption.textContent = "Przejdź na stronę klikając Logo";
+  partners.appendChild(partnersCaption);
 
   let partnersTable = [
     {
@@ -362,9 +362,9 @@ function renderRoot(linkId) {
       link: "http://titum.pl/",
     },
   ];
-  const partnersLogosContainer = document.createElement("div")
-  partnersLogosContainer.classList.add("footer-partners-logos")
-  partners.appendChild(partnersLogosContainer)
+  const partnersLogosContainer = document.createElement("div");
+  partnersLogosContainer.classList.add("footer-partners-logos");
+  partners.appendChild(partnersLogosContainer);
 
   partnersTable.forEach((partner) => {
     const partnersLogos = document.createElement("img");
@@ -373,7 +373,7 @@ function renderRoot(linkId) {
     partnersLinks.href = partner.link;
     partnersLinks.target = "_blank";
     if (partner.logo == "../logos/titum.png") {
-      partnersLogos.id = "lastPartner"
+      partnersLogos.id = "lastPartner";
     }
     partnersLinks.appendChild(partnersLogos);
     partnersLogosContainer.appendChild(partnersLinks);
@@ -387,15 +387,15 @@ function renderRoot(linkId) {
 
   animationButton.addEventListener("click", () => {
     animationContainer.classList.toggle("partners-animation");
-    animationCaption.classList.toggle("caption-animation")
-    
+    animationCaption.classList.toggle("caption-animation");
+
     if (animationContainer.classList.contains("partners-animation")) {
       setTimeout(() => {
-        animationContainer.style.setProperty("height", "fit-content")
+        animationContainer.style.setProperty("height", "fit-content");
         lastPartner.scrollIntoView("behavior: 'smooth'");
-    }, 300);
-    }else{
-      animationContainer.style.setProperty("height", "60px")
+      }, 300);
+    } else {
+      animationContainer.style.setProperty("height", "60px");
     }
   });
 }

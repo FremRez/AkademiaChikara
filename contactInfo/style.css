@@ -1,0 +1,250 @@
+nav {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.61) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.contact-title {
+  position: relative;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  & img {
+    width: 100%;
+  }
+
+  & h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+  }
+}
+
+.contact-container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 70px 30px;
+  padding-bottom: 0;
+  display: grid;
+  place-items: center;
+
+  & p {
+    font-size: 25px;
+    margin: 24px 0;
+    text-align: center;
+  }
+
+  & form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+.submit-form-button {
+  margin-top: 24px;
+  font-size: 17px;
+  width: 70%;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(
+    29deg,
+    rgba(255, 0, 0, 0.692) 0%,
+    rgba(255, 0, 0, 0.705) 100%
+  );
+  border: 1px solid white;
+  font-weight: bold;
+  color: white;
+  transition: 300ms;
+}
+
+.submit-form-button:hover {
+  background: linear-gradient(
+    29deg,
+    rgba(255, 0, 128, 0.644) 0%,
+    rgba(255, 0, 0, 0.705) 100%
+  );
+  box-shadow: 0 0 10px rgba(255, 0, 64, 0.685);
+}
+
+.input-box-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-box {
+  position: relative;
+  margin: 30px;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #000000;
+}
+
+.input-box ion-icon {
+  position: absolute;
+  right: 7px;
+  bottom: 10px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.message-area {
+  width: 70%;
+  height: 59px;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  font-size: 15px;
+  max-height: 200px;
+}
+
+.message-area::-webkit-scrollbar {
+  width: 0px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin: 90px 0;
+}
+
+.info-card {
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px;
+  background-color: rgba(236, 227, 227, 0.514);
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+
+  & ion-icon {
+    top: -40px;
+    position: absolute;
+    font-size: 50px;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.692);
+    border-radius: 50px;
+    color: white;
+    backdrop-filter: blur(5px);
+  }
+
+  & h3 {
+    margin: 24px 0;
+    font-size: 24px;
+  }
+
+  & h4 {
+    font-size: 17px;
+    margin: 15px 0;
+  }
+
+  & span {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  .contact-title h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .contact-container {
+    width: 100%;
+  }
+
+  .input-box-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .input-box {
+    margin: 30px 0;
+    width: 80%;
+  }
+
+  .message-area,
+  .submit-form-button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card {
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    padding: 50px 10px;
+  }
+  .contact-title img {
+    width: 150%;
+  }
+
+  .contact-container form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-title img {
+    width: 230%;
+  }
+
+  .input-box input {
+    width: 100%;
+  }
+
+  .contact-container p {
+    font-size: 17px;
+  }
+}
