@@ -99,7 +99,7 @@ nav {
   color: #000000;
   font-size: 1em;
   pointer-events: none;
-  transition: 0.5s;
+  transition: 500ms;
 }
 
 .input-box input {
@@ -161,7 +161,11 @@ nav {
     position: absolute;
     font-size: 50px;
     padding: 20px;
-    background-color: rgba(255, 0, 0, 0.692);
+    background: linear-gradient(
+      29deg,
+      rgba(255, 0, 128, 0.644) 0%,
+      rgba(255, 0, 0, 0.705) 100%
+    );
     border-radius: 50px;
     color: white;
     backdrop-filter: blur(5px);

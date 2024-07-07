@@ -9,6 +9,7 @@ formInputs.forEach((input) => {
       if (label.nextElementSibling !== input) return;
 
       label.style.setProperty("top", "-5px");
+      label.style.setProperty("color", "red");
     });
   });
 
@@ -16,7 +17,10 @@ formInputs.forEach((input) => {
     labels.forEach((label) => {
       if (label.nextElementSibling !== input) return;
 
-      if (input.value.length == 0) label.style.setProperty("top", "50%");
+      if (input.value.length == 0) {
+        label.style.setProperty("top", "50%");
+        label.style.setProperty("color", "black");
+      }
     });
   });
 });
