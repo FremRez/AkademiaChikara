@@ -78,7 +78,7 @@ function renderRoot(linkId) {
   const scheduleListItems = ["Karate", "Krav Maga", "Grupa niepełnosprawnych"];
   scheduleListItems.forEach((item) => {
     const listItem = document.createElement("a");
-    listItem.href = "../trainingSchedule x/schedule.html";
+    listItem.href = "../trainingSchedule/schedule.html";
     listItem.textContent = item;
     if (item == "Krav Maga") {
       listItem.href = "https://kravmaga-podkarpacie.pl/rzeszow-centrum/";
@@ -111,7 +111,7 @@ function renderRoot(linkId) {
       content: "Cennik",
     },
     {
-      href: "../contactPage/contact.html",
+      href: "../contactInfo/contact.html",
       content: "Kontakt",
     },
   ];
@@ -152,7 +152,7 @@ function renderRoot(linkId) {
   ];
   resScheduleListItems.forEach((item) => {
     const listItem = document.createElement("a");
-    listItem.href = "../trainingSchedule x/schedule.html";
+    listItem.href = "../trainingSchedule/schedule.html";
     listItem.textContent = item;
     if (item == "Krav Maga") {
       listItem.href = "https://kravmaga-podkarpacie.pl/rzeszow-centrum/";

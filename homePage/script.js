@@ -256,6 +256,7 @@ const questions = [
 
 const karateInfo = () => {
   homePageContent.classList.add("hidden");
+  homePageContent.classList.remove("showAnimation");
 
   const karateInfoSection = document.createElement("section");
   karateInfoSection.classList.add("karate-info");
@@ -265,6 +266,30 @@ const karateInfo = () => {
 
   //ikonka do powrotu
   renderBackIcon(karateInfoContainer, karateInfoSection);
+
+  //tytuł
+  const infoSiteTitle = document.createElement("h1");
+  infoSiteTitle.classList.add("info-site-title");
+  infoSiteTitle.textContent = "Informacje dla nowych osób";
+  karateInfoContainer.insertAdjacentElement("afterbegin", infoSiteTitle);
+
+  //informacje dla nowych
+  const newPeopleInfoContainer = document.createElement("div");
+  newPeopleInfoContainer.classList.add("new-people-info");
+
+  const infoTitle = document.createElement("h3");
+  infoTitle.textContent = "Zapisy na treningi karate tradycyjnego";
+  newPeopleInfoContainer.insertAdjacentElement("afterbegin", infoTitle);
+
+  const infoText = document.createElement("p");
+  infoText.textContent =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea accusantium culpa aliquid delectus soluta animi magni vitae est porro. Architecto dolore fuga harum qui necessitatibus beatae nesciunt, aperiam consequuntur provident fugit quam at vero error id ad odit, numquam modi libero sunt nulla pariatur unde laudantium animi!";
+  newPeopleInfoContainer.insertAdjacentElement("beforeend", infoText);
+
+  karateInfoContainer.insertAdjacentElement(
+    "beforeend",
+    newPeopleInfoContainer
+  );
 
   //podstawowe info
   const basicInfo = document.createElement("div");
