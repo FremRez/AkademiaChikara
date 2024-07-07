@@ -32,4 +32,24 @@ messageArea.addEventListener("input", (e) => {
   messageArea.style.setProperty("height", `${scrollHeight}px`);
 });
 
+const subButton = document.querySelector(".submit-form-button");
+const inputsToClear = document.querySelectorAll(".clear-input");
+
+subButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  let inputValue = true;
+  inputsToClear.forEach((input) => {
+    if (input.value.length == 0) inputValue = false;
+  });
+
+  if (inputValue) {
+    setTimeout(() => {
+      inputsToClear.forEach((input) => {
+        input.value = "";
+      });
+    }, 200);
+    document.querySelector("form").submit();
+  }
+});
+
 renderRoot("contactPageLink");

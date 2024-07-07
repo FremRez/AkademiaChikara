@@ -24,22 +24,22 @@ function renderRoot(linkId) {
   const navbarLinksTable = [
     {
       id: "homePageLink",
-      href: "../homePage x/homepage.html",
+      href: "../homePage/homepage.html",
       content: "Strona główna",
     },
     {
       id: "newsPageLink",
-      href: "../newsPage x/newspage.html",
+      href: "../newsPage/newspage.html",
       content: "Aktualności",
     },
     {
       id: "campPageLink",
-      href: "../campPage x/camp.html",
+      href: "../campPage/camp.html",
       content: "Obozy i półkolonie",
     },
     {
       id: "pricingPageLink",
-      href: "../pricingPage x/pricing.html",
+      href: "../pricingPage/pricing.html",
       content: "Cennik",
     },
     {
@@ -95,19 +95,19 @@ function renderRoot(linkId) {
 
   const navbarResponsiveLinksTable = [
     {
-      href: "../homePage x/homepage.html",
+      href: "../homePage/homepage.html",
       content: "Strona główna",
     },
     {
-      href: "../newsPage x/newspage.html",
+      href: "../newsPage/newspage.html",
       content: "Aktualności",
     },
     {
-      href: "../campPage x/camp.html",
+      href: "../campPage/camp.html",
       content: "Obozy i półkolonie",
     },
     {
-      href: "../pricingPage x/pricing.html",
+      href: "../pricingPage/pricing.html",
       content: "Cennik",
     },
     {
