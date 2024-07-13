@@ -4,6 +4,18 @@ const enterSiteButton = document.querySelector("#enter-site-button");
 const enterSiteContent = document.querySelector(".enter-site");
 const homePageContent = document.querySelector(".homePage-start-content");
 enterSiteButton.addEventListener("click", () => {
+  if (window.innerWidth > 1600) {
+    window.scrollTo({
+      top: 930,
+      behaviour: "smooth",
+    });
+  } else {
+    window.scrollTo({
+      top: 850,
+      behaviour: "smooth",
+    });
+  }
+
   setTimeout(() => {
     enterSiteContent.remove();
   }, 600);
@@ -274,17 +286,56 @@ const karateInfo = () => {
   karateInfoContainer.insertAdjacentElement("afterbegin", infoSiteTitle);
 
   //informacje dla nowych
+  const needToKnowArray = [
+    {
+      title: "Korzyści zdrowotne płynące z treningu karate",
+      text: "Poprawa parametrów wydolności i sprawności organizmu, lepsza regeneracja, wzmocnienie odporności, elastyczność i wzmocnienie mięśni i stawów, korekcja wad postawy, wzmocnienie mięśni posturalnych",
+    },
+
+    {
+      title: "Korzyści mentalne",
+      text: "Lepsza samoocena i odpowiedzialność, dyscyplina i pewność siebie, odpowiedzialność i empatia, determinacja i umiejętność radzenia sobie z niepowodzeniami, nabieranie kompetencji społecznych, szacunek",
+    },
+
+    {
+      title: "Jak przygotować się na trening",
+      text: "Pozytywne nastawienie i otwartość na nowe doświadczenia, odpowiedni strój nie krępujący ruchów (na początek koszulka i spodenki), napój (najlepiej woda niegazowana)",
+    },
+
+    {
+      title: "Jak wygląda zapis",
+      text: "Przychodzimy na pierwszy trening, który jest bezpłatny. Przed i po zajęciach mamy możliwość rozmowy z trenerem. Zapisujemy nowego karateke w naszym biurze",
+    },
+
+    {
+      title: "Jak możemy zdobywać pasy w karate?",
+      text: "Nasza akademia należy do Polskiej Unii Karate Tradycyjnego, w której prowadzone są egzaminy na stopnie uczniowskie. Egzaminy nasza akademia przeprowadza dwa razy w roku. Karateka ma możliwość założenia własnego konta w systemie PUKT, dzięki któremu mamy możlowość zapisu na wszelkiego rodzaju aktywności klubowe i związkowe, w tym egzaminy",
+    },
+  ];
+
   const newPeopleInfoContainer = document.createElement("div");
   newPeopleInfoContainer.classList.add("new-people-info");
 
   const infoTitle = document.createElement("h3");
-  infoTitle.textContent = "Zapisy na treningi karate tradycyjnego";
+  infoTitle.textContent =
+    "Co należy wiedzieć przed rozpoczęciem treningów karate".toUpperCase();
   newPeopleInfoContainer.insertAdjacentElement("afterbegin", infoTitle);
 
-  const infoText = document.createElement("p");
-  infoText.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea accusantium culpa aliquid delectus soluta animi magni vitae est porro. Architecto dolore fuga harum qui necessitatibus beatae nesciunt, aperiam consequuntur provident fugit quam at vero error id ad odit, numquam modi libero sunt nulla pariatur unde laudantium animi!";
-  newPeopleInfoContainer.insertAdjacentElement("beforeend", infoText);
+  const needToKnow = document.createElement("div");
+  needToKnow.classList.add("need-to-know");
+
+  needToKnowArray.forEach((item) => {
+    const itemTitle = document.createElement("h4");
+    itemTitle.textContent = item.title.toUpperCase();
+
+    const itemText = document.createElement("p");
+    itemText.textContent = item.text;
+
+    needToKnow.insertAdjacentElement("beforeend", itemTitle);
+    needToKnow.insertAdjacentElement("beforeend", itemText);
+  });
+
+  newPeopleInfoContainer.insertAdjacentElement("beforeend", needToKnow);
 
   karateInfoContainer.insertAdjacentElement(
     "beforeend",

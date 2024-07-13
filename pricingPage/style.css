@@ -1,14 +1,13 @@
 .pricing-content-wrapper {
-  padding: 60px 40px;
+  padding: 40px;
   max-width: 1450px;
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 100px auto;
   display: grid;
   place-items: center;
 
   & h2 {
     font-size: 50px;
-    margin: 100px 0 50px 0;
+    margin: 150px 0 50px 0;
     text-align: center;
   }
 }
@@ -19,7 +18,7 @@
 }
 
 .prices-image {
-  width: 80%;
+  width: 70%;
   margin-top: 80px;
 }
 
@@ -93,6 +92,18 @@
 .animation {
   width: 75px;
   opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .prices-image {
+    width: 90%;
+  }
+
+  .pricing-content-wrapper {
+    & h2 {
+      margin-top: 100px;
+    }
+  }
 }
 
 @media (max-width: 700px) {

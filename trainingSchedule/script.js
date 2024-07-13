@@ -9,14 +9,18 @@ buttonsArr.forEach((button) => {
       schedule.classList.add("hidden");
       headerArr.forEach((h, i) => {
         if (index == i) {
-          if (
-            h.textContent.replace(/\s+/g, "") ==
-            button.textContent.replace(/\s+/g, "")
-          ) {
-            schedule.classList.remove("hidden");
-            schedule.classList.add("showAnimation");
+          if (h.textContent.trim() !== button.textContent.trim()) return;
+          schedule.classList.remove("hidden");
+          schedule.classList.add("showAnimation");
+
+          if ((window.innerWidth < 1200) & (window.innerWidth > 550)) {
             window.scrollTo({
-              top: 500,
+              top: 750,
+              behaviour: "smooth",
+            });
+          } else {
+            window.scrollTo({
+              top: 550,
               behaviour: "smooth",
             });
           }

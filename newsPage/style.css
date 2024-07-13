@@ -9,7 +9,7 @@ body {
 .news-content {
   padding: 40px;
   max-width: 1450px;
-  margin: 70px auto;
+  margin: 100px auto;
 
   & h1 {
     font-size: 60px;

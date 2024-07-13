@@ -88,11 +88,7 @@ button:hover {
   backdrop-filter: blur(20px);
   cursor: pointer;
   transition: 400ms;
-
-  & a {
-    text-decoration: none;
-    color: white;
-  }
+  color: white;
 }
 
 #enter-site-button:hover {
@@ -102,7 +98,8 @@ button:hover {
 
 /*---------ABOUT US HOME PAGE---------*/
 main {
-  padding: 60px 30px 30px 30px;
+  padding: 30px;
+  margin: 100px 0;
 }
 
 #homepage-about-us {
@@ -189,7 +186,7 @@ main {
 /*---------ABOUT US---------*/
 .about-us {
   padding: 40px;
-  margin-top: 50px;
+  margin: 100px 0;
   position: relative;
 }
 
@@ -317,7 +314,7 @@ main {
 /*---------KARATE INFO---------*/
 .karate-info {
   padding: 40px;
-  margin-top: 50px;
+  margin: 100px 0;
   position: relative;
   background: rgb(200, 200, 200);
   background: linear-gradient(
@@ -346,10 +343,20 @@ main {
   & h3 {
     font-size: 35px;
   }
+}
+
+.need-to-know {
+  padding: 10px;
+
+  & h4 {
+    font-size: 22px;
+    color: rgba(255, 0, 0, 0.692);
+    margin-top: 50px;
+  }
 
   & p {
-    font-size: 20px;
-    margin: 24px 0;
+    font-size: 18px;
+    margin: 10px;
   }
 }
 
@@ -481,6 +488,16 @@ main {
   }
 }
 
+@media (max-width: 1430px) {
+  #homepage-about-us {
+    padding-top: 50px;
+  }
+
+  .basic-information img {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   /*---------ABOUT US HOME PAGE---------*/
   #homepage-about-us {
@@ -494,10 +511,6 @@ main {
   }
 
   /*---------KARATE INFO---------*/
-  .basic-information img {
-    display: none;
-  }
-
   .dojo-kun-dsc {
     grid-template-columns: 1fr;
 
@@ -588,18 +601,18 @@ main {
   }
 
   /*---------ABOUT US---------*/
+  .about-us-title {
+    grid-template-columns: 90px 1fr 90px;
+  }
   .about-us-title img {
     width: 30px;
-  }
-
-  .about-us-title h1 {
-    font-size: 30px;
   }
 
   /*---------KARATE INFO---------*/
   .karate-info-content {
     padding: 0;
   }
+
   .basic-information {
     padding: 30px;
     & h3 {
@@ -620,8 +633,13 @@ main {
     width: 100%;
   }
 
+  .faq {
+    padding: 30px 10px;
+  }
+
   .question-container {
-    padding: 25px;
+    padding: 40px 25px;
+    text-align: center;
     & h4 {
       font-size: 20px;
     }
