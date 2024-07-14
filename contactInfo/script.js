@@ -43,12 +43,12 @@ subButton.addEventListener("click", (e) => {
   });
 
   if (inputValue) {
+    document.querySelector("form").submit();
     setTimeout(() => {
       inputsToClear.forEach((input) => {
         input.value = "";
       });
     }, 200);
-    document.querySelector("form").submit();
   }
 });
 
