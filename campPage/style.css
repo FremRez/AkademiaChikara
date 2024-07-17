@@ -1,119 +1,118 @@
-.title-container{
-    position: relative;
-    & img{
-        height: 100vh;
-        width: 100vw;
-    }
+.title-container {
+  position: relative;
+  & img {
+    height: 100vh;
+    width: 100vw;
+  }
 }
-.title-container div{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    color: white;
+.title-container div {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
 
-    & h1 {
-        font-size: 60px;
-    }
-    & p {
-        margin: 30px;
-        font-size: 20px;
-    }
-    & button{
-        font-size: 20px;
-        background-color: transparent;
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 10px 30px;
-        border: 3px solid rgba(255, 255, 255, 0.500);
-        color: white;
-    }
-    & button:hover{
-        scale: 1.05;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.705);
-        transition: 300ms;
-        cursor: pointer;
-    }
-}
-
-.images-section{
-    margin: 100px auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-}
-
-.images-section div{
-    text-align: center;
-    padding: 100px;
-}
-
-.images-section img{
-    width: 100%;
-}
-
-video{
-    width: 80%;
-}
-
-
-.image-container{
-    margin: 100px 0;
+  & h1 {
+    font-size: 60px;
+  }
+  & p {
+    margin: 30px;
+    font-size: 20px;
+  }
+  & button {
+    font-size: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     border-radius: 15px;
-    overflow: hidden;
-    border: 1px solid rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    transition: scale 300ms, border 300ms;
+    padding: 10px 30px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    transition: 300ms;
+  }
+  & button:hover {
+    scale: 1.05;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.705);
+    cursor: pointer;
+  }
+}
 
-    & p{
-        font-size: 20px;
-        place-items: center;
-        padding: 50px;
-    }
+.images-section {
+  margin: 100px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.images-section div {
+  text-align: center;
+  padding: 100px;
+}
+
+.images-section img {
+  width: 100%;
+}
+
+video {
+  width: 80%;
+}
+
+.image-container {
+  margin: 100px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  transition: scale 300ms, border 300ms;
+
+  & p {
+    font-size: 20px;
+    place-items: center;
+    padding: 50px;
+  }
 }
 .camp-image {
-    position: relative;
-    width: 100%;
-    background: url('images/camps1.jpg') no-repeat center center;
-    background-size: cover;
+  position: relative;
+  width: 100%;
+  background: url("images/camps1.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .camp-image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
 }
-.image-container:hover{
-    scale: 1.03;
-    border: 1px solid rgb(255, 0, 0);
+.image-container:hover {
+  scale: 1.03;
+  border: 1px solid rgb(255, 0, 0);
 }
 
+.camp-registration {
+  padding: 15px 20px;
+  border: 2px solid rgba(255, 0, 0, 0.658);
+  background-color: transparent;
+  border-radius: 10px;
+  color: rgba(255, 0, 0, 0.719);
+  backdrop-filter: blur(10px);
+  font-weight: bolder;
+  transition: 300ms;
+}
 
-
-
-
-.camp-registration{
-    padding: 15px 20px;
-    border: 2px solid rgba(255, 0, 0, 0.658);
-    background-color: transparent;
-    border-radius: 10px;
-    color: rgba(255, 0, 0, 0.719);
-    backdrop-filter: blur(10px);
-    font-weight: bolder;
-    transition: 300ms;
-  }
-  
-  .camp-registration:hover {
-    background-color: rgba(255, 0, 0, 0.658);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
-    color: white;
-    scale: 1.05;
-    cursor: pointer;
-  }
+.camp-registration:hover {
+  background-color: rgba(255, 0, 0, 0.658);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
+  color: white;
+  scale: 1.05;
+  cursor: pointer;
+}
