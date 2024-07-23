@@ -1,3 +1,39 @@
+// {
+//   "name": "p",
+//   "text": "Lorem ipsum dolor",
+//   "fontSize": "24px",
+//   "fontWeight": 500,
+//   "textAlign": "center",
+//   "color": "green"
+// },
+
+// {
+//   "name": "ul",
+//   "text": ["listItem1", "listItem2"],
+//   "fontSize": "20px",
+//   "fontWeight": 500,
+//   "color": "black",
+//   "listStyleType": "disc",
+//   "placeSelf": "center"
+// },
+
+// {
+//   "name": "img",
+//   "src": "images/post-images/pxfuel (7).jpg",
+//   "width": "80%",
+//   "placeSelf": "center"
+// },
+
+// {
+//   "name": "ol",
+//   "text": ["akademia", "sportu", "chikara", "rzeszow"],
+//   "fontSize": "30px",
+//   "fontWeight": 400,
+//   "color": "red",
+//   "listStyleType": "decimal",
+//   "placeSelf": "end"
+// },
+
 import renderRoot from "../root.js";
 class Post {
   constructor(title, imgSrc, content) {
@@ -32,7 +68,7 @@ class Post {
 
     const shortText = templateCopy.querySelector(".news-short-text");
     for (let i = 0; i < this.content.length; i++) {
-      if (!this.content[i].name == "p") continue;
+      if (this.content[i].name !== "p") continue;
 
       if (this.content[i].text.split("").length < 50) {
         shortText.textContent = this.content[i].text;

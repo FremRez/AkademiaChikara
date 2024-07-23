@@ -1,11 +1,11 @@
 [
   {
-    "title": "cool post title ;3:3;3:3",
-    "img": "images/post-images/pxfuel (7).jpg",
+    "title": "Harmonogram aktywności Akademii",
+    "img": "images/post-images/post-1.png",
     "content": [
       {
         "name": "p",
-        "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+        "text": "Przedstawiamy Harmonogram Najważniejszych Aktywności naszej Aktywności w pierwszym półroczu 2024 roku 🙂",
         "fontSize": "24px",
         "fontWeight": 500,
         "textAlign": "center",
@@ -13,50 +13,31 @@
       },
 
       {
-        "name": "p",
-        "text": "Lorem ipsum dolor",
-        "fontSize": "24px",
-        "fontWeight": 500,
-        "textAlign": "center",
-        "color": "green"
-      },
-
-      {
-        "name": "ul",
-        "text": ["listItem1", "listItem2"],
-        "fontSize": "20px",
-        "fontWeight": 500,
-        "color": "blue",
-        "listStyleType": "circle",
-        "placeSelf": "center"
-      },
-
-      {
         "name": "img",
-        "src": "images/post-images/pxfuel (7).jpg",
+        "src": "images/post-images/post-1.png",
         "width": "80%",
         "placeSelf": "center"
-      },
-
-      {
-        "name": "p",
-        "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
-        "fontSize": "30px",
-        "fontWeight": 500,
-        "textAlign": "center",
-        "color": "violet"
       }
     ]
   },
 
   {
-    "title": "second cool post",
-    "img": "images/post-images/pxfuel (8).jpg",
+    "title": "Obozy letnie 2024",
+    "img": "images/post-images/post-2.jpg",
     "content": [
       {
         "name": "p",
-        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "text": "Trwają zapisy na obozy letnie 2024 z Akademią Sportu Chikara ☀️😎",
         "fontSize": "24px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "red"
+      },
+
+      {
+        "name": "p",
+        "text": "Niezapomniana przygoda podczas 2 turnusów, ❗❗ ilość miejsc na obozy ograniczona ❗❗",
+        "fontSize": "20px",
         "fontWeight": 500,
         "textAlign": "center",
         "color": "black"
@@ -64,26 +45,25 @@
 
       {
         "name": "p",
-        "text": "Lorem ipsum dolor",
-        "fontSize": "24px",
+        "text": "Aby nie przegapić miejsca nie zwlekaj i zapisz się już dziś 🏃🏃🏃",
+        "fontSize": "20px",
         "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "W razie pytań prosimy o kontakt: 781 231 014",
+        "fontSize": "18px",
+        "fontWeight": 600,
         "textAlign": "center",
         "color": "green"
       },
 
       {
-        "name": "ul",
-        "text": ["listItem1", "listItem2"],
-        "fontSize": "20px",
-        "fontWeight": 500,
-        "color": "black",
-        "listStyleType": "disc",
-        "placeSelf": "center"
-      },
-
-      {
         "name": "img",
-        "src": "images/post-images/pxfuel (7).jpg",
+        "src": "images/post-images/post-2.jpg",
         "width": "80%",
         "placeSelf": "center"
       }
@@ -91,12 +71,12 @@
   },
 
   {
-    "title": "cool post title",
-    "img": "images/post-images/pxfuel (10).jpg",
+    "title": "Eliminacje do Mistrzostw Polski",
+    "img": "images/post-images/post-3.png",
     "content": [
       {
         "name": "p",
-        "text": "Lorem ipsum dolor",
+        "text": "Zawodnicy, Kadrowicze oraz Wszyscy chętni którzy będą chcieli wystąpić w tegorocznych Mistrzostwach Polski Polskiej Unii Karate Tradycyjnego w Łodzi 19-21 kwietnia 🥋🏆",
         "fontSize": "24px",
         "fontWeight": 500,
         "textAlign": "start",
@@ -105,58 +85,65 @@
 
       {
         "name": "p",
-        "text": "Lorem ipsum dolor",
+        "text": "6 marca w Sobotę odbędą się Klubowe Eliminacje Akademii Sportu Chikara 🥋💯",
         "fontSize": "24px",
         "fontWeight": 500,
         "textAlign": "center",
-        "color": "green"
+        "color": "grey"
       },
 
       {
-        "name": "ul",
-        "text": ["listItem1", "listItem2"],
-        "fontSize": "20px",
+        "name": "p",
+        "text": "Udział w turnieju jest daje kwalifikacje na Mistrzostwa, obecność obowiązkowa dla chcących wystartować ❗❗❗",
+        "fontSize": "24px",
         "fontWeight": 500,
-        "color": "black",
-        "listStyleType": "disc",
-        "placeSelf": "center"
+        "textAlign": "center",
+        "color": "red"
       },
 
       {
         "name": "img",
-        "src": "images/post-images/pxfuel (7).jpg",
-        "width": "80%",
+        "src": "images/post-images/post-3.png",
+        "width": "60%",
         "placeSelf": "center"
       },
 
       {
-        "name": "ol",
-        "text": ["akademia", "sportu", "chikara", "rzeszow"],
-        "fontSize": "30px",
+        "name": "ul",
+        "text": [
+          "Koszt udziału w eliminacjach: bezpłatnie",
+          "Miejsce: Rzeszów ul. Hanasiewicza 10",
+          "Harmonogram:"
+        ],
+        "fontSize": "25px",
+        "fontWeight": 400,
+        "color": "black",
+        "listStyleType": "disc",
+        "placeSelf": "start"
+      },
+
+      {
+        "name": "ul",
+        "text": [
+          "Godzina 9.00 kategorie dzieci: grupa A ( roczniki 2017 i młodsze, grupa B ( roczniki 2016-2015 ), grupa C ( roczniki 2014-2013 ) , grupa D ( roczniki 2012-2011 )",
+          "Godzina 10.30 pozostałe kategorie: Junior Młodszy ( roczniki 2010-2009 od 6 kyu ), Junior ( roczniki 2008-2007 od 5 kyu ), Młodzieżowiec ( roczniki 2006-2004 od 3 kyu ), Senior ( roczniki 2003 i starsi od 3 kyu )"
+        ],
+        "fontSize": "20px",
         "fontWeight": 400,
         "color": "red",
-        "listStyleType": "decimal",
-        "placeSelf": "end"
-      },
-
-      {
-        "name": "p",
-        "text": "Lorem ipsum dolor",
-        "fontSize": "24px",
-        "fontWeight": 500,
-        "textAlign": "center",
-        "color": "green"
+        "listStyleType": "circle",
+        "placeSelf": "center"
       }
     ]
   },
 
   {
-    "title": "second cool post",
-    "img": "images/post-images/pxfuel (9).jpg",
+    "title": "Informacja MP",
+    "img": "images/post-images/post-4.png",
     "content": [
       {
         "name": "p",
-        "text": "Lorem ipsum dolor",
+        "text": "Zawodnicy startujący w Mistrzostwa Polski w Karate Tradycyjnym – Łódź 2024 którzy zgłosili swój udział w biurze Akademii proszeni są najpóźniej do wtorku 26 marca o:",
         "fontSize": "24px",
         "fontWeight": 500,
         "textAlign": "center",
@@ -164,8 +151,22 @@
       },
 
       {
+        "name": "ul",
+        "text": [
+          "👉 Umieszczenie zdjęcia profilowego na swoim profilu w systemie PUKT",
+          "👉 sprawdzenie aktualnej licencji członkowskiej PUKT ( 50 zł na rok )",
+          "👉 Dokonanie przelewu opłaty startowej na konto klubu 14175000120000000032172326 bank BNP odbiorca Akademia Sportu Chikara Rzeszów"
+        ],
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "color": "black",
+        "listStyleType": "none",
+        "placeSelf": "center"
+      },
+
+      {
         "name": "p",
-        "text": "Lorem ipsum dolor",
+        "text": "✅ Opłaty startowe:",
         "fontSize": "24px",
         "fontWeight": 500,
         "textAlign": "center",
@@ -174,17 +175,31 @@
 
       {
         "name": "ul",
-        "text": ["listItem1", "listItem2"],
+        "text": [
+          "👉 konkurencja indywidualna: 150 zł",
+          "👉 druga konkurencja indywidualna 50 zł",
+          "👉 Kata drużynowe: 50 zł od osoby",
+          "👉 En Bu: 75 zł od osoby"
+        ],
         "fontSize": "20px",
         "fontWeight": 500,
         "color": "black",
-        "listStyleType": "disc",
+        "listStyleType": "none",
         "placeSelf": "center"
       },
 
       {
+        "name": "p",
+        "text": "Klub dokonuje zgłoszeń na Mistrzostwa do 31 marca zgodnie z cennikiem I terminu zgłoszeń 💥 ( Po tym terminie opłaty startowe wzrosną wg. regulaminu zawodów ) ❗❗❗❗",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "red"
+      },
+
+      {
         "name": "img",
-        "src": "images/post-images/pxfuel (7).jpg",
+        "src": "images/post-images/post-4.png",
         "width": "80%",
         "placeSelf": "center"
       }
@@ -192,12 +207,12 @@
   },
 
   {
-    "title": "cool post title",
-    "img": "images/post-images/MPKT2024-Insta-stories-edited_1.png",
+    "title": "Egzaminy Uczniowskie",
+    "img": "images/post-images/post-5.jpg",
     "content": [
       {
         "name": "p",
-        "text": "Lorem ipsum dolor",
+        "text": "15 czerwca odbędą się w naszej Akademia Sportu Chikara Egzaminy Uczniowskie na wyższe pasy KYU",
         "fontSize": "24px",
         "fontWeight": 500,
         "textAlign": "center",
@@ -206,26 +221,43 @@
 
       {
         "name": "p",
-        "text": "Lorem ipsum dolor",
+        "text": "Zapisy i opłata egzaminacyjna przez System PUKT ( konto karateki )",
         "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Informacje dodatkowe: Osoby zdające na pasy od 8 kyu ( żółty pas ) włącznie aby przystąpić do egzaminu wymagana jest opłacona licencja członkowska PUKT ( koszt 50 zł na rok ) Płatne przez własny profil PUKT",
+        "fontSize": "20px",
         "fontWeight": 500,
         "textAlign": "center",
         "color": "green"
       },
 
       {
-        "name": "ul",
-        "text": ["listItem1", "listItem2"],
-        "fontSize": "20px",
+        "name": "p",
+        "text": "Zapisy na Egzaminy w systemie są już otwarte natomiast kończą się 13 czerwca o godzinie 10.00",
+        "fontSize": "24px",
         "fontWeight": 500,
-        "color": "black",
-        "listStyleType": "disc",
-        "placeSelf": "center"
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Godziny egzaminów bliżej terminu",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "red"
       },
 
       {
         "name": "img",
-        "src": "images/post-images/pxfuel (7).jpg",
+        "src": "images/post-images/post-5.jpg",
         "width": "60%",
         "placeSelf": "center"
       }
@@ -233,12 +265,12 @@
   },
 
   {
-    "title": "second cool post",
-    "img": "images/post-images/pxfuel (8).jpg",
+    "title": "Harmonogram treningów w ostatnim tygodniu czerwca",
+    "img": "images/post-images/post-6.jpg",
     "content": [
       {
         "name": "p",
-        "text": "Lorem ipsum dolor",
+        "text": "W tym roku regularne treningi trwają do końca czerwca.",
         "fontSize": "24px",
         "fontWeight": 500,
         "textAlign": "center",
@@ -247,27 +279,182 @@
 
       {
         "name": "p",
-        "text": "Lorem ipsum dolor",
-        "fontSize": "24px",
+        "text": "W związku z wyjazdem na Obóz do Krasnobrodu harmonogram zajęć ostatniego tygodnia czerwca ulegnie zmianie.",
+        "fontSize": "20px",
         "fontWeight": 500,
         "textAlign": "center",
-        "color": "green"
+        "color": "black"
       },
 
       {
-        "name": "ul",
-        "text": ["listItem1", "listItem2"],
+        "name": "p",
+        "text": "Treningi będą odbywać się w Dojo centralnym na Hanasiewicza 10 w Rzeszowie na które zapraszamy grupy z Krasnego , Białobrzeg i SP3",
         "fontSize": "20px",
         "fontWeight": 500,
-        "color": "black",
-        "listStyleType": "disc",
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Zapraszamy do Aktywności również w Lipcu w ramach Letniej Akademii",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "red"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/post-6.1.png",
+        "width": "80%",
         "placeSelf": "center"
       },
 
       {
         "name": "img",
-        "src": "images/post-images/pxfuel (7).jpg",
-        "width": "100%",
+        "src": "images/post-images/post-6.2.png",
+        "width": "80%",
+        "placeSelf": "center"
+      }
+    ]
+  },
+
+  {
+    "title": "Letnia Akademia - treningi w lipcu",
+    "img": "images/post-images/post-7.png",
+    "content": [
+      {
+        "name": "img",
+        "src": "images/post-images/post-7.png",
+        "width": "70%",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "p",
+        "text": "W Lipcu treningi w naszej Akademii będą odbywać się w każdy Wtorek i Czwartek o godzinie 18.00",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Start Letniej Akademii 2 lipca – Zakończenie 30 lipca",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/post-7.1.png",
+        "width": "80%",
+        "placeSelf": "center"
+      },
+
+      {
+        "name": "p",
+        "text": "Podział na 2 sale treningowe według stopni uczniowskich",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Prowadzący: Sensei Dawid, Sensei Tymoteusz, Sensei Piotr, Sensei Marek, Sensei Agnieszka",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+      {
+        "name": "p",
+        "text": "Miesiąc sierpień - Wolne od zajęć",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "red"
+      },
+
+      {
+        "name": "p",
+        "text": "Regularne treningi wracają od 2 września 2024",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "red"
+      }
+    ]
+  },
+
+  {
+    "title": "Wyjazd na Obóz do Krasnobrodu",
+    "img": "images/post-images/post-8.jpg",
+    "content": [
+      {
+        "name": "p",
+        "text": "Karatecy już w najbliższa sobotę wyruszamy na pierwszy tych Wakacji Obóz z Akademia Sportu Chikara",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Ośrodek wypoczynkowy 'U Buzunów’ Krasnobród",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Zbiórka 9.45 pod Akademią Chikara ul. Hanasiewicza 10 Rzeszów",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Oprócz bagaży prosimy zabrać ze sobą Duuużo Uśmiechu oraz Pozytywną Energię",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Do zobaczenia",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "red"
+      },
+
+      {
+        "name": "p",
+        "text": "Oss",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "red"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/post-8.jpg",
+        "width": "80%",
         "placeSelf": "center"
       }
     ]
