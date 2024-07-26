@@ -15,10 +15,6 @@ enterSiteButton.addEventListener("click", () => {
       behaviour: "smooth",
     });
   }
-
-  setTimeout(() => {
-    enterSiteContent.remove();
-  }, 600);
 });
 
 const renderBackIcon = (container, removeSection) => {
