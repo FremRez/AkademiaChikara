@@ -1,24 +1,12 @@
 import renderRoot from "../root.js";
 
 const enterSiteButton = document.querySelector("#enter-site-button");
-const enterSiteContent = document.querySelector(".enter-site");
+const scrollTarget = document.querySelector(".scroll");
 const homePageContent = document.querySelector(".homePage-start-content");
 enterSiteButton.addEventListener("click", () => {
-  if (window.innerWidth > 1600) {
-    window.scrollTo({
-      top: 930,
-      behaviour: "smooth",
-    });
-  } else {
-    window.scrollTo({
-      top: 850,
-      behaviour: "smooth",
-    });
-  }
-
-  setTimeout(() => {
-    enterSiteContent.remove();
-  }, 600);
+  scrollTarget.scrollIntoView({
+    behavior: 'smooth'
+  });
 });
 
 const renderBackIcon = (container, removeSection) => {
@@ -29,9 +17,8 @@ const renderBackIcon = (container, removeSection) => {
     removeSection.remove();
     homePageContent.classList.remove("hidden");
     homePageContent.classList.add("showAnimation");
-    window.scrollTo({
-      top: 0,
-      behaviour: "smooth",
+    scrollTarget.scrollIntoView({
+      behavior: 'smooth'
     });
   });
   container.insertAdjacentElement("afterbegin", backIcon);
