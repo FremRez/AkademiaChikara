@@ -1,11 +1,11 @@
 import renderRoot from "../root.js";
 
 const enterSiteButton = document.querySelector("#enter-site-button");
-const scrollTarget = document.querySelector(".scroll");
+const scrollTarget = document.querySelector("main");
 const homePageContent = document.querySelector(".homePage-start-content");
 enterSiteButton.addEventListener("click", () => {
   scrollTarget.scrollIntoView({
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 });
 
@@ -18,7 +18,7 @@ const renderBackIcon = (container, removeSection) => {
     homePageContent.classList.remove("hidden");
     homePageContent.classList.add("showAnimation");
     scrollTarget.scrollIntoView({
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
   container.insertAdjacentElement("afterbegin", backIcon);
@@ -238,7 +238,6 @@ const questions = [
   new Question(
     "Jak długo trwa, aby osiągnąć czarny pas?",
     "Zdobycie czarnego pasa w karate tradycyjnym zwykle zajmuje od 4 do 6 lat regularnego treningu, w zależności od stylu karate, częstotliwości treningów oraz postępów ucznia. Proces ten obejmuje opanowanie technik, kata i uczestnictwo w egzaminach na kolejne stopnie zaawansowania."
-
   ),
   new Question(
     "Czym różni się karate tradycyjne od innych stylów karate?",
