@@ -1,4 +1,4 @@
-.title-container{
+.title-container {
   background-image: url(images/background.jpg);
   text-align: center;
   color: white;
@@ -37,17 +37,18 @@
 }
 
 .current-events-container {
-  margin: 100px 0;
+  margin-top: 100px;
 
   & h1 {
     font-size: 40px;
+    margin-bottom: 30px;
   }
-  & p{
-    padding: 50px;
+  & p {
+    padding: 50px 0;
     font-weight: bold;
     text-align: center;
-    font-size: 40px;
-    color: rgba(255, 0, 0, 0.700);
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.7);
   }
 }
 
@@ -199,7 +200,8 @@
 }
 
 .images-fan-section {
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
@@ -207,7 +209,7 @@
 
 .images-fan-section div {
   text-align: center;
-  padding: 100px;
+  padding: 50px;
 
   & p {
     margin-top: 24px;
@@ -219,7 +221,7 @@
 }
 
 .scrolling-images {
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   position: relative;
 }
@@ -256,66 +258,76 @@
   width: 30%;
 }
 
-.gradient-mask {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.gradient-mask img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-container {
-  margin: 100px 0;
-  border-radius: 15px;
-  overflow: hidden;
-  border: 1px solid rgb(0, 0, 0);
+.camp-content-bottom-section {
   display: grid;
-  place-items: center;
   grid-template-columns: 1fr 1fr;
-  transition: scale 300ms, border 300ms;
-  position: relative;
+  max-width: 70vw;
+  margin: 100px auto;
+  place-items: center;
+  text-align: center;
+  border: 1px solid black;
+  overflow: hidden;
+  border-radius: 30px;
+  transition: 500ms;
+}
 
-  & p {
-    font-size: 19px;
-    place-items: center;
-    padding: 25px;
+.camp-content-bottom-section:hover {
+  border: 1px solid red;
+  scale: 1.03;
+}
+
+.camp-content-text {
+  padding: 70px;
+  font-size: 20px;
+
+  & h3 {
+    margin-bottom: 24px;
+    font-size: 30px;
   }
 }
 
-.camp-image {
-  position: relative;
-}
-
-.camp-image img{
-  width: 100%;
-}
-
-.camp-image::before {
-  content: '';
+.gradient {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, white, transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 10;
 }
 
-.image-container:hover {
-  scale: 1.03;
-  border: 1px solid rgb(255, 0, 0);
+.camp-content-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  & img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 }
 
-.hidden{
+.img-container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.hidden {
   display: none;
 }
 
 @media (max-width: 1250px) {
-  .title-container{
+  .title-container {
     padding: 150px;
   }
 
@@ -327,7 +339,7 @@
     padding: 0 200px;
   }
 
-  .event-details h1{
+  .event-details h1 {
     font-size: 35px;
   }
 
@@ -343,20 +355,25 @@
     width: 70%;
   }
 
-  .images-fan-section{
+  .images-fan-section {
     grid-template-columns: 1fr;
+    padding: 50px 0;
+
+    & div {
+      padding: 50px 0;
+    }
   }
 
   .images-fan-section img {
     width: 80%;
   }
 
-  .images-fan-section div h1{
+  .images-fan-section div h1 {
     font-size: 40px;
   }
 
   .scrolling-images {
-    height: 400px;
+    height: 500px;
   }
 
   .image1 {
@@ -380,30 +397,35 @@
     width: 30%;
   }
 
-  .image-container {
+  .camp-content-bottom-section {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
-  .image-container p{
-    padding: 75px;
+  .camp-content-text {
+    padding-top: 50px;
   }
 
-  .camp-image::before {
-    background: linear-gradient(to bottom, white, transparent);
+  .camp-content-img img {
+    height: 150%;
+  }
+
+  .gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 5%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 }
 
 @media (max-width: 1000px) {
-  .title-container h1{
+  .title-container h1 {
     font-size: 50px;
   }
 
   .current-events {
     padding: 0 100px;
-  }
-
-  .scrolling-images {
-    height: 400px;
   }
 
   .event-details {
@@ -417,20 +439,26 @@
   }
 }
 
+@media (max-width: 900px) {
+  .camp-content-img img {
+    height: 100%;
+  }
+}
+
 @media (max-width: 800px) {
-  .title-container{
+  .title-container {
     padding: 125px 75px;
   }
 
-  .title-container h1{
+  .title-container h1 {
     font-size: 40px;
   }
 
-  .title-container p{
+  .title-container p {
     font-size: 17px;
   }
 
-  .current-events-container h1{
+  .current-events-container h1 {
     font-size: 40px;
   }
 
@@ -446,70 +474,85 @@
     font-size: 18px;
   }
 
-  .event-details h1{
+  .event-details h1 {
     font-size: 25px;
   }
 
-  .event-details p{
+  .event-details p {
     font-size: 17px;
   }
 
   .details-list {
     width: 90%;
-  
+
     & h4 {
       font-size: 25px;
     }
-  
+
     & li {
       font-size: 17px;
       padding: 10px 0;
     }
   }
 
-  .images-fan-section {
-    margin: 50px auto;
-  }
+  /* .images-fan-section {
+    margin: 0 auto;
+  } */
 
   .images-fan-section img {
     width: 100%;
   }
 
-  .images-fan-section div {
+  /* .images-fan-section div {
     padding: 50px;
-  }
+  } */
 
-  .images-fan-section div h1{
+  .images-fan-section div h1 {
     font-size: 30px;
   }
 
   .scrolling-images {
-    height: 300px;
+    height: 350px;
   }
 
-  .image-container p{
+  .image-container p {
     font-size: 17px;
   }
 }
 
+@media (max-width: 550px) {
+  .camp-content-text {
+    padding: 30px;
+    padding-top: 55px;
+
+    & p {
+      font-size: 15px;
+    }
+
+    & h3 {
+      font-size: 20px;
+    }
+  }
+}
+
 @media (max-width: 500px) {
-  .title-container{
+  .title-container {
     padding: 100px 30px;
   }
-  
-  .title-container h1{
+
+  .title-container h1 {
     margin-top: 75px;
   }
 
-  .title-container p{
+  .title-container p {
     font-size: 15px;
   }
 
-  .title-container button{
+  .title-container button {
     font-size: 17px;
   }
 
-  .current-events-container h1{
+  .current-events-container h1 {
     font-size: 30px;
   }
 
@@ -522,39 +565,35 @@
     width: 90%;
   }
 
-  .event-details h1{
+  .event-details h1 {
     font-size: 25px;
   }
 
-  .event-details p{
+  .event-details p {
     font-size: 15px;
   }
 
   .details-list {
     width: 100%;
-  
+
     & h4 {
       font-size: 20px;
     }
-  
+
     & li {
       font-size: 16px;
     }
   }
 
-  .images-fan-section div{
-    padding: 25px;
-  }
-
-  .images-fan-section div p{
+  .images-fan-section div p {
     font-size: 15px;
   }
 
   .scrolling-images {
-    height: 250px;
+    height: 200px;
   }
 
-  .image-container p{
+  .image-container p {
     padding: 35px;
     font-size: 16px;
   }
