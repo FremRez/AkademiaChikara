@@ -101,6 +101,20 @@ class Post {
       container.remove();
     });
 
+    const blackBcg = templateCopy.querySelector(".black-bg");
+    blackBcg.addEventListener("click", () => {
+      const container = document.querySelector(".news-details-container");
+      container.remove();
+    });
+
+    document.body.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") return;
+
+      const container = document.querySelector(".news-details-container");
+      if (container == null) return;
+
+      container.remove();
+    });
     //-------------------------------------------------------------------------------------------------------
 
     const detailsElementsContainer = templateCopy.querySelector(".details");
