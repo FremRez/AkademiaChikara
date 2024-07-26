@@ -89,37 +89,37 @@ class Trainer {
 const trainers = [
   new Trainer(
     "Marek Żyłka",
-    "Urodził się 26.07.1991r. w Rzeszowie. Założyciel Akademii Sportu Chikara w roku 2014. Prezes Klubu, Właściciel Firmy, Szczęśliwy Tata Dwójki Córek.",
+    "Założyciel Akademii Sportu Chikara oraz prezes klubu. Od 7. roku życia trenuje karate, zdobywając liczne medale krajowe i międzynarodowe, w tym tytuł Mistrza Polski oraz medale na Mistrzostwach Europy. Pełni także rolę trenera personalnego i kierownika wypoczynków dzieci oraz młodzieży.",
     "sensei marek.png",
     "???"
   ),
   new Trainer(
     "Piotr Ramot",
-    "Posiada stopień 2 Dan – urodzony 14 października 1985r. w Rzeszowie. Treningi Karate rozpoczął w 1998.  W 2005 roku kiedy to zdobył czarny pas.",
+    "Jest Mistrzem Polski w Karate Tradycyjnym i wielokrotnym medalistą Mistrzostw Polski. Angażuje się w różnorodne projekty, prowadząc zajęcia karate dla osób niepełnosprawnych, niewidomych, seniorów oraz przedszkolaków. Autor książki ''Karate - na krawędzi inspiracji''.",
     "sensei piotr.png",
     "2 Dan"
   ),
   new Trainer(
     "Agnieszka Sajdutka",
-    "Instruktor Karate Tradycyjnego, trenuje karate od 20 lat.  Mistrzyni Świata w Karate Tradycyjnym, Mistrzyni Europy, Zdobywczyni Pucharu Świata, Wielokrotna Mistrzyni Polski.",
+    "Instruktorka Karate Tradycyjnego. Trenuje karate od 20 lat. Wielokrotna Mistrzyni Polski, Europy i świata. Jedna z najbardziej utytułowanych zawodniczek w Historii Polskiego Karate.",
     "sensei agnieszka.png",
     "3 Dan"
   ),
   new Trainer(
     "Daria Bąk",
-    "Instruktor Karate Tradycyjnego, Stopień 1 Dan, Zawodniczka Kadry Polski, Mistrzyni Polski w Karate Tradycyjnym.  Od 2022 roku Trenerka w Akademii Sportu Chikara Rzeszów.",
+    "Instruktor Karate Tradycyjnego, Mistrzyni Polski oraz aktywna zawodniczka kadry Polski. Od 2022 roku pełni rolę trenerki w Akademii Sportu Chikara w Rzeszowie. Jej zaangażowanie w karate oraz umiejętności przyczyniają się do efektywnego prowadzenia treningów i pomagania uczniom w osiąganiu ich celów.",
     "sensei daria.png",
     "1 Dan"
   ),
   new Trainer(
     "Dawid Jędrzejczyk",
-    "Mistrz Polski w Karate Tradycyjnym. Członek Kadry Polski. Od 2022 roku Instruktor w Akademii Sportu Chikara. Stopień 1 DAN.",
+    "Mistrz Polski w Karate Tradycyjnym oraz członek Kadry Polski, z bogatym doświadczeniem w rywalizacji i treningach. Od 2022 roku pełni rolę Instruktora w Akademii Sportu Chikara, gdzie skupia się na doskonaleniu technik i strategii kumite, rozwijając umiejętności swoich uczniów oraz promując ducha sportowego i samodyscyplinę.",
     "sensei dawid.png",
     "1 Dan"
   ),
   new Trainer(
     "Mariusz Kazanowski",
-    "Legenda Karate Tradycyjnego w Polsce i Rzeszowie Stopień 3 dan. Wielokrotny medalista Mistrzostw Polski, brązowy medalista Mistrzostw Europy w kumite drużynowym.",
+    "Legenda Karate Tradycyjnego w Polsce i Rzeszowie. Jest znanym i utytułowanym zawodnikiem. Wielokrotnie zdobywał medale na Mistrzostwach Polski, a także zdobył brązowy medal w kumite drużynowym podczas Mistrzostw Europy. Jego osiągnięcia i zaangażowanie w rozwój karate w regionie Rzeszowa są szeroko doceniane.",
     "sensei mariusz.png",
     "3 Dan"
   ),
@@ -162,7 +162,7 @@ const aboutUs = () => {
   const paragraph = document.createElement("p");
   paragraph.classList.add("about-us-description");
   paragraph.textContent =
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipismolestiae deleniti aut. Ratione dolorum, distinctio labore, ab veliticing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicimolestiae deleniti autmolestiae deleniti aut. Ratione dolorum, distinctio labore, ab velit. Ratione dolorum, distinctio labore, ab velitng elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.";
+    "W Akademii Sportu Chikara każdy znajdzie coś dla siebie. Prowadzimy różnorodne treningi, które łączą klasyczne techniki karate z nowoczesnymi metodami. Nasza oferta obejmuje zajęcia dla dzieci, które rozwijają koordynację i pewność siebie, oraz zaawansowane kursy dla dorosłych, które poprawiają kondycję i technikę. Nasi doświadczeni nauczyciele motywują uczniów do osiągania nowych celów i przekraczania własnych ograniczeń. Dysponujemy komfortowymi salami treningowymi i organizujemy obozy oraz zawody, które umożliwiają rozwijanie umiejętności w praktyce i zdrową rywalizację. W Akademii Sportu Chikara karate to nie tylko technika walki, ale także ścieżka do odkrywania siebie, kształtowania charakteru i budowania harmonii ciała oraz umysłu.";
   contentContainer.insertAdjacentElement("beforeend", paragraph);
 
   //placeholder na film
@@ -249,20 +249,21 @@ class Question {
 }
 const questions = [
   new Question(
-    "Jakie są korzyści z trenowania karate?",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus veniam harum ipsam, eius ipsa maiores dolores similique nihil cumque repellat dolore, quod facilis quam eos eveniet rerum pariatur?"
-  ),
-  new Question(
-    "Czy potrzebuję specjalnego sprzętu, aby zacząć?",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus veniam"
-  ),
-  new Question(
-    "Czy muszę mieć dobrą kondycję fizyczną, aby zacząć?",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus veniam harum ipsam, eius ipsa maiores dolores similique nihil cumque repellat dolore, quod facilis quam eos eveniet rerum pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus"
-  ),
-  new Question(
     "Jak długo trwa, aby osiągnąć czarny pas?",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus ducimus veniam harum ipsam, eius ipsa maiores dolores similique nihil cumque repellat dolore, quod facilis"
+    "Zdobycie czarnego pasa w karate tradycyjnym zwykle zajmuje od 4 do 6 lat regularnego treningu, w zależności od stylu karate, częstotliwości treningów oraz postępów ucznia. Proces ten obejmuje opanowanie technik, kata i uczestnictwo w egzaminach na kolejne stopnie zaawansowania."
+
+  ),
+  new Question(
+    "Czym różni się karate tradycyjne od innych stylów karate?",
+    "Karate tradycyjne, takie jak Shotokan, Goju-Ryu, Shito-Ryu czy Wado-Ryu, kładzie duży nacisk na techniki kata (sekwencje ruchów) i filozofię samodoskonalenia. W przeciwieństwie do niektórych nowoczesnych stylów, które mogą koncentrować się bardziej na sportowej rywalizacji, karate tradycyjne skupia się na nauce technik, etyce i duchowym rozwoju."
+  ),
+  new Question(
+    "Jak często powinienem trenować, aby osiągnąć postępy?",
+    "Aby osiągnąć widoczne postępy, zaleca się regularne treningi co najmniej 2-3 razy w tygodniu. Regularność i zaangażowanie są kluczowe dla rozwoju umiejętności i poprawy techniki."
+  ),
+  new Question(
+    "Co to są kata i jaką rolę odgrywają w treningu?",
+    "Kata to precyzyjnie zaplanowane sekwencje ruchów, które symulują walkę z wyimaginowanym przeciwnikiem. Odgrywają kluczową rolę w nauce technik, równowagi i koordynacji, a także w doskonaleniu strategii i formy."
   ),
 ];
 
@@ -355,7 +356,7 @@ const karateInfo = () => {
 
   const basicInfoText = document.createElement("p");
   basicInfoText.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea accusantium culpa aliquid delectus soluta animi magni vitae est porro. Architecto dolore fuga harum qui necessitatibus beatae nesciunt, aperiam consequuntur provident fugit quam at vero error id ad odit, numquam modi libero sunt nulla pariatur unde laudantium animi! Minus provident laudantium quos eaque eum minima praesentium eligendi eveniet modi debitis quia adipisci accusamus inventore rerum, qui, alias voluptate. Ipsam non voluptate ipsum quia modi assumenda possimus saepe, inventore, repellat dolorem suscipit minus ratione quam facilis fuga adipisci laudantium, ex corrupti.";
+    "Karate Shotokan to jeden z najpopularniejszych stylów karate, założony przez mistrza Gichin Funakoshi w Japonii w latach 30. XX wieku. Charakteryzuje się prostymi i skutecznymi technikami, które koncentrują się na precyzyjnych uderzeniach, kopnięciach oraz blokach. W Shotokan duży nacisk kładzie się na rozwijanie siły ciała, stabilności oraz równowagi. Styl ten jest również znany z nauki kata – sekwencji ruchów wykonywanych samodzielnie, które mają na celu doskonalenie techniki i strategii walki. Trening w Shotokan rozwija nie tylko umiejętności fizyczne, ale także dyscyplinę, koncentrację i szacunek.";
   basicInfo.insertAdjacentElement("beforeend", basicInfoText);
 
   const basicInfoArrowImg = document.createElement("img");
@@ -378,7 +379,7 @@ const karateInfo = () => {
   const desctiptionTextContainer = document.createElement("div");
   const dscText = document.createElement("p");
   dscText.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea accusantium culpa aliquid delectus soluta animi magni vitae est porro. Architecto dolore fuga harum qui necessitatibus beatae nesciunt, aperiam consequuntur provident fugit quam at vero error";
+    "Dojo Kun to zbiór zasad etycznych i wartości, które są fundamentem treningu w karate. Obejmuje pięć kluczowych zobowiązań. Jest to kodeks postępowania, który kieruje zarówno techniką, jak i zachowaniem praktykujących, podkreślając moralne i filozoficzne aspekty sztuk walki.";
   desctiptionTextContainer.insertAdjacentElement("afterbegin", dscText);
 
   //lista

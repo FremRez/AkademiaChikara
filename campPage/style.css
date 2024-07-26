@@ -42,6 +42,13 @@
   & h1 {
     font-size: 40px;
   }
+  & p{
+    padding: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.700);
+  }
 }
 
 .current-events {
@@ -301,6 +308,10 @@
 .image-container:hover {
   scale: 1.03;
   border: 1px solid rgb(255, 0, 0);
+}
+
+.hidden{
+  display: none;
 }
 
 @media (max-width: 1250px) {

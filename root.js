@@ -295,7 +295,7 @@ function renderRoot(linkId) {
   partners.classList.add("footer-partners");
   footer.appendChild(partners);
 
-  const partnersButton = document.createElement("p");
+  const partnersButton = document.createElement("button");
   partnersButton.textContent = "Zobacz naszych partnerów";
   partners.appendChild(partnersButton);
 
@@ -380,7 +380,7 @@ function renderRoot(linkId) {
   });
 
   // ----- Kod obsługujący footer ----- //
-  const animationButton = document.querySelector(".footer-partners p");
+  const animationButton = document.querySelector(".footer-partners button");
   const animationCaption = document.querySelector(".footer-partners-caption");
   const animationContainer = document.querySelector(".footer-partners-logos");
   const lastPartner = document.getElementById("lastPartner");

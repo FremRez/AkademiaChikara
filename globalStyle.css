@@ -279,7 +279,7 @@ footer p ion-icon {
   align-items: center;
 }
 
-.footer-partners p {
+.footer-partners button {
   padding: 15px 20px;
   border: 2px solid rgba(255, 0, 0, 0.658);
   background-color: transparent;
@@ -290,7 +290,7 @@ footer p ion-icon {
   transition: 300ms;
 }
 
-.footer-partners p:hover {
+.footer-partners button:hover {
   background-color: rgba(255, 0, 0, 0.658);
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
   color: white;
