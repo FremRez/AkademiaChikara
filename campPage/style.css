@@ -31,12 +31,18 @@
   }
 }
 
+.scroll-target{
+  position: absolute;
+  top: -75px;
+}
+
 .camp-content {
   width: 80%;
   margin: 0 auto;
 }
 
 .current-events-container {
+  position: relative;
   margin-top: 100px;
 
   & h1 {

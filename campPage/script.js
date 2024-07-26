@@ -1,5 +1,14 @@
 import renderRoot from "../root.js";
 
+const scrollTarget = document.querySelector(".scroll-target")
+const titleButton = document.querySelector(".title-button")
+
+titleButton.addEventListener("click", ()=>{
+  scrollTarget.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
 const images = document.querySelectorAll(".scrolling-images img");
 
 function hideImage() {

@@ -162,10 +162,13 @@ function renderRoot(linkId) {
   });
 
   // ---- Logo ---- //
+  const chikaraLogoLink = document.createElement("a");
   const chikaraLogoNavbar = document.createElement("img");
+  chikaraLogoLink.href = "https://fremrez.github.io/AkademiaChikara/homePage/homepage.html"
   chikaraLogoNavbar.src = "../Logo.png";
   chikaraLogoNavbar.id = "navbar-logo";
-  schedule.insertAdjacentElement("afterend", chikaraLogoNavbar);
+  chikaraLogoLink.appendChild(chikaraLogoNavbar)
+  schedule.insertAdjacentElement("afterend", chikaraLogoLink);
 
   // ----- Kod obsługujący navbar ----- //
   const menuButton = document.querySelector("#menu-icon");
