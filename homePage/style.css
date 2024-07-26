@@ -96,11 +96,6 @@ button:hover {
   scale: 1.07;
 }
 
-.scroll{
-  position: absolute;
-  top: -100px;
-}
-
 /*---------ABOUT US HOME PAGE---------*/
 main {
   padding: 30px;
