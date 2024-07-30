@@ -309,10 +309,6 @@ function renderRoot(linkId) {
 
   let partnersTable = [
     {
-      logo: "../logos/benefit.svg",
-      link: "https://www.benefitsystems.pl/en",
-    },
-    {
       logo: "../logos/decathlon.png",
       link: "https://www.decathlon.pl/",
     },

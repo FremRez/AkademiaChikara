@@ -78,7 +78,7 @@ const trainers = [
     "Marek Żyłka",
     "Założyciel Akademii Sportu Chikara oraz prezes klubu. Od 7. roku życia trenuje karate, zdobywając liczne medale krajowe i międzynarodowe, w tym tytuł Mistrza Polski oraz medale na Mistrzostwach Europy. Pełni także rolę trenera personalnego i kierownika wypoczynków dzieci oraz młodzieży.",
     "sensei marek.png",
-    "???"
+    "1 Dan"
   ),
   new Trainer(
     "Piotr Ramot",
