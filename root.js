@@ -164,7 +164,7 @@ function renderRoot(linkId) {
   // ---- Logo ---- //
   const chikaraLogoLink = document.createElement("a");
   const chikaraLogoNavbar = document.createElement("img");
-  chikaraLogoLink.href = "https://fremrez.github.io/AkademiaChikara/homePage/homepage.html"
+  chikaraLogoLink.href = "https://akademiachikara.pl/"
   chikaraLogoNavbar.src = "../Logo.png";
   chikaraLogoNavbar.id = "navbar-logo";
   chikaraLogoLink.appendChild(chikaraLogoNavbar)
