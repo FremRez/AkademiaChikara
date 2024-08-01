@@ -458,5 +458,126 @@
         "placeSelf": "center"
       }
     ]
+  },
+
+  {
+    "title": "Zapisy na treningi Karate – Nowy Sezon",
+    "img": "images/post-images/post-9.png",
+    "content": [
+      {
+        "name": "p",
+        "text": "Już 2 WRZEŚNIA rusza Nowy Sezon Szkoleniowo – Treningowy 2024/2025",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Akademia Sportu Chikara Serdecznie zaprasza na treningi KARATE TRADYCYJNEGO",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "rgba(255, 0, 0, 0.7)"
+      },
+
+      {
+        "name": "p",
+        "text": "Rzeszów, Krasne, Białobrzegi",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "RAZEM Z NAMI:",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "textAlign": "left",
+        "color": "black"
+      },
+
+      {
+        "name": "ul",
+        "text": [
+          "Podniesiesz własne zasoby Zdrowotne",
+          "Rozwiniesz poziom Motoryczność i Sprawność",
+          "Nauczysz się Pewności Siebie w działaniu, Poznasz umiejętność Panowania nad Emocjami",
+          "Wyrobisz dobre nawyki Samodzielności",
+          "Zbudujesz silną Mentalność",
+          "Nabierzesz umiejętności Rywalizacji, Szacunku, Dyscypliny w Sporcie",
+          "Poznasz wspaniałych ludzi i Rozwiniesz piękne relację"
+        ],
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "color": "black",
+        "listStyleType": "disc",
+        "placeSelf": "start"
+      },
+
+      {
+        "name": "p",
+        "text": "Postaw na Aktywność",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Postaw na Zdrowie",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Postaw na Doświadczenie i Wiedzę naszych Trenerów",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Zainwestuj we Własny Rozwój",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "p",
+        "text": "Dołącz do Nas",
+        "fontSize": "25px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "rgba(0, 200, 0, 0.7)"
+      },
+
+      {
+        "name": "p",
+        "text": "Grupy treningowe: Przedszkolne, Szkolne, Młodzieżowe, Rodzinne oraz dla Dorosłych",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "textAlign": "center",
+        "color": "black"
+      },
+
+      {
+        "name": "img",
+        "src": "images/post-images/post-9.png",
+        "width": "100%",
+        "placeSelf": "center"
+      }
+    ]
   }
 ]
