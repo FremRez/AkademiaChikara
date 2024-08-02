@@ -24,7 +24,7 @@ function renderRoot(linkId) {
   const navbarLinksTable = [
     {
       id: "homePageLink",
-      href: "../homePage/homepage.html",
+      href: "/",
       content: "Strona główna",
     },
     {
@@ -164,10 +164,10 @@ function renderRoot(linkId) {
   // ---- Logo ---- //
   const chikaraLogoLink = document.createElement("a");
   const chikaraLogoNavbar = document.createElement("img");
-  chikaraLogoLink.href = "https://akademiachikara.pl/"
+  chikaraLogoLink.href = "https://akademiachikara.pl/";
   chikaraLogoNavbar.src = "../Logo.png";
   chikaraLogoNavbar.id = "navbar-logo";
-  chikaraLogoLink.appendChild(chikaraLogoNavbar)
+  chikaraLogoLink.appendChild(chikaraLogoNavbar);
   schedule.insertAdjacentElement("afterend", chikaraLogoLink);
 
   // ----- Kod obsługujący navbar ----- //
