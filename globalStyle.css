@@ -76,6 +76,7 @@ nav {
   cursor: pointer;
   font-size: 15px;
 }
+
 .menu-option:hover {
   scale: 1.15;
 }
@@ -84,10 +85,12 @@ nav {
   position: relative;
   scale: 1;
 }
+
 #schedulePageLinks:hover #menu-training-list {
   display: flex;
   animation: menuTrainingList 300ms;
 }
+
 @keyframes menuTrainingList {
   0% {
     opacity: 0;
@@ -102,6 +105,7 @@ nav {
   background-color: var(--light-red);
   color: white;
 }
+
 .selected-menu-option:hover {
   scale: 1;
 }
@@ -118,19 +122,19 @@ nav {
   border: 1px solid rgb(218, 218, 218);
   border-radius: 10px;
   padding: 15px 0;
+}
 
-  & a {
-    padding: 15px 20px;
-    color: black;
-    text-decoration: none;
-    background-color: white;
-    width: 100%;
-    transition: background-color 300ms;
-  }
+#menu-training-list a {
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  width: 100%;
+  transition: background-color 300ms;
+}
 
-  & a:hover {
-    background-color: whitesmoke;
-  }
+#menu-training-list a:hover {
+  background-color: whitesmoke;
 }
 
 #responsive-menu {
@@ -170,6 +174,7 @@ nav {
   border-bottom: 2px solid whitesmoke;
   cursor: pointer;
 }
+
 .res-menu-option:hover {
   background-color: whitesmoke;
 }
@@ -177,18 +182,17 @@ nav {
 #res-menu-training-schedule {
   display: flex;
   align-items: center;
-
-  & ion-icon {
-    margin-left: 20px;
-  }
 }
-.res-menu-training-list {
-  & a {
-    display: block;
-    text-decoration: none;
-    padding-top: 40px;
-    color: var(--darker-red);
-  }
+
+#res-menu-training-schedule ion-icon {
+  margin-left: 20px;
+}
+
+.res-menu-training-list a {
+  display: block;
+  text-decoration: none;
+  padding-top: 40px;
+  color: var(--darker-red);
 }
 
 #menu-icon {
@@ -207,7 +211,6 @@ footer {
     "img content"
     "separator separator"
     "partners partners";
-
   place-items: center;
   padding: 100px;
   margin-top: 50px;
@@ -226,42 +229,43 @@ footer p ion-icon {
 .footer-items-container {
   grid-area: content;
   font-size: 16px;
+}
 
-  & p {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-  }
+.footer-items-container p {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
 .footer-call {
   display: flex;
+}
 
-  & p:last-of-type {
-    margin-left: 45px;
-  }
+.footer-call p:last-of-type {
+  margin-left: 45px;
 }
 
 .footer-social-media {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
 
-  & ion-icon {
-    font-size: 25px;
-    padding: 7px 10px;
-    border-radius: 10px;
-    color: black;
-    text-decoration: none;
-    transition: 300ms;
-  }
-  & ion-icon:hover {
-    background-color: rgba(255, 0, 0, 0.658);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
-    color: white;
-    scale: 1.1;
-    cursor: pointer;
-  }
+.footer-social-media ion-icon {
+  font-size: 25px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.footer-social-media ion-icon:hover {
+  background-color: rgba(255, 0, 0, 0.658);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
+  color: white;
+  scale: 1.1;
+  cursor: pointer;
 }
 
 .footer-separator {
@@ -339,7 +343,6 @@ footer p ion-icon {
 }
 
 @media (max-width: 1400px) {
-  /*-----------------------------NAVBAR-----------------------------*/
   nav {
     padding: 25px 60px;
   }
@@ -358,23 +361,21 @@ footer p ion-icon {
     display: block;
   }
 
-  /*-----------------------------FOOTER-----------------------------*/
   footer {
     padding: 25px;
     min-width: 250px;
   }
+
   .footer-items-container {
     font-size: 15px;
   }
 }
 
 @media (max-width: 800px) {
-  /*-----------------------------NAVBAR-----------------------------*/
   #responsive-menu-list {
     width: 100%;
   }
 
-  /*-----------------------------FOOTER-----------------------------*/
   footer {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -384,20 +385,25 @@ footer p ion-icon {
       "partners";
     padding: 20px;
   }
+
   .footer-chikara-logo {
     width: 250px;
   }
+
   .footer-items-container {
     margin-top: 50px;
   }
+
   .footer-social-media ion-icon {
     font-size: 20px;
   }
 }
+
 @media (max-width: 350px) {
   .footer-items-container {
     font-size: 13px;
   }
+
   .footer-chikara-logo {
     width: 70%;
     min-width: 200px;

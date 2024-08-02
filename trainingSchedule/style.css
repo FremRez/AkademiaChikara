@@ -6,6 +6,7 @@
     opacity: 1;
   }
 }
+
 .showAnimation {
   animation: showAnimation 500ms;
 }
@@ -25,13 +26,13 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
 
-  & h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 50px 0;
-    color: rgba(0, 0, 0, 0.808);
-  }
+.schedule-content h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 50px 0;
+  color: rgba(0, 0, 0, 0.808);
 }
 
 .categories {
@@ -42,8 +43,8 @@
 }
 
 legend {
-  text-align: center;
   padding: 0 20px;
+  text-align: center;
   font-size: 25px;
   font-weight: bold;
   color: rgba(255, 0, 0, 0.705);
@@ -55,22 +56,22 @@ fieldset {
   padding: 30px;
   border: 2px solid rgba(0, 0, 0, 0.377);
   border-radius: 30px;
+}
 
-  & button {
-    padding: 15px 20px;
-    font-size: 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    transition: scale 300ms;
-  }
+fieldset button {
+  padding: 15px 20px;
+  font-size: 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: scale 300ms;
+}
 
-  & button:hover {
-    scale: 1.07;
-  }
+fieldset button:hover {
+  scale: 1.07;
 }
 
 #large-room-schedule-button {
@@ -137,30 +138,30 @@ img {
   text-align: center;
   transition: 400ms;
   position: relative;
+}
 
-  & h3 {
-    color: white;
-    font-size: 30px;
-  }
+.schedule-card h3 {
+  color: white;
+  font-size: 30px;
+}
 
-  & h4 {
-    margin: 24px 0;
-    font-size: 20px;
-  }
+.schedule-card h4 {
+  margin: 24px 0;
+  font-size: 20px;
+}
 
-  & p {
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.76);
-  }
+.schedule-card p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.76);
+}
 
-  & ion-icon {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    font-size: 80px;
-    color: white;
-    opacity: 0.3;
-  }
+.schedule-card ion-icon {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 80px;
+  color: white;
+  opacity: 0.3;
 }
 
 .schedule-card:hover {
@@ -172,7 +173,7 @@ img {
   display: none;
 }
 
-/*----------RESPONSYWNOSC-----------*/
+/*----------RESPONSIVENESS-----------*/
 
 @media (max-width: 1300px) {
   .categories {
@@ -193,10 +194,10 @@ img {
     display: grid;
     place-items: center;
     width: 100%;
+  }
 
-    & button {
-      width: 70%;
-    }
+  .training-place-buttons button {
+    width: 70%;
   }
 
   .schedule-card {
@@ -212,16 +213,9 @@ img {
   .schedule-content h1 {
     font-size: 40px;
   }
+
   .training-place-buttons button {
     width: 100%;
-  }
-
-  .schedule-content h1 {
-    font-size: 25px;
-  }
-
-  .training-schedule {
-    padding: 0;
   }
 
   .schedule-card {

@@ -10,12 +10,12 @@ body {
   padding: 40px;
   max-width: 1450px;
   margin: 100px auto;
+}
 
-  & h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 30px 0 100px 0;
-  }
+.news-content h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 30px 0 100px 0;
 }
 
 .news {
@@ -48,10 +48,10 @@ body {
   height: 300px;
   justify-content: center;
   align-items: center;
+}
 
-  & img {
-    transition: scale 400ms;
-  }
+.img-container img {
+  transition: scale 400ms;
 }
 
 .news-text-container {
@@ -61,17 +61,17 @@ body {
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(255, 0, 0, 0.685);
+}
 
-  & h2 {
-    font-size: 35px;
-    color: white;
-    text-align: center;
-    margin-bottom: 14px;
-  }
+.news-text-container h2 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-bottom: 14px;
+}
 
-  & p {
-    font-size: 20px;
-  }
+.news-text-container p {
+  font-size: 20px;
 }
 
 .black-bg {
@@ -109,24 +109,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  & ion-icon {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    cursor: pointer;
-    font-size: 35px;
-    color: white;
-  }
+}
 
-  & h2 {
-    padding: 40px;
-    font-size: 45px;
-    color: white;
-  }
+.details-header ion-icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 35px;
+  color: white;
+}
 
-  & img {
-    width: 100%;
-  }
+.details-header h2 {
+  padding: 40px;
+  font-size: 45px;
+  color: white;
+}
+
+.details-header img {
+  width: 100%;
 }
 
 .red-bg {
@@ -154,11 +155,11 @@ body {
 
 .post-details-list {
   margin: 16px 0;
+}
 
-  & li {
-    padding: 10px 0;
-    margin: 0 60px;
-  }
+.post-details-list li {
+  padding: 10px 0;
+  margin: 0 60px;
 }
 
 .post-details-img {
