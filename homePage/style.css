@@ -12,7 +12,6 @@ button {
   transition: 400ms;
   cursor: pointer;
 }
-
 button:hover {
   background-color: rgba(255, 0, 0, 0.658);
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.705);
@@ -28,7 +27,6 @@ button:hover {
     opacity: 1;
   }
 }
-
 .showAnimation {
   animation: showAnimation 400ms;
 }
@@ -67,10 +65,9 @@ button:hover {
   font-weight: 600;
   text-shadow: 0 0 10px rgb(255, 79, 79);
   margin-bottom: 14px;
-}
-
-.enter-site-text span {
-  margin: 0 40px;
+  & span {
+    margin: 0 40px;
+  }
 }
 
 #enter-site-title {
@@ -113,24 +110,24 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-}
 
-#homepage-about-us h1 {
-  font-size: 50px;
-  margin-top: 15px;
-  margin-left: 30px;
-}
+  & h1 {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
 
-#homepage-about-us p {
-  font-size: 20px;
-  margin-left: 30px;
-  margin-top: 25px;
-  padding-right: 40px;
-}
+  & p {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-right: 40px;
+  }
 
-#homepage-about-us button {
-  margin-left: 30px;
-  margin-top: 25px;
+  & button {
+    margin-left: 30px;
+    margin-top: 25px;
+  }
 }
 
 .homepage-about-us-video {
@@ -143,12 +140,12 @@ main {
   justify-content: center;
   align-items: center;
   aspect-ratio: 16/9;
-}
 
-.homepage-about-us-video video {
-  max-width: 550px;
-  aspect-ratio: 16/9;
-  transform: rotate(10deg);
+  & video {
+    max-width: 550px;
+    aspect-ratio: 16/9;
+    transform: rotate(10deg);
+  }
 }
 
 /*---------KARATE INFO HOME PAGE---------*/
@@ -160,11 +157,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.homepage-karate-info h1 {
-  font-size: 45px;
-  margin-bottom: 24px;
+  & h1 {
+    font-size: 45px;
+    margin-bottom: 24px;
+  }
 }
 
 .homepage-karate-info-txt {
@@ -174,10 +170,9 @@ main {
   align-items: flex-start;
   margin: 130px 0 60px 0;
   min-height: 210px;
-}
-
-.homepage-karate-info-txt p {
-  font-size: 20px;
+  & p {
+    font-size: 20px;
+  }
 }
 
 .homepage-dojokun-img {
@@ -210,15 +205,15 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-}
 
-.about-us-title img {
-  width: 50px;
-  opacity: 0.3;
-}
+  & img {
+    width: 50px;
+    opacity: 0.3;
+  }
 
-.about-us-title h1 {
-  font-size: 60px;
+  & h1 {
+    font-size: 60px;
+  }
 }
 
 .about-us-description {
@@ -242,18 +237,18 @@ main {
   margin-top: 30px;
   list-style-type: none;
   font-size: 20px;
-}
 
-.spot-list div {
-  display: flex;
-  align-items: center;
-  margin: 40px 0;
-}
+  & div {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+  }
 
-.spot-list img {
-  width: 30px;
-  margin-right: 30px;
-  opacity: 0.5;
+  & img {
+    width: 30px;
+    margin-right: 30px;
+    opacity: 0.5;
+  }
 }
 
 .trainers-list-title {
@@ -279,10 +274,9 @@ main {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.527);
   color: white;
   scale: 1.03;
-}
-
-.trainer-card:hover p span {
-  color: rgb(71, 41, 41);
+  & p span {
+    color: rgb(71, 41, 41);
+  }
 }
 
 .trainer-img-container {
@@ -293,26 +287,25 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.trainer-img-container img {
-  width: 150%;
+  & img {
+    width: 150%;
+  }
 }
 
 .trainer-short {
   grid-column: 2/4;
   font-size: 20px;
   margin-left: 30px;
-}
 
-.trainer-short p {
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-size: 23px;
-}
-
-.trainer-short p span {
-  color: rgba(255, 0, 0, 0.692);
+  & p {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 23px;
+    & span {
+      color: rgba(255, 0, 0, 0.692);
+    }
+  }
 }
 
 .trainer-rank {
@@ -348,24 +341,24 @@ main {
 .new-people-info {
   text-align: center;
   margin: 100px 0;
-}
-.new-people-info h3 {
-  font-size: 35px;
+  & h3 {
+    font-size: 35px;
+  }
 }
 
 .need-to-know {
   padding: 10px;
-}
 
-.need-to-know h4 {
-  font-size: 22px;
-  color: rgba(255, 0, 0, 0.692);
-  margin-top: 50px;
-}
+  & h4 {
+    font-size: 22px;
+    color: rgba(255, 0, 0, 0.692);
+    margin-top: 50px;
+  }
 
-.need-to-know p {
-  font-size: 18px;
-  margin: 10px;
+  & p {
+    font-size: 18px;
+    margin: 10px;
+  }
 }
 
 .basic-information {
@@ -376,31 +369,30 @@ main {
   position: relative;
   transition: scale 500ms;
   margin-bottom: 100px;
-}
+  & h3 {
+    font-size: 35px;
+  }
 
-.basic-information h3 {
-  font-size: 35px;
-}
+  & span {
+    color: rgba(255, 0, 0, 0.658);
+  }
 
-.basic-information span {
-  color: rgba(255, 0, 0, 0.658);
-}
+  & img {
+    position: absolute;
+    width: 250px;
+    opacity: 0.7;
+    right: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 500ms;
+  }
 
-.basic-information img {
-  position: absolute;
-  width: 250px;
-  opacity: 0.7;
-  right: -150px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: 500ms;
-}
-
-.basic-information p {
-  max-width: 800px;
-  font-size: 20px;
-  margin-top: 24px;
-  padding: 10px;
+  & p {
+    max-width: 800px;
+    font-size: 20px;
+    margin-top: 24px;
+    padding: 10px;
+  }
 }
 
 .basic-information:hover {
@@ -413,36 +405,36 @@ main {
 
 .dojo-kun {
   padding: 30px;
-}
 
-.dojo-kun h2 {
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 50px;
-}
+  & h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-.dojo-kun p {
-  font-size: 20px;
-  margin: 40px 0;
-}
+  & p {
+    font-size: 20px;
+    margin: 40px 0;
+  }
 
-.dojo-kun img {
-  width: 100%;
-}
+  & img {
+    width: 100%;
+  }
 
-.dojo-kun ul {
-  list-style-type: none;
-}
+  & ul {
+    list-style-type: none;
+  }
 
-.dojo-kun li {
-  font-size: 23px;
-  margin: 20px 0;
-  font-weight: bold;
-  opacity: 0.8;
-}
+  & li {
+    font-size: 23px;
+    margin: 20px 0;
+    font-weight: bold;
+    opacity: 0.8;
+  }
 
-.dojo-kun span {
-  color: rgba(255, 0, 0, 0.712);
+  & span {
+    color: rgba(255, 0, 0, 0.712);
+  }
 }
 
 .dojo-kun-dsc {
@@ -476,25 +468,25 @@ main {
   padding: 40px;
   margin: 20px 0;
   transition: 300ms;
-}
 
-.question-container h4 {
-  font-size: 25px;
-  margin-bottom: 24px;
-  color: rgb(36, 0, 0);
-  transition: 300ms;
-}
+  & h4 {
+    font-size: 25px;
+    margin-bottom: 24px;
+    color: rgb(36, 0, 0);
+    transition: 300ms;
+  }
 
-.question-container p {
-  font-size: 18px;
+  & p {
+    font-size: 18px;
+  }
 }
 
 .question-container:hover {
   scale: 1.05;
-}
 
-.question-container:hover h4 {
-  color: rgba(255, 0, 0, 0.733);
+  & h4 {
+    color: rgba(255, 0, 0, 0.733);
+  }
 }
 
 @media (max-width: 1430px) {
@@ -508,21 +500,24 @@ main {
 }
 
 @media (max-width: 1200px) {
+  /*---------ABOUT US HOME PAGE---------*/
   #homepage-about-us {
     grid-template-columns: 1fr;
     gap: 100px;
   }
 
+  /*---------ABOUT US---------*/
   .about-us-title h1 {
     font-size: 43px;
   }
 
+  /*---------KARATE INFO---------*/
   .dojo-kun-dsc {
     grid-template-columns: 1fr;
-  }
 
-  .dojo-kun-dsc img {
-    width: 70%;
+    & img {
+      width: 70%;
+    }
   }
 }
 
@@ -535,6 +530,7 @@ main {
     font-size: 50px;
   }
 
+  /*---------ABOUT US HOME PAGE---------*/
   .homepage-about-us-video {
     width: 400px;
     height: 250px;
@@ -544,18 +540,19 @@ main {
     width: 400px;
   }
 
+  /*---------KARATE INFO HOME PAGE---------*/
   .homepage-karate-info-txt {
     margin: 100px 0 40px 0;
+    & img {
+      opacity: 0.4;
+    }
+
+    & p {
+      text-shadow: 0 0 20px rgb(202, 202, 202);
+    }
   }
 
-  .homepage-karate-info-txt img {
-    opacity: 0.4;
-  }
-
-  .homepage-karate-info-txt p {
-    text-shadow: 0 0 20px rgb(202, 202, 202);
-  }
-
+  /*---------ABOUT US---------*/
   .about-us-title h1 {
     font-size: 35px;
     text-align: center;
@@ -578,16 +575,17 @@ main {
     margin-top: 40px;
   }
 
+  /*---------KARATE INFO---------*/
   .info-site-title {
     font-size: 50px;
   }
 }
 
 @media (max-width: 550px) {
+  /*---------ABOUT US HOME PAGE---------*/
   #homepage-about-us {
     padding: 30px 20px;
   }
-
   .homepage-about-us-video {
     width: 300px;
     height: 190px;
@@ -597,34 +595,35 @@ main {
     width: 300px;
   }
 
+  /*---------KARATE INFO HOME PAGE---------*/
   .homepage-dojokun-img {
     width: 300px;
     top: 70px;
   }
 
+  /*---------ABOUT US---------*/
   .about-us-title {
     grid-template-columns: 90px 1fr 90px;
   }
-
   .about-us-title img {
     width: 30px;
   }
 
+  /*---------KARATE INFO---------*/
   .karate-info-content {
     padding: 0;
   }
 
   .basic-information {
     padding: 30px;
-  }
+    & h3 {
+      font-size: 25px;
+      text-align: center;
+    }
 
-  .basic-information h3 {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  .basic-information p {
-    font-size: 17px;
+    & p {
+      font-size: 17px;
+    }
   }
 
   .dojo-kun-dsc li {
@@ -642,13 +641,12 @@ main {
   .question-container {
     padding: 40px 25px;
     text-align: center;
-  }
+    & h4 {
+      font-size: 20px;
+    }
 
-  .question-container h4 {
-    font-size: 20px;
-  }
-
-  .question-container p {
-    font-size: 15px;
+    & p {
+      font-size: 15px;
+    }
   }
 }

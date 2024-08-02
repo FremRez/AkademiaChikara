@@ -3,35 +3,35 @@
   text-align: center;
   color: white;
   padding: 200px;
+
+  & h1 {
+    font-size: 60px;
+  }
+
+  & p {
+    margin: 30px;
+    font-size: 20px;
+  }
+
+  & button {
+    font-size: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 10px 30px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    transition: 300ms;
+  }
+
+  & button:hover {
+    scale: 1.05;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.705);
+    cursor: pointer;
+  }
 }
 
-.title-container h1 {
-  font-size: 60px;
-}
-
-.title-container p {
-  margin: 30px;
-  font-size: 20px;
-}
-
-.title-container button {
-  font-size: 20px;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 10px 30px;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  color: white;
-  transition: 300ms;
-}
-
-.title-container button:hover {
-  scale: 1.05;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.705);
-  cursor: pointer;
-}
-
-.scroll-target {
+.scroll-target{
   position: absolute;
   top: -75px;
 }
@@ -44,19 +44,18 @@
 .current-events-container {
   position: relative;
   margin-top: 100px;
-}
 
-.current-events-container h1 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-.current-events-container p {
-  padding: 50px 0;
-  font-weight: bold;
-  text-align: center;
-  font-size: 20px;
-  color: rgba(255, 0, 0, 0.7);
+  & h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  & p {
+    padding: 50px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.7);
+  }
 }
 
 .current-events {
@@ -81,11 +80,11 @@
 .event-item:hover {
   scale: 1.05;
   cursor: pointer;
-}
 
-.event-item:hover img {
-  scale: 1.12;
-  opacity: 1;
+  & img {
+    scale: 1.12;
+    opacity: 1;
+  }
 }
 
 .event-item:hover .event-description {
@@ -111,16 +110,16 @@
   padding: 40px;
   background-color: rgba(255, 0, 0, 0.5);
   transition: background-color 400ms;
-}
 
-.event-description h2 {
-  color: white;
-  font-size: 35px;
-}
+  & h2 {
+    color: white;
+    font-size: 35px;
+  }
 
-.event-description p {
-  font-size: 20px;
-  margin-top: 24px;
+  & p {
+    font-size: 20px;
+    margin-top: 24px;
+  }
 }
 
 .event-details {
@@ -156,25 +155,24 @@
   border: 1px solid white;
   overflow-y: scroll;
   z-index: 2;
-}
 
-.event-details h1 {
-  margin: 24px 0;
-  font-size: 45px;
-}
+  & h1 {
+    margin: 24px 0;
+    font-size: 45px;
+  }
 
-.event-details ion-icon {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  font-size: 40px;
-  cursor: pointer;
-}
+  & ion-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+  }
 
-.event-details p {
-  font-size: 20px;
+  & p {
+    font-size: 20px;
+  }
 }
-
 .event-details::-webkit-scrollbar {
   display: none;
 }
@@ -186,25 +184,25 @@
   width: 100%;
   gap: 30px;
   margin-top: 70px;
-}
 
-.details-img-container img {
-  width: 100%;
+  & img {
+    width: 100%;
+  }
 }
 
 .details-list {
   margin-top: 40px;
   padding: 30px;
   width: 70%;
-}
 
-.details-list h4 {
-  font-size: 25px;
-}
+  & h4 {
+    font-size: 25px;
+  }
 
-.details-list li {
-  font-size: 18px;
-  padding: 15px 0;
+  & li {
+    font-size: 18px;
+    padding: 15px 0;
+  }
 }
 
 .images-fan-section {
@@ -218,10 +216,10 @@
 .images-fan-section div {
   text-align: center;
   padding: 50px;
-}
 
-.images-fan-section div p {
-  margin-top: 24px;
+  & p {
+    margin-top: 24px;
+  }
 }
 
 .images-fan-section img {
@@ -287,11 +285,11 @@
 .camp-content-text {
   padding: 70px;
   font-size: 20px;
-}
 
-.camp-content-text h3 {
-  margin-bottom: 24px;
-  font-size: 30px;
+  & h3 {
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
 }
 
 .gradient {
@@ -313,15 +311,15 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
 
-.camp-content-img img {
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  & img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 }
 
 .img-container {
@@ -366,10 +364,10 @@
   .images-fan-section {
     grid-template-columns: 1fr;
     padding: 50px 0;
-  }
 
-  .images-fan-section div {
-    padding: 50px 0;
+    & div {
+      padding: 50px 0;
+    }
   }
 
   .images-fan-section img {
@@ -388,22 +386,18 @@
     left: 50%;
     width: 80%;
   }
-
   .image2 {
     left: -10%;
     width: 30%;
   }
-
   .image3 {
     left: -70%;
     width: 30%;
   }
-
   .image4 {
     left: 180%;
     width: 30%;
   }
-
   .image5 {
     left: 110%;
     width: 30%;
@@ -496,20 +490,28 @@
 
   .details-list {
     width: 90%;
+
+    & h4 {
+      font-size: 25px;
+    }
+
+    & li {
+      font-size: 17px;
+      padding: 10px 0;
+    }
   }
 
-  .details-list h4 {
-    font-size: 25px;
-  }
-
-  .details-list li {
-    font-size: 17px;
-    padding: 10px 0;
-  }
+  /* .images-fan-section {
+    margin: 0 auto;
+  } */
 
   .images-fan-section img {
     width: 100%;
   }
+
+  /* .images-fan-section div {
+    padding: 50px;
+  } */
 
   .images-fan-section div h1 {
     font-size: 30px;
@@ -528,14 +530,14 @@
   .camp-content-text {
     padding: 30px;
     padding-top: 55px;
-  }
 
-  .camp-content-text p {
-    font-size: 15px;
-  }
+    & p {
+      font-size: 15px;
+    }
 
-  .camp-content-text h3 {
-    font-size: 20px;
+    & h3 {
+      font-size: 20px;
+    }
   }
 }
 
@@ -579,14 +581,14 @@
 
   .details-list {
     width: 100%;
-  }
 
-  .details-list h4 {
-    font-size: 20px;
-  }
+    & h4 {
+      font-size: 20px;
+    }
 
-  .details-list li {
-    font-size: 16px;
+    & li {
+      font-size: 16px;
+    }
   }
 
   .images-fan-section div p {
