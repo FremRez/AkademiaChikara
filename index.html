@@ -3,11 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Chikara</title>
-    <meta
-      http-equiv="refresh"
-      content="0; url=https://fremrez.github.io/AkademiaChikara/homePage/homepage.html"
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./- favicon -/apple-touch-icon.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./- favicon -/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./- favicon -/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./- favicon -/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./- favicon -/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="./globalStyle.css" />
+    <link rel="stylesheet" href="./homePage/style.css" />
+
+    <title>Akademia Sportu Chikara Rzeszów - Strona główna</title>
   </head>
-  <body></body>
+  <body>
+    <div class="homePage-start-content">
+      <section class="enter-site">
+        <div class="enter-site-items">
+          <div class="enter-site-text">
+            <span>Pasja</span>
+            <span>Rozwój</span>
+            <span>Inspiracja</span>
+          </div>
+          <h1 id="enter-site-title">
+            Akademia Sportu <br />
+            Chikara
+          </h1>
+          <button id="enter-site-button">
+            <!-- <a href="#homepage-about-us"></a> -->
+            Przejdź do strony
+          </button>
+        </div>
+      </section>
+
+      <main>
+        <section id="homepage-about-us">
+          <div class="homepage-about-us-text">
+            <div class="line"></div>
+            <h1>O NAS</h1>
+            <p>
+              Przedstawiamy Państwu miejsce, które łączy ze sobą pasję do
+              tradycji Japońskiej sztuki walki Karate–Do oraz nowoczesnego
+              treningu sportowego. Oto Akademia Sportu Chikara – przestrzeń do
+              rozwoju i inspiracji dla każdego.
+            </p>
+            <button>Więcej informacji</button>
+          </div>
+          <div class="homepage-about-us-video">
+            <video
+              src="./homePage/images/enter site/akademiachikara video.mp4"
+              controls
+            ></video>
+          </div>
+        </section>
+
+        <section class="homepage-karate-info">
+          <h1>DLA NOWYCH OSÓB</h1>
+          <div class="line center-line"></div>
+          <div class="homepage-karate-info-txt">
+            <img
+              src="./homePage/images/enter site/dojokun.png"
+              alt=""
+              class="homepage-dojokun-img"
+            />
+            <p>
+              Cieszymy się, że interesujesz się rozpoczęciem przygody z karate w
+              naszej Akademii! Karate to nie tylko sztuka walki, ale także
+              doskonały sposób na poprawę kondycji, zdobycie pewności siebie
+              oraz naukę dyscypliny i szacunku. W Akademii Sportu Chikara
+              oferujemy kompleksowe wprowadzenie do tej wspaniałej sztuki walki,
+              zarówno dla dzieci, jak i dorosłych. Na tej stronie znajdziesz
+              wszystkie niezbędne informacje, które pomogą Ci zacząć treningi
+              karate w naszej akademii.
+            </p>
+          </div>
+          <button>Zobacz więcej</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="./homePage/script.js" type="module"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

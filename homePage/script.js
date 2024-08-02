@@ -39,7 +39,7 @@ class Trainer {
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("trainer-img-container");
     let image = document.createElement("img");
-    image.src = "images/about-us/trainers/" + this.image;
+    image.src = "./homePage/images/about-us/trainers/" + this.image;
     imgContainer.insertAdjacentElement("afterbegin", image);
     trainerCard.insertAdjacentElement("afterbegin", imgContainer);
 
@@ -128,9 +128,9 @@ const aboutUs = () => {
   titleBar.classList.add("about-us-title");
   const arrowsImg = document.createElement("img");
   const arrowsImg2 = document.createElement("img");
-  arrowsImg.src = "images/about-us/arrows.png";
+  arrowsImg.src = "./homePage/images/about-us/arrows.png";
   arrowsImg.classList.add("title-arrows");
-  arrowsImg2.src = "images/about-us/arrows.png";
+  arrowsImg2.src = "./homePage/images/about-us/arrows.png";
   arrowsImg2.classList.add("title-arrows");
   const title = document.createElement("h1");
   title.textContent = "O NAS";
@@ -154,7 +154,7 @@ const aboutUs = () => {
 
   //placeholder na film
   const placeholder = document.createElement("img");
-  placeholder.src = "images/about-us/placeholder.jpg";
+  placeholder.src = "./homePage/images/about-us/placeholder.jpg";
   placeholder.classList.add("about-us-video");
   contentContainer.insertAdjacentElement("beforeend", placeholder);
 
@@ -175,7 +175,7 @@ const aboutUs = () => {
   spots.forEach((spot) => {
     const listItemsContainer = document.createElement("div");
     const listItemImg = document.createElement("img");
-    listItemImg.src = "images/about-us/list-item.png";
+    listItemImg.src = "./homePage/images/about-us/list-item.png";
     listItemsContainer.insertAdjacentElement("afterbegin", listItemImg);
 
     const listItemText = document.createElement("li");
@@ -346,7 +346,7 @@ const karateInfo = () => {
   basicInfo.insertAdjacentElement("beforeend", basicInfoText);
 
   const basicInfoArrowImg = document.createElement("img");
-  basicInfoArrowImg.src = "images/karate-info/arrow.png";
+  basicInfoArrowImg.src = "./homePage/images/karate-info/arrow.png";
   basicInfo.insertAdjacentElement("beforeend", basicInfoArrowImg);
 
   karateInfoContainer.insertAdjacentElement("beforeend", basicInfo);
@@ -401,7 +401,7 @@ const karateInfo = () => {
   );
 
   const dojoKunImg = document.createElement("img");
-  dojoKunImg.src = "images/karate-info/dojokun.png";
+  dojoKunImg.src = "./homePage/images/karate-info/dojokun.png";
   dojoKunDescriprion.insertAdjacentElement("beforeend", dojoKunImg);
 
   dojoKun.insertAdjacentElement("beforeend", dojoKunDescriprion);

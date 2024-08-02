@@ -4,12 +4,12 @@
   margin: 100px auto;
   display: grid;
   place-items: center;
+}
 
-  & h2 {
-    font-size: 50px;
-    margin: 100px 0 50px 0;
-    text-align: center;
-  }
+.pricing-content-wrapper h2 {
+  font-size: 50px;
+  margin: 100px 0 50px 0;
+  text-align: center;
 }
 
 .title {
@@ -31,15 +31,15 @@
   width: 100%;
   margin: 20px 0;
   padding: 40px 10px;
+}
 
-  & h3 {
-    font-size: 25px;
-    color: rgba(255, 0, 0, 0.705);
-  }
+.karate-payment h3 {
+  font-size: 25px;
+  color: rgba(255, 0, 0, 0.705);
+}
 
-  & p {
-    font-size: 17px;
-  }
+.karate-payment p {
+  font-size: 17px;
 }
 
 .bank-name {
@@ -54,20 +54,20 @@
   max-width: 500px;
   margin: 0 auto;
   position: relative;
+}
 
-  & ion-icon {
-    font-size: 20px;
-    margin: 0 20px;
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.781);
-  }
+.bank-account-number ion-icon {
+  font-size: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.781);
+}
 
-  & p {
-    font-size: 20px;
-    margin: 20px 0;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.842);
-  }
+.bank-account-number p {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.842);
 }
 
 .copy {
@@ -80,7 +80,6 @@
   position: absolute;
   right: -7px;
   bottom: 20px;
-
   width: 0;
   display: inline-block;
   opacity: 0;
@@ -89,7 +88,8 @@
   transition: width 300ms ease-in-out, opacity 300ms ease-in-out,
     background-color 300ms;
 }
-.animation {
+
+.copy.animation {
   width: 75px;
   opacity: 1;
 }
@@ -99,10 +99,8 @@
     width: 90%;
   }
 
-  .pricing-content-wrapper {
-    & h2 {
-      margin-top: 100px;
-    }
+  .pricing-content-wrapper h2 {
+    margin-top: 100px;
   }
 }
 
@@ -115,10 +113,10 @@
 @media (max-width: 550px) {
   .pricing-content-wrapper {
     padding: 60px 20px;
+  }
 
-    & h2 {
-      font-size: 40px;
-    }
+  .pricing-content-wrapper h2 {
+    font-size: 40px;
   }
 
   .prices-image {
