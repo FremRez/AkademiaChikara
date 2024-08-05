@@ -8,7 +8,15 @@
 
 .pricing-content-wrapper h2 {
   font-size: 50px;
-  margin: 100px 0 50px 0;
+  margin: 100px 0 10px 0;
+  text-align: center;
+}
+
+.pricing-content-wrapper p {
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.562);
   text-align: center;
 }
 
@@ -40,6 +48,13 @@
 
 .karate-payment p {
   font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.multisport-info{
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(255, 0, 0, 0.705);
 }
 
 .bank-name {
@@ -117,6 +132,9 @@
 
   .pricing-content-wrapper h2 {
     font-size: 40px;
+  }
+  .pricing-content-wrapper p {
+    font-size: 20px;
   }
 
   .prices-image {
