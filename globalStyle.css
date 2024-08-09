@@ -222,8 +222,8 @@ footer p ion-icon {
 
 .footer-chikara-logo {
   grid-area: img;
-  width: 30%;
-  min-width: 300px;
+  width: 35%;
+  min-width: 250px;
 }
 
 .footer-items-container {

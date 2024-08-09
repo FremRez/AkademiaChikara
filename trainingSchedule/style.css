@@ -210,8 +210,12 @@ img {
 }
 
 @media (max-width: 550px) {
+  .training-schedule {
+    padding: 20px;
+  }
+
   .schedule-content h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .training-place-buttons button {
@@ -220,5 +224,22 @@ img {
 
   .schedule-card {
     padding: 80px 20px;
+  }
+
+  .disabled-people-schedule h1{
+    font-size: 35px;
+  }
+
+  img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 410px) {
+  .schedule-content h1 {
+    font-size: 27px;
+  }
+  .schedule-text{
+    font-size: 18px;
   }
 }
